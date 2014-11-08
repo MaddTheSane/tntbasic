@@ -913,11 +913,11 @@
 		4D41AA6F0A3C8E04007F22EF /* PSink.C */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = PSink.C; path = ../third_party/BkgConsoleLibs/PLibs/Sink/PSink.C; sourceTree = SOURCE_ROOT; };
 		4D41AA880A3C8E5E007F22EF /* PDynMem.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = PDynMem.h; path = ../third_party/BkgConsoleLibs/PLibs/Alloc/PDynMem.h; sourceTree = SOURCE_ROOT; };
 		4D41ABEF0A3C9B68007F22EF /* OpenPlay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenPlay.framework; path = ../third_party/openplay2.2/Project_Files/xcode/build/Development/OpenPlay.framework; sourceTree = SOURCE_ROOT; };
-		4D6151A00A3C2734006E490C /* RLCocoaMachODisplay.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = RLCocoaMachODisplay.cpp; sourceTree = "<group>"; };
-		4D6151A10A3C2734006E490C /* RLCocoaMachODisplay.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = RLCocoaMachODisplay.h; sourceTree = "<group>"; };
-		4D6151A20A3C2734006E490C /* RLDisplayMachO.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = RLDisplayMachO.cpp; sourceTree = "<group>"; };
-		4D6151A30A3C2734006E490C /* RLDisplayMachO.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = RLDisplayMachO.h; sourceTree = "<group>"; };
-		4D93175014C4E86000A10310 /* TB_Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; name = TB_Info.plist; path = Source/TB_Info.plist; sourceTree = "<group>"; };
+		4D6151A00A3C2734006E490C /* RLCocoaMachODisplay.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = RLCocoaMachODisplay.cpp; sourceTree = "<group>"; };
+		4D6151A10A3C2734006E490C /* RLCocoaMachODisplay.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = RLCocoaMachODisplay.h; sourceTree = "<group>"; };
+		4D6151A20A3C2734006E490C /* RLDisplayMachO.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = RLDisplayMachO.cpp; sourceTree = "<group>"; };
+		4D6151A30A3C2734006E490C /* RLDisplayMachO.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = RLDisplayMachO.h; sourceTree = "<group>"; };
+		4D93175014C4E86000A10310 /* TB_Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TB_Info.plist; sourceTree = "<group>"; };
 		4D99DE3214CE002B00C5A075 /* TNT Basic User Guide */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "TNT Basic User Guide"; path = "Distribution/TNT Basic User Guide"; sourceTree = "<group>"; };
 		4DD0CE0D09CE3E4F00E34038 /* TNT Basic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TNT Basic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD0CE1109CE3E4F00E34038 /* TNTBasic_ServerPrefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TNTBasic_ServerPrefix.h; path = Source/Server_Only/TNTBasic_ServerPrefix.h; sourceTree = SOURCE_ROOT; };
@@ -2221,10 +2221,10 @@
 		4D9FC5650A33401B00894472 /* RezLibMachO */ = {
 			isa = PBXGroup;
 			children = (
-				4D6151A00A3C2734006E490C /* RLCocoaMachODisplay.cpp */,
 				4D6151A10A3C2734006E490C /* RLCocoaMachODisplay.h */,
-				4D6151A20A3C2734006E490C /* RLDisplayMachO.cpp */,
+				4D6151A00A3C2734006E490C /* RLCocoaMachODisplay.cpp */,
 				4D6151A30A3C2734006E490C /* RLDisplayMachO.h */,
+				4D6151A20A3C2734006E490C /* RLDisplayMachO.cpp */,
 			);
 			path = RezLibMachO;
 			sourceTree = "<group>";

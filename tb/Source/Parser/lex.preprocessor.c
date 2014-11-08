@@ -497,8 +497,8 @@ int preprocessor_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *preprocessortext;
-#line 1 "preprocessor.lex"
-#line 2 "preprocessor.lex"
+#line 1 "preprocessor.l"
+#line 2 "preprocessor.l"
 
 // ÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑ
 // TNT Basic
@@ -743,7 +743,7 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
     
-#line 76 "preprocessor.lex"
+#line 76 "preprocessor.l"
 
 
 #line 750 "lex.preprocessor.c"
@@ -831,44 +831,44 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 78 "preprocessor.lex"
+#line 78 "preprocessor.l"
 { }
 	YY_BREAK
 case 2:
 /* rule 2 can match eol */
 YY_RULE_SETUP
-#line 79 "preprocessor.lex"
+#line 79 "preprocessor.l"
 { gProcLine++; return ENDLINE; }
 	YY_BREAK
 case 3:
 /* rule 3 can match eol */
 YY_RULE_SETUP
-#line 80 "preprocessor.lex"
+#line 80 "preprocessor.l"
 { }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 81 "preprocessor.lex"
+#line 81 "preprocessor.l"
 { return PROCEDURE; }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 82 "preprocessor.lex"
+#line 82 "preprocessor.l"
 { return ENDPROC; }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 83 "preprocessor.lex"
+#line 83 "preprocessor.l"
 { preprocessorlval.string=UCString::Duplicate(preprocessortext); return IDENTIFIER; }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 84 "preprocessor.lex"
+#line 84 "preprocessor.l"
 { }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 86 "preprocessor.lex"
+#line 86 "preprocessor.l"
 ECHO;
 	YY_BREAK
 #line 875 "lex.preprocessor.c"
@@ -1865,7 +1865,7 @@ void preprocessorfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 86 "preprocessor.lex"
+#line 86 "preprocessor.l"
 
 
 

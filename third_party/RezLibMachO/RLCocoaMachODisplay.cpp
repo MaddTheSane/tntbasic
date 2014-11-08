@@ -14,14 +14,13 @@
 #define VERBOSE_LOGGING false
 
 #include "RLCocoaMachODisplay.h"
-#include <CFBundle.h>
-#include <CFNumber.h>
+#include <CoreFoundation/CoreFoundation.h>
 #include <string.h>
 #include <stdio.h>
-#include <Multiprocessing.h>
+#include <Carbon/Carbon.h>
 #include <math.h>
 #include <limits.h>
-#include <Movies.h>
+#include <QuickTime/QuickTime.h>
 
 #if TARGET_RT_BIG_ENDIAN
 #include <mach/ppc/thread_act.h>

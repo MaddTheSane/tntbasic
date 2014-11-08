@@ -19,7 +19,7 @@
 // Modified by Mark Tully 11/6/06 to work directly with Mach rather than doing so indirectly via function ptrs.
 
 #include "RLCocoaMachODisplay.h"
-#include <DriverServices.h>
+#include <Carbon/Carbon.h>
 
 static Handle LoadDITL();
 

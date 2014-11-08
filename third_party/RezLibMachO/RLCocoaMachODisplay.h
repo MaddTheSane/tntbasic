@@ -14,9 +14,9 @@
 #include "RLDisplayMachO.h"
 
 #ifndef __CGDIRECTDISPLAY__
-	#include "CGDirectDisplay.h"
+	#include <CoreGraphics/CGDirectDisplay.h>
 #endif
-#include <Multiprocessing.h>
+#include <Carbon/Carbon.h>
 
 Rect *GetCocoaDisplayList( unsigned long *listEntryCount );
 void DisposeCocoaDisplayList( Rect *list );

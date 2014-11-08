@@ -3225,8 +3225,8 @@ int basic_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *basictext;
-#line 1 "basic.lex"
-#line 2 "basic.lex"
+#line 1 "basic.l"
+#line 2 "basic.l"
 
 // ÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑ
 // TNT Basic
@@ -3713,7 +3713,7 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
     
-#line 321 "basic.lex"
+#line 321 "basic.l"
 
 
 #line 3720 "lex.basic.c"
@@ -3801,7 +3801,7 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 323 "basic.lex"
+#line 323 "basic.l"
 {
 						#ifdef WritersBlock
 							return REM;
@@ -3811,7 +3811,7 @@ YY_RULE_SETUP
 case 2:
 /* rule 2 can match eol */
 YY_RULE_SETUP
-#line 329 "basic.lex"
+#line 329 "basic.l"
 { 
 						#ifndef WritersBlock
 						basiclval.string=DupeAndStripEscapeChrs(basictext);
@@ -3821,77 +3821,77 @@ YY_RULE_SETUP
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 336 "basic.lex"
+#line 336 "basic.l"
 { ReturnToken_(EQUALS); }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 337 "basic.lex"
+#line 337 "basic.l"
 { ReturnToken_(NEQ); }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 338 "basic.lex"
+#line 338 "basic.l"
 { ReturnToken_(LTE); }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 339 "basic.lex"
+#line 339 "basic.l"
 { ReturnToken_(GTE); }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 340 "basic.lex"
+#line 340 "basic.l"
 { ReturnToken_(LT); }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 341 "basic.lex"
+#line 341 "basic.l"
 { ReturnToken_(GT); }
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 342 "basic.lex"
+#line 342 "basic.l"
 { ReturnToken_(PLUS); }
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 343 "basic.lex"
+#line 343 "basic.l"
 { ReturnToken_(MINUS); }
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 344 "basic.lex"
+#line 344 "basic.l"
 { ReturnToken_(DIVIDE); }
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 345 "basic.lex"
+#line 345 "basic.l"
 { ReturnToken_(TIMES); }
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 346 "basic.lex"
+#line 346 "basic.l"
 { ReturnToken_(POWER); }
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 347 "basic.lex"
+#line 347 "basic.l"
 { ReturnToken_(OPENBRACKET); }
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 348 "basic.lex"
+#line 348 "basic.l"
 { ReturnToken_(CLOSEBRACKET); }
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 349 "basic.lex"
+#line 349 "basic.l"
 { ReturnToken_(OPENSQBRACKET); }
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 350 "basic.lex"
+#line 350 "basic.l"
 {
 						#ifndef WritersBlock
 						CProgram::GetParsingProgram()->ResumeDeclarationMode();
@@ -3901,437 +3901,437 @@ YY_RULE_SETUP
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 356 "basic.lex"
+#line 356 "basic.l"
 { ReturnToken_(COMMA); }
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 357 "basic.lex"
+#line 357 "basic.l"
 { ReturnToken_(SEMICOLON); }
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 358 "basic.lex"
+#line 358 "basic.l"
 { EndLineParserReset(); ReturnToken_(ENDLINE); }
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 359 "basic.lex"
+#line 359 "basic.l"
 { ReturnToken_(TNTB_TRUE); }
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 360 "basic.lex"
+#line 360 "basic.l"
 { ReturnToken_(TNTB_FALSE); }
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 362 "basic.lex"
+#line 362 "basic.l"
 { ReturnStatement_(PRINT); }
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 364 "basic.lex"
+#line 364 "basic.l"
 { ReturnStatement_(DISABLEBREAK); }
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 365 "basic.lex"
+#line 365 "basic.l"
 { ReturnArithFunc_(GETTIMER); }
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 366 "basic.lex"
+#line 366 "basic.l"
 { ReturnStatement_(DELAY); }
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 367 "basic.lex"
+#line 367 "basic.l"
 { ReturnArithFunc_(RESOURCEEXISTS); }
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 368 "basic.lex"
+#line 368 "basic.l"
 { ReturnArithFunc_(COUNTRESOURCES); }
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 369 "basic.lex"
+#line 369 "basic.l"
 { ReturnStrFunc_(GETRESOURCENAME); }
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 370 "basic.lex"
+#line 370 "basic.l"
 { ReturnArithFunc_(NTHRESOURCEID); }
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 372 "basic.lex"
+#line 372 "basic.l"
 { ReturnStatement_(BEEP); }
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 373 "basic.lex"
+#line 373 "basic.l"
 { ReturnStatement_(LOADSOUNDS); }
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 374 "basic.lex"
+#line 374 "basic.l"
 { ReturnStatement_(UNLOADSOUNDS); }
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
-#line 375 "basic.lex"
+#line 375 "basic.l"
 { ReturnStatement_(PLAYSOUND); }
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
-#line 376 "basic.lex"
+#line 376 "basic.l"
 { ReturnStatement_(LOOPSOUND); }
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
-#line 377 "basic.lex"
+#line 377 "basic.l"
 { ReturnArithFunc_(SOUNDRESULT); }
 	YY_BREAK
 case 37:
 YY_RULE_SETUP
-#line 378 "basic.lex"
+#line 378 "basic.l"
 { ReturnStatement_(STOPSOUND); }
 	YY_BREAK
 case 38:
 YY_RULE_SETUP
-#line 379 "basic.lex"
+#line 379 "basic.l"
 { ReturnStatement_(STOPCHANNEL); }
 	YY_BREAK
 case 39:
 YY_RULE_SETUP
-#line 380 "basic.lex"
+#line 380 "basic.l"
 { ReturnArithFunc_(SOUNDPLAYING); }
 	YY_BREAK
 case 40:
 YY_RULE_SETUP
-#line 381 "basic.lex"
+#line 381 "basic.l"
 { ReturnArithFunc_(CHANNELPLAYING); }
 	YY_BREAK
 case 41:
 YY_RULE_SETUP
-#line 382 "basic.lex"
+#line 382 "basic.l"
 { ReturnStatement_(MOVESOUND); }
 	YY_BREAK
 case 42:
 YY_RULE_SETUP
-#line 383 "basic.lex"
+#line 383 "basic.l"
 { ReturnStatement_(MOVECHANNEL); }
 	YY_BREAK
 case 43:
 YY_RULE_SETUP
-#line 384 "basic.lex"
+#line 384 "basic.l"
 { ReturnArithFunc_(SOUNDVOLUME); }
 	YY_BREAK
 case 44:
 YY_RULE_SETUP
-#line 385 "basic.lex"
+#line 385 "basic.l"
 { ReturnStatement_(SETSOUNDVOLUME); }
 	YY_BREAK
 case 45:
 YY_RULE_SETUP
-#line 387 "basic.lex"
+#line 387 "basic.l"
 { ReturnStatement_(LOADMUSIC); }
 	YY_BREAK
 case 46:
 YY_RULE_SETUP
-#line 388 "basic.lex"
+#line 388 "basic.l"
 { ReturnStatement_(PLAYMUSIC); }
 	YY_BREAK
 case 47:
 YY_RULE_SETUP
-#line 389 "basic.lex"
+#line 389 "basic.l"
 { ReturnStatement_(STOPMUSIC); }
 	YY_BREAK
 case 48:
 YY_RULE_SETUP
-#line 390 "basic.lex"
+#line 390 "basic.l"
 { ReturnArithFunc_(GETMUSICLENGTH); }
 	YY_BREAK
 case 49:
 YY_RULE_SETUP
-#line 391 "basic.lex"
+#line 391 "basic.l"
 { ReturnArithFunc_(GETMUSICPOSITION); }
 	YY_BREAK
 case 50:
 YY_RULE_SETUP
-#line 392 "basic.lex"
+#line 392 "basic.l"
 { ReturnStatement_(SETMUSICPOSITION); }
 	YY_BREAK
 case 51:
 YY_RULE_SETUP
-#line 393 "basic.lex"
+#line 393 "basic.l"
 { ReturnArithFunc_(MUSICVOLUME); }
 	YY_BREAK
 case 52:
 YY_RULE_SETUP
-#line 394 "basic.lex"
+#line 394 "basic.l"
 { ReturnStatement_(SETMUSICVOLUME); }
 	YY_BREAK
 case 53:
 YY_RULE_SETUP
-#line 395 "basic.lex"
+#line 395 "basic.l"
 { ReturnStatement_(MUSICLOOPON); }
 	YY_BREAK
 case 54:
 YY_RULE_SETUP
-#line 396 "basic.lex"
+#line 396 "basic.l"
 { ReturnStatement_(MUSICLOOPOFF); }
 	YY_BREAK
 case 55:
 YY_RULE_SETUP
-#line 397 "basic.lex"
+#line 397 "basic.l"
 { ReturnArithFunc_(ISMUSICPLAYING); }
 	YY_BREAK
 case 56:
 YY_RULE_SETUP
-#line 399 "basic.lex"
+#line 399 "basic.l"
 { ReturnStatement_(DRAWTRACKINGON); }
 	YY_BREAK
 case 57:
 YY_RULE_SETUP
-#line 400 "basic.lex"
+#line 400 "basic.l"
 { ReturnStatement_(DRAWTRACKINGOFF); }
 	YY_BREAK
 case 58:
 YY_RULE_SETUP
-#line 402 "basic.lex"
+#line 402 "basic.l"
 { ReturnStatement_(PAINTCANVAS); }
 	YY_BREAK
 case 59:
 YY_RULE_SETUP
-#line 403 "basic.lex"
+#line 403 "basic.l"
 { ReturnStatement_(OPENCANVAS); }
 	YY_BREAK
 case 60:
 YY_RULE_SETUP
-#line 404 "basic.lex"
+#line 404 "basic.l"
 { ReturnStatement_(CLOSECANVAS); }
 	YY_BREAK
 case 61:
 YY_RULE_SETUP
-#line 405 "basic.lex"
+#line 405 "basic.l"
 { ReturnStatement_(COPYCANVAS); }
 	YY_BREAK
 case 62:
 YY_RULE_SETUP
-#line 406 "basic.lex"
+#line 406 "basic.l"
 { ReturnStatement_(TARGETCANVAS); }
 	YY_BREAK
 case 63:
 YY_RULE_SETUP
-#line 407 "basic.lex"
+#line 407 "basic.l"
 { ReturnToken_(CANVASFX); }
 	YY_BREAK
 case 64:
 YY_RULE_SETUP
-#line 409 "basic.lex"
+#line 409 "basic.l"
 { ReturnArithFunc_(TEXTWIDTH); }
 	YY_BREAK
 case 65:
 YY_RULE_SETUP
-#line 410 "basic.lex"
+#line 410 "basic.l"
 { ReturnArithFunc_(TEXTHEIGHT); }
 	YY_BREAK
 case 66:
 YY_RULE_SETUP
-#line 411 "basic.lex"
+#line 411 "basic.l"
 { ReturnArithFunc_(TEXTDESCENT); }
 	YY_BREAK
 case 67:
 YY_RULE_SETUP
-#line 412 "basic.lex"
+#line 412 "basic.l"
 { ReturnStatement_(DRAWTEXT); }
 	YY_BREAK
 case 68:
 YY_RULE_SETUP
-#line 413 "basic.lex"
+#line 413 "basic.l"
 { ReturnStatement_(TEXTFONT); }
 	YY_BREAK
 case 69:
 YY_RULE_SETUP
-#line 414 "basic.lex"
+#line 414 "basic.l"
 { ReturnStatement_(TEXTSIZE); }
 	YY_BREAK
 case 70:
 YY_RULE_SETUP
-#line 415 "basic.lex"
+#line 415 "basic.l"
 { ReturnStatement_(TEXTFACE); }
 	YY_BREAK
 case 71:
 YY_RULE_SETUP
-#line 417 "basic.lex"
+#line 417 "basic.l"
 { ReturnStatement_(FADEUP); }
 	YY_BREAK
 case 72:
 YY_RULE_SETUP
-#line 418 "basic.lex"
+#line 418 "basic.l"
 { ReturnStatement_(FADEDOWN); }
 	YY_BREAK
 case 73:
 YY_RULE_SETUP
-#line 419 "basic.lex"
+#line 419 "basic.l"
 { ReturnStatement_(FADETO); }
 	YY_BREAK
 case 74:
 YY_RULE_SETUP
-#line 421 "basic.lex"
+#line 421 "basic.l"
 { ReturnStatement_(SHOWMOUSE); }
 	YY_BREAK
 case 75:
 YY_RULE_SETUP
-#line 422 "basic.lex"
+#line 422 "basic.l"
 { ReturnStatement_(HIDEMOUSE); }
 	YY_BREAK
 case 76:
 YY_RULE_SETUP
-#line 423 "basic.lex"
+#line 423 "basic.l"
 { ReturnArithFunc_(GETMOUSEX); }
 	YY_BREAK
 case 77:
 YY_RULE_SETUP
-#line 424 "basic.lex"
+#line 424 "basic.l"
 { ReturnArithFunc_(GETMOUSEY); }
 	YY_BREAK
 case 78:
 YY_RULE_SETUP
-#line 426 "basic.lex"
+#line 426 "basic.l"
 { ReturnStatement_(INITNETWORKING); }
 	YY_BREAK
 case 79:
 YY_RULE_SETUP
-#line 427 "basic.lex"
+#line 427 "basic.l"
 { ReturnStatement_(INITNETWORKING); }
 	YY_BREAK
 case 80:
 YY_RULE_SETUP
-#line 428 "basic.lex"
+#line 428 "basic.l"
 { ReturnArithFunc_(HOSTNETGAME); }
 	YY_BREAK
 case 81:
 YY_RULE_SETUP
-#line 429 "basic.lex"
+#line 429 "basic.l"
 { ReturnArithFunc_(JOINNETGAME); }
 	YY_BREAK
 case 82:
 YY_RULE_SETUP
-#line 430 "basic.lex"
+#line 430 "basic.l"
 { ReturnStatement_(LEAVENETGAME); }
 	YY_BREAK
 case 83:
 YY_RULE_SETUP
-#line 432 "basic.lex"
+#line 432 "basic.l"
 { ReturnStatement_(SETNETWORKINGNORMAL); }
 	YY_BREAK
 case 84:
 YY_RULE_SETUP
-#line 433 "basic.lex"
+#line 433 "basic.l"
 { ReturnStatement_(SETNETWORKINGREGISTERED); }
 	YY_BREAK
 case 85:
 YY_RULE_SETUP
-#line 435 "basic.lex"
+#line 435 "basic.l"
 { ReturnToken_(SETNETDATA); }
 	YY_BREAK
 case 86:
 YY_RULE_SETUP
-#line 436 "basic.lex"
+#line 436 "basic.l"
 { ReturnStatement_(UPDATENETDATA); }
 	YY_BREAK
 case 87:
 YY_RULE_SETUP
-#line 438 "basic.lex"
+#line 438 "basic.l"
 { ReturnArithFunc_(MORENETEVENTS); }
 	YY_BREAK
 case 88:
 YY_RULE_SETUP
-#line 439 "basic.lex"
+#line 439 "basic.l"
 { ReturnArithFunc_(GETNETEVENTTYPE); }
 	YY_BREAK
 case 89:
 YY_RULE_SETUP
-#line 440 "basic.lex"
+#line 440 "basic.l"
 { ReturnArithFunc_(GETNETEVENTCONTENT); }
 	YY_BREAK
 case 90:
 YY_RULE_SETUP
-#line 442 "basic.lex"
+#line 442 "basic.l"
 { ReturnArithFunc_(GETNETID); }
 	YY_BREAK
 case 91:
 YY_RULE_SETUP
-#line 443 "basic.lex"
+#line 443 "basic.l"
 { ReturnArithFunc_(COUNTNETPLAYERS); }
 	YY_BREAK
 case 92:
 YY_RULE_SETUP
-#line 444 "basic.lex"
+#line 444 "basic.l"
 { ReturnStrFunc_(GETNETPLAYERNAME); }
 	YY_BREAK
 case 93:
 YY_RULE_SETUP
-#line 446 "basic.lex"
+#line 446 "basic.l"
 { ReturnArithFunc_(NETGAMETERMINATED); }
 	YY_BREAK
 case 94:
 YY_RULE_SETUP
-#line 447 "basic.lex"
+#line 447 "basic.l"
 { ReturnArithFunc_(NETPLAYERLEFT); }
 	YY_BREAK
 case 95:
 YY_RULE_SETUP
-#line 448 "basic.lex"
+#line 448 "basic.l"
 { ReturnArithFunc_(NETPLAYERDISCONNECTED); }
 	YY_BREAK
 case 96:
 YY_RULE_SETUP
-#line 449 "basic.lex"
+#line 449 "basic.l"
 { ReturnArithFunc_(NETCONNECTIONLOST); }
 	YY_BREAK
 case 97:
 YY_RULE_SETUP
-#line 451 "basic.lex"
+#line 451 "basic.l"
 { ReturnStatement_(LOADTNTMAP); }
 	YY_BREAK
 case 98:
 YY_RULE_SETUP
-#line 452 "basic.lex"
+#line 452 "basic.l"
 { ReturnStatement_(UNLOADTNTMAP); }
 	YY_BREAK
 case 99:
 YY_RULE_SETUP
-#line 453 "basic.lex"
+#line 453 "basic.l"
 { ReturnStatement_(SETCURRENTTNTMAP); }
 	YY_BREAK
 case 100:
 YY_RULE_SETUP
-#line 455 "basic.lex"
+#line 455 "basic.l"
 { ReturnArithFunc_(GETTILE); }
 	YY_BREAK
 case 101:
 YY_RULE_SETUP
-#line 456 "basic.lex"
+#line 456 "basic.l"
 { ReturnStatement_(SETMAPTILE); }
 	YY_BREAK
 case 102:
 YY_RULE_SETUP
-#line 458 "basic.lex"
+#line 458 "basic.l"
 { ReturnArithFunc_(GETTNTMAPWIDTH); }
 	YY_BREAK
 case 103:
 YY_RULE_SETUP
-#line 459 "basic.lex"
+#line 459 "basic.l"
 { ReturnArithFunc_(GETTNTMAPHEIGHT); }
 	YY_BREAK
 case 104:
 YY_RULE_SETUP
-#line 460 "basic.lex"
+#line 460 "basic.l"
 { ReturnArithFunc_(GETTNTMAPLAYERS); }
 	YY_BREAK
 case 105:
@@ -4340,7 +4340,7 @@ case 105:
 (yy_c_buf_p) = yy_cp = yy_bp + 14;
 YY_DO_BEFORE_ACTION; /* set up basictext again */
 YY_RULE_SETUP
-#line 461 "basic.lex"
+#line 461 "basic.l"
 { ReturnArithFunc_(GETMAPTILEWIDTH); }
 	YY_BREAK
 case 106:
@@ -4349,617 +4349,617 @@ case 106:
 (yy_c_buf_p) = yy_cp = yy_bp + 15;
 YY_DO_BEFORE_ACTION; /* set up basictext again */
 YY_RULE_SETUP
-#line 462 "basic.lex"
+#line 462 "basic.l"
 { ReturnArithFunc_(GETMAPTILEHEIGHT); }
 	YY_BREAK
 case 107:
 YY_RULE_SETUP
-#line 464 "basic.lex"
+#line 464 "basic.l"
 { ReturnArithFunc_(COUNTOBJECTS); }
 	YY_BREAK
 case 108:
 YY_RULE_SETUP
-#line 465 "basic.lex"
+#line 465 "basic.l"
 { ReturnStrFunc_(GETNTHOBJECTNAME); } 
 	YY_BREAK
 case 109:
 YY_RULE_SETUP
-#line 466 "basic.lex"
+#line 466 "basic.l"
 { ReturnArithFunc_(GETNTHOBJECTTYPE); }
 	YY_BREAK
 case 110:
 YY_RULE_SETUP
-#line 467 "basic.lex"
+#line 467 "basic.l"
 { ReturnArithFunc_(GETNTHOBJECTX); }
 	YY_BREAK
 case 111:
 YY_RULE_SETUP
-#line 468 "basic.lex"
+#line 468 "basic.l"
 { ReturnArithFunc_(GETNTHOBJECTY); }
 	YY_BREAK
 case 112:
 YY_RULE_SETUP
-#line 469 "basic.lex"
+#line 469 "basic.l"
 { ReturnArithFunc_(GETNTHOBJECTZ); }
 	YY_BREAK
 case 113:
 YY_RULE_SETUP
-#line 471 "basic.lex"
+#line 471 "basic.l"
 { ReturnArithFunc_(COUNTPOLYGONS); }
 	YY_BREAK
 case 114:
 YY_RULE_SETUP
-#line 472 "basic.lex"
+#line 472 "basic.l"
 { ReturnArithFunc_(INPOLYGON); }
 	YY_BREAK
 case 115:
 YY_RULE_SETUP
-#line 473 "basic.lex"
+#line 473 "basic.l"
 { ReturnStrFunc_(POLYNAME); }
 	YY_BREAK
 case 116:
 YY_RULE_SETUP
-#line 474 "basic.lex"
+#line 474 "basic.l"
 { ReturnArithFunc_(POLYBOUNDSX); }
 	YY_BREAK
 case 117:
 YY_RULE_SETUP
-#line 475 "basic.lex"
+#line 475 "basic.l"
 { ReturnArithFunc_(POLYBOUNDSY); }
 	YY_BREAK
 case 118:
 YY_RULE_SETUP
-#line 476 "basic.lex"
+#line 476 "basic.l"
 { ReturnArithFunc_(POLYBOUNDSWIDTH); }
 	YY_BREAK
 case 119:
 YY_RULE_SETUP
-#line 477 "basic.lex"
+#line 477 "basic.l"
 { ReturnArithFunc_(POLYBOUNDSHEIGHT); }
 	YY_BREAK
 case 120:
 YY_RULE_SETUP
-#line 479 "basic.lex"
+#line 479 "basic.l"
 { ReturnStatement_(DRAWMAPSECTION); }
 	YY_BREAK
 case 121:
 YY_RULE_SETUP
-#line 480 "basic.lex"
+#line 480 "basic.l"
 { ReturnArithFunc_(MAPLINECOL); } 
 	YY_BREAK
 case 122:
 YY_RULE_SETUP
-#line 482 "basic.lex"
+#line 482 "basic.l"
 { ReturnStatement_(LINE); }
 	YY_BREAK
 case 123:
 YY_RULE_SETUP
-#line 483 "basic.lex"
+#line 483 "basic.l"
 { ReturnStatement_(FILLRECT); }
 	YY_BREAK
 case 124:
 YY_RULE_SETUP
-#line 484 "basic.lex"
+#line 484 "basic.l"
 { ReturnStatement_(FRAMERECT); }
 	YY_BREAK
 case 125:
 YY_RULE_SETUP
-#line 485 "basic.lex"
+#line 485 "basic.l"
 { ReturnStatement_(FILLOVAL); }
 	YY_BREAK
 case 126:
 YY_RULE_SETUP
-#line 486 "basic.lex"
+#line 486 "basic.l"
 { ReturnStatement_(FRAMEOVAL); }
 	YY_BREAK
 case 127:
 YY_RULE_SETUP
-#line 487 "basic.lex"
+#line 487 "basic.l"
 { ReturnStatement_(FILLPOLY); }
 	YY_BREAK
 case 128:
 YY_RULE_SETUP
-#line 488 "basic.lex"
+#line 488 "basic.l"
 { ReturnStatement_(FRAMEPOLY); }
 	YY_BREAK
 case 129:
 YY_RULE_SETUP
-#line 489 "basic.lex"
+#line 489 "basic.l"
 { ReturnStatement_(SETPIXELCOLOUR); }
 	YY_BREAK
 case 130:
 YY_RULE_SETUP
-#line 490 "basic.lex"
+#line 490 "basic.l"
 { ReturnStatement_(SETPIXELCOLOUR); }
 	YY_BREAK
 case 131:
 YY_RULE_SETUP
-#line 491 "basic.lex"
+#line 491 "basic.l"
 { ReturnArithFunc_(GETPIXEL); }
 	YY_BREAK
 case 132:
 YY_RULE_SETUP
-#line 492 "basic.lex"
+#line 492 "basic.l"
 { ReturnArithFunc_(GETPIXEL); }
 	YY_BREAK
 case 133:
 YY_RULE_SETUP
-#line 494 "basic.lex"
+#line 494 "basic.l"
 { ReturnArithFunc_(GETPENCOLOUR); }
 	YY_BREAK
 case 134:
 YY_RULE_SETUP
-#line 495 "basic.lex"
+#line 495 "basic.l"
 { ReturnArithFunc_(GETPENCOLOUR); }
 	YY_BREAK
 case 135:
 YY_RULE_SETUP
-#line 496 "basic.lex"
+#line 496 "basic.l"
 { ReturnStatement_(SETPENCOLOUR); }
 	YY_BREAK
 case 136:
 YY_RULE_SETUP
-#line 497 "basic.lex"
+#line 497 "basic.l"
 { ReturnStatement_(SETPENCOLOUR); }
 	YY_BREAK
 case 137:
 YY_RULE_SETUP
-#line 499 "basic.lex"
+#line 499 "basic.l"
 { ReturnArithFunc_(GETPENTRANSPARENCY); }
 	YY_BREAK
 case 138:
 YY_RULE_SETUP
-#line 500 "basic.lex"
+#line 500 "basic.l"
 { ReturnStatement_(SETPENTRANSPARENCY); }
 	YY_BREAK
 case 139:
 YY_RULE_SETUP
-#line 502 "basic.lex"
+#line 502 "basic.l"
 { ReturnArithFunc_(GETREDCOMPONENT); }
 	YY_BREAK
 case 140:
 YY_RULE_SETUP
-#line 503 "basic.lex"
+#line 503 "basic.l"
 { ReturnArithFunc_(GETGREENCOMPONENT); }
 	YY_BREAK
 case 141:
 YY_RULE_SETUP
-#line 504 "basic.lex"
+#line 504 "basic.l"
 { ReturnArithFunc_(GETBLUECOMPONENT); }
 	YY_BREAK
 case 142:
 YY_RULE_SETUP
-#line 505 "basic.lex"
+#line 505 "basic.l"
 { ReturnArithFunc_(SETREDCOMPONENT); }
 	YY_BREAK
 case 143:
 YY_RULE_SETUP
-#line 506 "basic.lex"
+#line 506 "basic.l"
 { ReturnArithFunc_(SETGREENCOMPONENT); }
 	YY_BREAK
 case 144:
 YY_RULE_SETUP
-#line 507 "basic.lex"
+#line 507 "basic.l"
 { ReturnArithFunc_(SETBLUECOMPONENT); }
 	YY_BREAK
 case 145:
 YY_RULE_SETUP
-#line 509 "basic.lex"
+#line 509 "basic.l"
 { ReturnArithFunc_(MAKECOLOUR); }
 	YY_BREAK
 case 146:
 YY_RULE_SETUP
-#line 510 "basic.lex"
+#line 510 "basic.l"
 { ReturnArithFunc_(MAKECOLOUR); }
 	YY_BREAK
 case 147:
 YY_RULE_SETUP
-#line 512 "basic.lex"
+#line 512 "basic.l"
 { ReturnStatement_(INVALRECT); }
 	YY_BREAK
 case 148:
 YY_RULE_SETUP
-#line 514 "basic.lex"
+#line 514 "basic.l"
 { ReturnArithFunc_(BUTTON); }
 	YY_BREAK
 case 149:
 YY_RULE_SETUP
-#line 515 "basic.lex"
+#line 515 "basic.l"
 { ReturnArithFunc_(ISPRESSED); }
 	YY_BREAK
 case 150:
 YY_RULE_SETUP
-#line 517 "basic.lex"
+#line 517 "basic.l"
 { ReturnArithFunc_(UP); }
 	YY_BREAK
 case 151:
 YY_RULE_SETUP
-#line 518 "basic.lex"
+#line 518 "basic.l"
 { ReturnArithFunc_(DOWN); }
 	YY_BREAK
 case 152:
 YY_RULE_SETUP
-#line 519 "basic.lex"
+#line 519 "basic.l"
 { ReturnArithFunc_(LEFT); }
 	YY_BREAK
 case 153:
 YY_RULE_SETUP
-#line 520 "basic.lex"
+#line 520 "basic.l"
 { ReturnArithFunc_(RIGHT); }
 	YY_BREAK
 case 154:
 YY_RULE_SETUP
-#line 521 "basic.lex"
+#line 521 "basic.l"
 { ReturnArithFunc_(SPACE); }
 	YY_BREAK
 case 155:
 YY_RULE_SETUP
-#line 523 "basic.lex"
+#line 523 "basic.l"
 { ReturnArithFunc_(READRAWKEY); }
 	YY_BREAK
 case 156:
 YY_RULE_SETUP
-#line 524 "basic.lex"
+#line 524 "basic.l"
 { ReturnArithFunc_(RAW2ASCII); }
 	YY_BREAK
 case 157:
 YY_RULE_SETUP
-#line 525 "basic.lex"
+#line 525 "basic.l"
 { ReturnStrFunc_(RAW2STR); }
 	YY_BREAK
 case 158:
 YY_RULE_SETUP
-#line 526 "basic.lex"
+#line 526 "basic.l"
 { ReturnArithFunc_(RAW2SCANCODE); }
 	YY_BREAK
 case 159:
 YY_RULE_SETUP
-#line 527 "basic.lex"
+#line 527 "basic.l"
 { ReturnArithFunc_(RAWMODSHIFT); }
 	YY_BREAK
 case 160:
 YY_RULE_SETUP
-#line 528 "basic.lex"
+#line 528 "basic.l"
 { ReturnArithFunc_(RAWMODCONTROL); }
 	YY_BREAK
 case 161:
 YY_RULE_SETUP
-#line 529 "basic.lex"
+#line 529 "basic.l"
 { ReturnArithFunc_(RAWMODCOMMAND); }
 	YY_BREAK
 case 162:
 YY_RULE_SETUP
-#line 530 "basic.lex"
+#line 530 "basic.l"
 { ReturnArithFunc_(RAWMODOPTION); }
 	YY_BREAK
 case 163:
 YY_RULE_SETUP
-#line 531 "basic.lex"
+#line 531 "basic.l"
 { ReturnArithFunc_(RAWMODCAPS); }
 	YY_BREAK
 case 164:
 YY_RULE_SETUP
-#line 532 "basic.lex"
+#line 532 "basic.l"
 { ReturnArithFunc_(RAWFILTNUMBER); }
 	YY_BREAK
 case 165:
 YY_RULE_SETUP
-#line 533 "basic.lex"
+#line 533 "basic.l"
 { ReturnArithFunc_(RAWFILTPRINT); }
 	YY_BREAK
 case 166:
 YY_RULE_SETUP
-#line 534 "basic.lex"
+#line 534 "basic.l"
 { ReturnArithFunc_(RAWFILTNAV); }
 	YY_BREAK
 case 167:
 YY_RULE_SETUP
-#line 535 "basic.lex"
+#line 535 "basic.l"
 { ReturnArithFunc_(RAWFILTDEL); }
 	YY_BREAK
 case 168:
 YY_RULE_SETUP
-#line 536 "basic.lex"
+#line 536 "basic.l"
 { ReturnArithFunc_(CHAR2ASCII); }
 	YY_BREAK
 case 169:
 YY_RULE_SETUP
-#line 537 "basic.lex"
+#line 537 "basic.l"
 { ReturnStrFunc_(ASCII2CHAR); }
 	YY_BREAK
 case 170:
 YY_RULE_SETUP
-#line 538 "basic.lex"
+#line 538 "basic.l"
 { ReturnStatement_(KEYBOARDREPEATON); }
 	YY_BREAK
 case 171:
 YY_RULE_SETUP
-#line 539 "basic.lex"
+#line 539 "basic.l"
 { ReturnStatement_(KEYBOARDREPEATOFF); }
 	YY_BREAK
 case 172:
 YY_RULE_SETUP
-#line 540 "basic.lex"
+#line 540 "basic.l"
 { ReturnArithFunc_(GETKEYBOARDREPEAT); }
 	YY_BREAK
 case 173:
 YY_RULE_SETUP
-#line 541 "basic.lex"
+#line 541 "basic.l"
 { ReturnStatement_(CLEARKEYBOARD); }
 	YY_BREAK
 case 174:
 YY_RULE_SETUP
-#line 542 "basic.lex"
+#line 542 "basic.l"
 { ReturnStatement_(WAITKEYPRESS); }
 	YY_BREAK
 case 175:
 YY_RULE_SETUP
-#line 544 "basic.lex"
+#line 544 "basic.l"
 { ReturnStrFunc_(STREDITORCONTENTS); }
 	YY_BREAK
 case 176:
 YY_RULE_SETUP
-#line 545 "basic.lex"
+#line 545 "basic.l"
 { ReturnStatement_(SETSTREDITORCONTENTS); }
 	YY_BREAK
 case 177:
 YY_RULE_SETUP
-#line 546 "basic.lex"
+#line 546 "basic.l"
 { ReturnArithFunc_(STREDITORCURSOR); }
 	YY_BREAK
 case 178:
 YY_RULE_SETUP
-#line 547 "basic.lex"
+#line 547 "basic.l"
 { ReturnStatement_(SETSTREDITORCURSOR); }
 	YY_BREAK
 case 179:
 YY_RULE_SETUP
-#line 548 "basic.lex"
+#line 548 "basic.l"
 { ReturnStatement_(STREDITORINPUT); }
 	YY_BREAK
 case 180:
 YY_RULE_SETUP
-#line 550 "basic.lex"
+#line 550 "basic.l"
 { ReturnStatement_(WAITMOUSEDOWN); }
 	YY_BREAK
 case 181:
 YY_RULE_SETUP
-#line 551 "basic.lex"
+#line 551 "basic.l"
 { ReturnStatement_(WAITMOUSEUP); }
 	YY_BREAK
 case 182:
 YY_RULE_SETUP
-#line 552 "basic.lex"
+#line 552 "basic.l"
 { ReturnStatement_(WAITMOUSECLICK); }
 	YY_BREAK
 case 183:
 YY_RULE_SETUP
-#line 554 "basic.lex"
+#line 554 "basic.l"
 { ReturnStatement_(LOADINPUTBANK); }
 	YY_BREAK
 case 184:
 YY_RULE_SETUP
-#line 555 "basic.lex"
+#line 555 "basic.l"
 { ReturnArithFunc_(POLLINPUT); }
 	YY_BREAK
 case 185:
 YY_RULE_SETUP
-#line 556 "basic.lex"
+#line 556 "basic.l"
 { ReturnStatement_(EDITINPUT); }
 	YY_BREAK
 case 186:
 YY_RULE_SETUP
-#line 557 "basic.lex"
+#line 557 "basic.l"
 { ReturnStatement_(SUSPENDINPUT); }
 	YY_BREAK
 case 187:
 YY_RULE_SETUP
-#line 558 "basic.lex"
+#line 558 "basic.l"
 { ReturnStatement_(RESUMEINPUT); }
 	YY_BREAK
 case 188:
 YY_RULE_SETUP
-#line 560 "basic.lex"
+#line 560 "basic.l"
 { ReturnArithFunc_(ABS); }
 	YY_BREAK
 case 189:
 YY_RULE_SETUP
-#line 561 "basic.lex"
+#line 561 "basic.l"
 { ReturnArithFunc_(MOD); }
 	YY_BREAK
 case 190:
 YY_RULE_SETUP
-#line 562 "basic.lex"
+#line 562 "basic.l"
 { ReturnArithFunc_(SQUAREROOT); }
 	YY_BREAK
 case 191:
 YY_RULE_SETUP
-#line 564 "basic.lex"
+#line 564 "basic.l"
 { ReturnArithFunc_(SIN); }
 	YY_BREAK
 case 192:
 YY_RULE_SETUP
-#line 565 "basic.lex"
+#line 565 "basic.l"
 { ReturnArithFunc_(COS); }
 	YY_BREAK
 case 193:
 YY_RULE_SETUP
-#line 566 "basic.lex"
+#line 566 "basic.l"
 { ReturnArithFunc_(TAN); }
 	YY_BREAK
 case 194:
 YY_RULE_SETUP
-#line 567 "basic.lex"
+#line 567 "basic.l"
 { ReturnArithFunc_(INVSIN); }
 	YY_BREAK
 case 195:
 YY_RULE_SETUP
-#line 568 "basic.lex"
+#line 568 "basic.l"
 { ReturnArithFunc_(INVCOS); }
 	YY_BREAK
 case 196:
 YY_RULE_SETUP
-#line 569 "basic.lex"
+#line 569 "basic.l"
 { ReturnArithFunc_(INVTAN); }
 	YY_BREAK
 case 197:
 YY_RULE_SETUP
-#line 571 "basic.lex"
+#line 571 "basic.l"
 { ReturnArithFunc_(RADSIN); }
 	YY_BREAK
 case 198:
 YY_RULE_SETUP
-#line 572 "basic.lex"
+#line 572 "basic.l"
 { ReturnArithFunc_(RADCOS); }
 	YY_BREAK
 case 199:
 YY_RULE_SETUP
-#line 573 "basic.lex"
+#line 573 "basic.l"
 { ReturnArithFunc_(RADTAN); }
 	YY_BREAK
 case 200:
 YY_RULE_SETUP
-#line 574 "basic.lex"
+#line 574 "basic.l"
 { ReturnArithFunc_(INVRADSIN); }
 	YY_BREAK
 case 201:
 YY_RULE_SETUP
-#line 575 "basic.lex"
+#line 575 "basic.l"
 { ReturnArithFunc_(INVRADCOS); }
 	YY_BREAK
 case 202:
 YY_RULE_SETUP
-#line 576 "basic.lex"
+#line 576 "basic.l"
 { ReturnArithFunc_(INVRADTAN); }
 	YY_BREAK
 case 203:
 YY_RULE_SETUP
-#line 578 "basic.lex"
+#line 578 "basic.l"
 { ReturnArithFunc_(CALCULATEANGLE); }
 	YY_BREAK
 case 204:
 YY_RULE_SETUP
-#line 579 "basic.lex"
+#line 579 "basic.l"
 { ReturnArithFunc_(ANGLEDIFFERENCE); }
 	YY_BREAK
 case 205:
 YY_RULE_SETUP
-#line 581 "basic.lex"
+#line 581 "basic.l"
 { ReturnArithFunc_(RADTODEG); }
 	YY_BREAK
 case 206:
 YY_RULE_SETUP
-#line 582 "basic.lex"
+#line 582 "basic.l"
 { ReturnArithFunc_(DEGTORAD); }
 	YY_BREAK
 case 207:
 YY_RULE_SETUP
-#line 584 "basic.lex"
+#line 584 "basic.l"
 { ReturnArithFunc_(CEIL); }
 	YY_BREAK
 case 208:
 YY_RULE_SETUP
-#line 585 "basic.lex"
+#line 585 "basic.l"
 { ReturnArithFunc_(ROUND); }
 	YY_BREAK
 case 209:
 YY_RULE_SETUP
-#line 586 "basic.lex"
+#line 586 "basic.l"
 { ReturnArithFunc_(FLOOR); }
 	YY_BREAK
 case 210:
 YY_RULE_SETUP
-#line 588 "basic.lex"
+#line 588 "basic.l"
 { ReturnArithFunc_(BITAND); }
 	YY_BREAK
 case 211:
 YY_RULE_SETUP
-#line 589 "basic.lex"
+#line 589 "basic.l"
 { ReturnArithFunc_(BITOR); }
 	YY_BREAK
 case 212:
 YY_RULE_SETUP
-#line 590 "basic.lex"
+#line 590 "basic.l"
 { ReturnArithFunc_(BITXOR); }
 	YY_BREAK
 case 213:
 YY_RULE_SETUP
-#line 591 "basic.lex"
+#line 591 "basic.l"
 { ReturnArithFunc_(BITTEST); }
 	YY_BREAK
 case 214:
 YY_RULE_SETUP
-#line 592 "basic.lex"
+#line 592 "basic.l"
 { ReturnArithFunc_(SETBIT); }
 	YY_BREAK
 case 215:
 YY_RULE_SETUP
-#line 593 "basic.lex"
+#line 593 "basic.l"
 { ReturnArithFunc_(BITSHIFT); }
 	YY_BREAK
 case 216:
 YY_RULE_SETUP
-#line 595 "basic.lex"
+#line 595 "basic.l"
 { ReturnArithFunc_(MAX); }
 	YY_BREAK
 case 217:
 YY_RULE_SETUP
-#line 596 "basic.lex"
+#line 596 "basic.l"
 { ReturnArithFunc_(MIN); }
 	YY_BREAK
 case 218:
 YY_RULE_SETUP
-#line 597 "basic.lex"
+#line 597 "basic.l"
 { ReturnArithFunc_(WRAP); }
 	YY_BREAK
 case 219:
 YY_RULE_SETUP
-#line 599 "basic.lex"
+#line 599 "basic.l"
 { ReturnArithFunc_(RANDOM); }
 	YY_BREAK
 case 220:
 YY_RULE_SETUP
-#line 600 "basic.lex"
+#line 600 "basic.l"
 { ReturnStatement_(SETRANDOMSEED); }
 	YY_BREAK
 case 221:
 YY_RULE_SETUP
-#line 602 "basic.lex"
+#line 602 "basic.l"
 { ReturnStatement_(GRAPHICSMODE); }
 	YY_BREAK
 case 222:
 YY_RULE_SETUP
-#line 603 "basic.lex"
+#line 603 "basic.l"
 { ReturnStatement_(GRAPHICSMODEHARDWARE); }
 	YY_BREAK
 case 223:
 YY_RULE_SETUP
-#line 604 "basic.lex"
+#line 604 "basic.l"
 { ReturnStatement_(WINDOWMODE); }
 	YY_BREAK
 case 224:
 YY_RULE_SETUP
-#line 605 "basic.lex"
+#line 605 "basic.l"
 { ReturnStatement_(WINDOWMODEHARDWARE); }
 	YY_BREAK
 case 225:
 YY_RULE_SETUP
-#line 606 "basic.lex"
+#line 606 "basic.l"
 { ReturnStatement_(TEXTMODE); }
 	YY_BREAK
 case 226:
 YY_RULE_SETUP
-#line 607 "basic.lex"
+#line 607 "basic.l"
 { ReturnStatement_(SYNCSCREEN); }
 	YY_BREAK
 case 227:
 YY_RULE_SETUP
-#line 608 "basic.lex"
+#line 608 "basic.l"
 { ReturnStatement_(VBLSYNCON); }
 	YY_BREAK
 case 228:
 YY_RULE_SETUP
-#line 609 "basic.lex"
+#line 609 "basic.l"
 { ReturnStatement_(VBLSYNCOFF); }
 	YY_BREAK
 case 229:
@@ -4968,12 +4968,12 @@ case 229:
 (yy_c_buf_p) = yy_cp = yy_bp + 17;
 YY_DO_BEFORE_ACTION; /* set up basictext again */
 YY_RULE_SETUP
-#line 610 "basic.lex"
+#line 610 "basic.l"
 { ReturnStatement_(FRAMERATEMAX); }
 	YY_BREAK
 case 230:
 YY_RULE_SETUP
-#line 611 "basic.lex"
+#line 611 "basic.l"
 { ReturnStatement_(FRAMERATE); }
 	YY_BREAK
 case 231:
@@ -4982,32 +4982,32 @@ case 231:
 (yy_c_buf_p) = yy_cp = yy_bp + 10;
 YY_DO_BEFORE_ACTION; /* set up basictext again */
 YY_RULE_SETUP
-#line 612 "basic.lex"
+#line 612 "basic.l"
 { ReturnStatement_(SPRITEOFF); }
 	YY_BREAK
 case 232:
 YY_RULE_SETUP
-#line 613 "basic.lex"
+#line 613 "basic.l"
 { ReturnStatement_(SPRITE); }
 	YY_BREAK
 case 233:
 YY_RULE_SETUP
-#line 614 "basic.lex"
+#line 614 "basic.l"
 { ReturnStatement_(PASTESPRITE); }
 	YY_BREAK
 case 234:
 YY_RULE_SETUP
-#line 615 "basic.lex"
+#line 615 "basic.l"
 { ReturnStatement_(SETSPRITEBANK); }
 	YY_BREAK
 case 235:
 YY_RULE_SETUP
-#line 616 "basic.lex"
+#line 616 "basic.l"
 { ReturnArithFunc_(SPRITEBANK); }
 	YY_BREAK
 case 236:
 YY_RULE_SETUP
-#line 617 "basic.lex"
+#line 617 "basic.l"
 { ReturnStatement_(MOVESPRITE); }
 	YY_BREAK
 case 237:
@@ -5016,7 +5016,7 @@ case 237:
 (yy_c_buf_p) = yy_cp = yy_bp + 8;
 YY_DO_BEFORE_ACTION; /* set up basictext again */
 YY_RULE_SETUP
-#line 618 "basic.lex"
+#line 618 "basic.l"
 { ReturnArithFunc_(SPRITEX); }
 	YY_BREAK
 case 238:
@@ -5025,7 +5025,7 @@ case 238:
 (yy_c_buf_p) = yy_cp = yy_bp + 8;
 YY_DO_BEFORE_ACTION; /* set up basictext again */
 YY_RULE_SETUP
-#line 619 "basic.lex"
+#line 619 "basic.l"
 { ReturnArithFunc_(SPRITEY); }
 	YY_BREAK
 case 239:
@@ -5034,7 +5034,7 @@ case 239:
 (yy_c_buf_p) = yy_cp = yy_bp + 12;
 YY_DO_BEFORE_ACTION; /* set up basictext again */
 YY_RULE_SETUP
-#line 620 "basic.lex"
+#line 620 "basic.l"
 { ReturnArithFunc_(SPRITEI); }
 	YY_BREAK
 case 240:
@@ -5043,12 +5043,12 @@ case 240:
 (yy_c_buf_p) = yy_cp = yy_bp + 13;
 YY_DO_BEFORE_ACTION; /* set up basictext again */
 YY_RULE_SETUP
-#line 621 "basic.lex"
+#line 621 "basic.l"
 { ReturnArithFunc_(SPRITEMOVING); }
 	YY_BREAK
 case 241:
 YY_RULE_SETUP
-#line 622 "basic.lex"
+#line 622 "basic.l"
 { ReturnStatement_(ANIMSPRITE); }
 	YY_BREAK
 case 242:
@@ -5057,7 +5057,7 @@ case 242:
 (yy_c_buf_p) = yy_cp = yy_bp + 16;
 YY_DO_BEFORE_ACTION; /* set up basictext again */
 YY_RULE_SETUP
-#line 623 "basic.lex"
+#line 623 "basic.l"
 { ReturnArithFunc_(SPRITEANIMATING); }
 	YY_BREAK
 case 243:
@@ -5066,7 +5066,7 @@ case 243:
 (yy_c_buf_p) = yy_cp = yy_bp + 13;
 YY_DO_BEFORE_ACTION; /* set up basictext again */
 YY_RULE_SETUP
-#line 624 "basic.lex"
+#line 624 "basic.l"
 { ReturnArithFunc_(SPRITEACTIVE); 
 /*
 commented out as don't want to separate the features of software mode and hardware mode needlessly
@@ -5077,207 +5077,207 @@ to redo it all right now so we'll just leave this feature out
 	YY_BREAK
 case 244:
 YY_RULE_SETUP
-#line 632 "basic.lex"
+#line 632 "basic.l"
 { ReturnStatement_(SETMOANPROG); }
 	YY_BREAK
 case 245:
 YY_RULE_SETUP
-#line 633 "basic.lex"
+#line 633 "basic.l"
 { ReturnStatement_(ADDSPRITETOCHAN); }
 	YY_BREAK
 case 246:
 YY_RULE_SETUP
-#line 634 "basic.lex"
+#line 634 "basic.l"
 { ReturnStatement_(ADDVIEWPORTTOCHAN); }
 	YY_BREAK
 case 247:
 YY_RULE_SETUP
-#line 635 "basic.lex"
+#line 635 "basic.l"
 { ReturnStatement_(REMOVESPRITEFROMCHAN); }
 	YY_BREAK
 case 248:
 YY_RULE_SETUP
-#line 636 "basic.lex"
+#line 636 "basic.l"
 { ReturnStatement_(REMOVEVIEWPORTFROMCHAN); }
 	YY_BREAK
 case 249:
 YY_RULE_SETUP
-#line 637 "basic.lex"
+#line 637 "basic.l"
 { ReturnArithFunc_(CHANMOVE); }
 	YY_BREAK
 case 250:
 YY_RULE_SETUP
-#line 638 "basic.lex"
+#line 638 "basic.l"
 { ReturnArithFunc_(CHANANIM); }
 	YY_BREAK
 case 251:
 YY_RULE_SETUP
-#line 639 "basic.lex"
+#line 639 "basic.l"
 { ReturnArithFunc_(CHANPLAY); }
 	YY_BREAK
 case 252:
 YY_RULE_SETUP
-#line 640 "basic.lex"
+#line 640 "basic.l"
 { ReturnStatement_(AUTOMOANON); }
 	YY_BREAK
 case 253:
 YY_RULE_SETUP
-#line 641 "basic.lex"
+#line 641 "basic.l"
 { ReturnStatement_(AUTOMOANOFF); }
 	YY_BREAK
 case 254:
 YY_RULE_SETUP
-#line 642 "basic.lex"
+#line 642 "basic.l"
 { ReturnArithFunc_(AUTOMOANING); }
 	YY_BREAK
 case 255:
 YY_RULE_SETUP
-#line 643 "basic.lex"
+#line 643 "basic.l"
 { ReturnStatement_(STEPMOAN); }
 	YY_BREAK
 case 256:
 YY_RULE_SETUP
-#line 644 "basic.lex"
+#line 644 "basic.l"
 { ReturnStatement_(PAUSECHANNEL); }
 	YY_BREAK
 case 257:
 YY_RULE_SETUP
-#line 645 "basic.lex"
+#line 645 "basic.l"
 { ReturnStatement_(UNPAUSECHANNEL); }
 	YY_BREAK
 case 258:
 YY_RULE_SETUP
-#line 646 "basic.lex"
+#line 646 "basic.l"
 { ReturnArithFunc_(CHANPAUSED); }
 	YY_BREAK
 case 259:
 YY_RULE_SETUP
-#line 647 "basic.lex"
+#line 647 "basic.l"
 { ReturnStatement_(RESETCHAN); }
 	YY_BREAK
 case 260:
 YY_RULE_SETUP
-#line 648 "basic.lex"
+#line 648 "basic.l"
 { ReturnStatement_(RESTARTCHAN); }
 	YY_BREAK
 case 261:
 YY_RULE_SETUP
-#line 649 "basic.lex"
+#line 649 "basic.l"
 { ReturnStatement_(SETCHANREG); }
 	YY_BREAK
 case 262:
 YY_RULE_SETUP
-#line 650 "basic.lex"
+#line 650 "basic.l"
 { ReturnArithFunc_(CHANREG); }
 	YY_BREAK
 case 263:
 YY_RULE_SETUP
-#line 652 "basic.lex"
+#line 652 "basic.l"
 { ReturnStatement_(LOADIMAGES); }
 	YY_BREAK
 case 264:
 YY_RULE_SETUP
-#line 653 "basic.lex"
+#line 653 "basic.l"
 { ReturnStatement_(UNLOADIMAGES); }
 	YY_BREAK
 case 265:
 YY_RULE_SETUP
-#line 654 "basic.lex"
+#line 654 "basic.l"
 { ReturnStatement_(SETDEFAULTSPRITEBANK); }
 	YY_BREAK
 case 266:
 YY_RULE_SETUP
-#line 655 "basic.lex"
+#line 655 "basic.l"
 { ReturnStatement_(PASTEIMAGE); }
 	YY_BREAK
 case 267:
 YY_RULE_SETUP
-#line 656 "basic.lex"
+#line 656 "basic.l"
 { ReturnStatement_(COPYIMAGE); }
 	YY_BREAK
 case 268:
 YY_RULE_SETUP
-#line 657 "basic.lex"
+#line 657 "basic.l"
 { ReturnStatement_(DELETEIMAGE); }
 	YY_BREAK
 case 269:
 YY_RULE_SETUP
-#line 658 "basic.lex"
+#line 658 "basic.l"
 { ReturnArithFunc_(COUNTIMAGES); }
 	YY_BREAK
 case 270:
 YY_RULE_SETUP
-#line 659 "basic.lex"
+#line 659 "basic.l"
 { ReturnArithFunc_(IMAGEWIDTH); }
 	YY_BREAK
 case 271:
 YY_RULE_SETUP
-#line 660 "basic.lex"
+#line 660 "basic.l"
 { ReturnArithFunc_(IMAGEHEIGHT); }
 	YY_BREAK
 case 272:
 YY_RULE_SETUP
-#line 661 "basic.lex"
+#line 661 "basic.l"
 { ReturnArithFunc_(IMAGEXOFF); }
 	YY_BREAK
 case 273:
 YY_RULE_SETUP
-#line 662 "basic.lex"
+#line 662 "basic.l"
 { ReturnArithFunc_(IMAGEYOFF); }
 	YY_BREAK
 case 274:
 YY_RULE_SETUP
-#line 663 "basic.lex"
+#line 663 "basic.l"
 { ReturnStatement_(SETIMAGEOFFSETS); }
 	YY_BREAK
 case 275:
 YY_RULE_SETUP
-#line 664 "basic.lex"
+#line 664 "basic.l"
 { ReturnStatement_(SETIMAGECOLLISION); }
 	YY_BREAK
 case 276:
 YY_RULE_SETUP
-#line 665 "basic.lex"
+#line 665 "basic.l"
 { ReturnArithFunc_(IMAGECOLLISIONTOLERANCE); }
 	YY_BREAK
 case 277:
 YY_RULE_SETUP
-#line 666 "basic.lex"
+#line 666 "basic.l"
 { ReturnArithFunc_(IMAGECOLLISIONTYPE); }
 	YY_BREAK
 case 278:
 YY_RULE_SETUP
-#line 668 "basic.lex"
+#line 668 "basic.l"
 { ReturnArithFunc_(WHITE); }
 	YY_BREAK
 case 279:
 YY_RULE_SETUP
-#line 669 "basic.lex"
+#line 669 "basic.l"
 { ReturnArithFunc_(BLACK); }
 	YY_BREAK
 case 280:
 YY_RULE_SETUP
-#line 670 "basic.lex"
+#line 670 "basic.l"
 { ReturnArithFunc_(RED); }
 	YY_BREAK
 case 281:
 YY_RULE_SETUP
-#line 671 "basic.lex"
+#line 671 "basic.l"
 { ReturnArithFunc_(GREEN); }
 	YY_BREAK
 case 282:
 YY_RULE_SETUP
-#line 672 "basic.lex"
+#line 672 "basic.l"
 { ReturnArithFunc_(BLUE); }
 	YY_BREAK
 case 283:
 YY_RULE_SETUP
-#line 673 "basic.lex"
+#line 673 "basic.l"
 { ReturnArithFunc_(YELLOW); }
 	YY_BREAK
 case 284:
 YY_RULE_SETUP
-#line 675 "basic.lex"
+#line 675 "basic.l"
 { ReturnStatement_(SETSPRITEANGLE); }
 	YY_BREAK
 case 285:
@@ -5286,27 +5286,27 @@ case 285:
 (yy_c_buf_p) = yy_cp = yy_bp + 15;
 YY_DO_BEFORE_ACTION; /* set up basictext again */
 YY_RULE_SETUP
-#line 676 "basic.lex"
+#line 676 "basic.l"
 { ReturnArithFunc_(SPRITEANGLE); }
 	YY_BREAK
 case 286:
 YY_RULE_SETUP
-#line 677 "basic.lex"
+#line 677 "basic.l"
 { ReturnStatement_(ROTATESPRITE); }
 	YY_BREAK
 case 287:
 YY_RULE_SETUP
-#line 678 "basic.lex"
+#line 678 "basic.l"
 { ReturnArithFunc_(SPRITEROTATING); }
 	YY_BREAK
 case 288:
 YY_RULE_SETUP
-#line 680 "basic.lex"
+#line 680 "basic.l"
 { ReturnStatement_(SETSPRITEXSCALE); }
 	YY_BREAK
 case 289:
 YY_RULE_SETUP
-#line 681 "basic.lex"
+#line 681 "basic.l"
 { ReturnStatement_(SETSPRITEYSCALE); }
 	YY_BREAK
 case 290:
@@ -5315,7 +5315,7 @@ case 290:
 (yy_c_buf_p) = yy_cp = yy_bp + 14;
 YY_DO_BEFORE_ACTION; /* set up basictext again */
 YY_RULE_SETUP
-#line 682 "basic.lex"
+#line 682 "basic.l"
 { ReturnArithFunc_(SPRITEXSCALE); }
 	YY_BREAK
 case 291:
@@ -5324,22 +5324,22 @@ case 291:
 (yy_c_buf_p) = yy_cp = yy_bp + 14;
 YY_DO_BEFORE_ACTION; /* set up basictext again */
 YY_RULE_SETUP
-#line 683 "basic.lex"
+#line 683 "basic.l"
 { ReturnArithFunc_(SPRITEYSCALE); }
 	YY_BREAK
 case 292:
 YY_RULE_SETUP
-#line 684 "basic.lex"
+#line 684 "basic.l"
 { ReturnStatement_(SCALESPRITE); }
 	YY_BREAK
 case 293:
 YY_RULE_SETUP
-#line 685 "basic.lex"
+#line 685 "basic.l"
 { ReturnArithFunc_(SPRITESCALING); }
 	YY_BREAK
 case 294:
 YY_RULE_SETUP
-#line 687 "basic.lex"
+#line 687 "basic.l"
 { ReturnStatement_(SETSPRITETRANSPARENCY); }
 	YY_BREAK
 case 295:
@@ -5348,17 +5348,17 @@ case 295:
 (yy_c_buf_p) = yy_cp = yy_bp + 19;
 YY_DO_BEFORE_ACTION; /* set up basictext again */
 YY_RULE_SETUP
-#line 688 "basic.lex"
+#line 688 "basic.l"
 { ReturnArithFunc_(GETSPRITETRANSPARENCY); }
 	YY_BREAK
 case 296:
 YY_RULE_SETUP
-#line 690 "basic.lex"
+#line 690 "basic.l"
 { ReturnStatement_(SETSPRITEXFLIP); }
 	YY_BREAK
 case 297:
 YY_RULE_SETUP
-#line 691 "basic.lex"
+#line 691 "basic.l"
 { ReturnStatement_(SETSPRITEYFLIP); }
 	YY_BREAK
 case 298:
@@ -5367,7 +5367,7 @@ case 298:
 (yy_c_buf_p) = yy_cp = yy_bp + 13;
 YY_DO_BEFORE_ACTION; /* set up basictext again */
 YY_RULE_SETUP
-#line 692 "basic.lex"
+#line 692 "basic.l"
 { ReturnArithFunc_(SPRITEXFLIP); }
 	YY_BREAK
 case 299:
@@ -5376,7 +5376,7 @@ case 299:
 (yy_c_buf_p) = yy_cp = yy_bp + 13;
 YY_DO_BEFORE_ACTION; /* set up basictext again */
 YY_RULE_SETUP
-#line 693 "basic.lex"
+#line 693 "basic.l"
 { ReturnArithFunc_(SPRITEYFLIP); }
 	YY_BREAK
 case 300:
@@ -5385,7 +5385,7 @@ case 300:
 (yy_c_buf_p) = yy_cp = yy_bp + 21;
 YY_DO_BEFORE_ACTION; /* set up basictext again */
 YY_RULE_SETUP
-#line 695 "basic.lex"
+#line 695 "basic.l"
 { ReturnStatement_(SPRITECOLOUROFF); }
 	YY_BREAK
 case 301:
@@ -5394,287 +5394,287 @@ case 301:
 (yy_c_buf_p) = yy_cp = yy_bp + 20;
 YY_DO_BEFORE_ACTION; /* set up basictext again */
 YY_RULE_SETUP
-#line 696 "basic.lex"
+#line 696 "basic.l"
 { ReturnStatement_(SPRITECOLOUROFF); }
 	YY_BREAK
 case 302:
 YY_RULE_SETUP
-#line 697 "basic.lex"
+#line 697 "basic.l"
 { ReturnStatement_(SPRITECOLOUR); }
 	YY_BREAK
 case 303:
 YY_RULE_SETUP
-#line 698 "basic.lex"
+#line 698 "basic.l"
 { ReturnStatement_(SPRITECOLOUR); }
 	YY_BREAK
 case 304:
 YY_RULE_SETUP
-#line 700 "basic.lex"
+#line 700 "basic.l"
 { ReturnStatement_(SETSPRITEPRIORITY); }
 	YY_BREAK
 case 305:
 YY_RULE_SETUP
-#line 702 "basic.lex"
+#line 702 "basic.l"
 { ReturnStatement_(DRAWPICTRES); }
 	YY_BREAK
 case 306:
 YY_RULE_SETUP
-#line 704 "basic.lex"
+#line 704 "basic.l"
 { ReturnArithFunc_(CREATEFILE); }
 	YY_BREAK
 case 307:
 YY_RULE_SETUP
-#line 705 "basic.lex"
+#line 705 "basic.l"
 { ReturnArithFunc_(FILEOPEN); }
 	YY_BREAK
 case 308:
 YY_RULE_SETUP
-#line 706 "basic.lex"
+#line 706 "basic.l"
 { ReturnArithFunc_(ASKCREATEFILE); }
 	YY_BREAK
 case 309:
 YY_RULE_SETUP
-#line 707 "basic.lex"
+#line 707 "basic.l"
 { ReturnArithFunc_(ASKUSERFILEOPEN); }
 	YY_BREAK
 case 310:
 YY_RULE_SETUP
-#line 708 "basic.lex"
+#line 708 "basic.l"
 { ReturnStatement_(FILECLOSE); }
 	YY_BREAK
 case 311:
 YY_RULE_SETUP
-#line 710 "basic.lex"
+#line 710 "basic.l"
 { ReturnStatement_(NEWFOLDER); }
 	YY_BREAK
 case 312:
 YY_RULE_SETUP
-#line 711 "basic.lex"
+#line 711 "basic.l"
 { ReturnStatement_(DELETEFILE); }
 	YY_BREAK
 case 313:
 YY_RULE_SETUP
-#line 713 "basic.lex"
+#line 713 "basic.l"
 { ReturnStatement_(FILEWRITE); }
 	YY_BREAK
 case 314:
 YY_RULE_SETUP
-#line 714 "basic.lex"
+#line 714 "basic.l"
 { ReturnStrFunc_(FILEREADSTRING); }
 	YY_BREAK
 case 315:
 YY_RULE_SETUP
-#line 715 "basic.lex"
+#line 715 "basic.l"
 { ReturnArithFunc_(FILEREADFLOAT); }
 	YY_BREAK
 case 316:
 YY_RULE_SETUP
-#line 716 "basic.lex"
+#line 716 "basic.l"
 { ReturnArithFunc_(FILEREADINT); }
 	YY_BREAK
 case 317:
 YY_RULE_SETUP
-#line 718 "basic.lex"
+#line 718 "basic.l"
 { ReturnArithFunc_(FILEEXISTS); }
 	YY_BREAK
 case 318:
 YY_RULE_SETUP
-#line 719 "basic.lex"
+#line 719 "basic.l"
 { ReturnStrFunc_(FILETYPE); }
 	YY_BREAK
 case 319:
 YY_RULE_SETUP
-#line 721 "basic.lex"
+#line 721 "basic.l"
 { ReturnArithFunc_(FILEPOS); }
 	YY_BREAK
 case 320:
 YY_RULE_SETUP
-#line 722 "basic.lex"
+#line 722 "basic.l"
 { ReturnStatement_(SETFILEPOS); }
 	YY_BREAK
 case 321:
 YY_RULE_SETUP
-#line 723 "basic.lex"
+#line 723 "basic.l"
 { ReturnArithFunc_(FILELENGTH); }
 	YY_BREAK
 case 322:
 YY_RULE_SETUP
-#line 725 "basic.lex"
+#line 725 "basic.l"
 { ReturnStatement_(SETDIRECTORYUSERPREFERENCES); }
 	YY_BREAK
 case 323:
 YY_RULE_SETUP
-#line 726 "basic.lex"
+#line 726 "basic.l"
 { ReturnStatement_(SETDIRECTORYTEMPORARY); }
 	YY_BREAK
 case 324:
 YY_RULE_SETUP
-#line 727 "basic.lex"
+#line 727 "basic.l"
 { ReturnStatement_(SETDIRECTORYSYSTEMPREFERENCES); }
 	YY_BREAK
 case 325:
 YY_RULE_SETUP
-#line 728 "basic.lex"
+#line 728 "basic.l"
 { ReturnStatement_(SETDIRECTORYGAME); }
 	YY_BREAK
 case 326:
 YY_RULE_SETUP
-#line 730 "basic.lex"
+#line 730 "basic.l"
 { ReturnToken_(DATA); }
 	YY_BREAK
 case 327:
 YY_RULE_SETUP
-#line 731 "basic.lex"
+#line 731 "basic.l"
 { ReturnToken_(READ); }
 	YY_BREAK
 case 328:
 YY_RULE_SETUP
-#line 732 "basic.lex"
+#line 732 "basic.l"
 { ReturnToken_(RESTORE); }
 	YY_BREAK
 case 329:
 YY_RULE_SETUP
-#line 734 "basic.lex"
+#line 734 "basic.l"
 { ReturnToken_(DIM); }
 	YY_BREAK
 case 330:
 YY_RULE_SETUP
-#line 736 "basic.lex"
+#line 736 "basic.l"
 { ReturnToken_(WHILE); }
 	YY_BREAK
 case 331:
 YY_RULE_SETUP
-#line 737 "basic.lex"
+#line 737 "basic.l"
 { ReturnToken_(WEND); }
 	YY_BREAK
 case 332:
 YY_RULE_SETUP
-#line 739 "basic.lex"
+#line 739 "basic.l"
 { ReturnToken_(FOR); }
 	YY_BREAK
 case 333:
 YY_RULE_SETUP
-#line 740 "basic.lex"
+#line 740 "basic.l"
 { ReturnToken_(TO); }
 	YY_BREAK
 case 334:
 YY_RULE_SETUP
-#line 741 "basic.lex"
+#line 741 "basic.l"
 { ReturnToken_(NEXT); }
 	YY_BREAK
 case 335:
 YY_RULE_SETUP
-#line 742 "basic.lex"
+#line 742 "basic.l"
 { ReturnToken_(STEP); }
 	YY_BREAK
 case 336:
 YY_RULE_SETUP
-#line 744 "basic.lex"
+#line 744 "basic.l"
 { ReturnToken_(REPEAT); }
 	YY_BREAK
 case 337:
 YY_RULE_SETUP
-#line 745 "basic.lex"
+#line 745 "basic.l"
 { ReturnToken_(UNTIL); }
 	YY_BREAK
 case 338:
 YY_RULE_SETUP
-#line 746 "basic.lex"
+#line 746 "basic.l"
 { ReturnToken_(FOREVER); }
 	YY_BREAK
 case 339:
 YY_RULE_SETUP
-#line 748 "basic.lex"
+#line 748 "basic.l"
 { ReturnToken_(IF); }
 	YY_BREAK
 case 340:
 YY_RULE_SETUP
-#line 749 "basic.lex"
+#line 749 "basic.l"
 { ReturnToken_(THEN); }
 	YY_BREAK
 case 341:
 YY_RULE_SETUP
-#line 750 "basic.lex"
+#line 750 "basic.l"
 { ReturnToken_(ELSEIF); }
 	YY_BREAK
 case 342:
 YY_RULE_SETUP
-#line 751 "basic.lex"
+#line 751 "basic.l"
 { ReturnToken_(ELSE); }
 	YY_BREAK
 case 343:
 YY_RULE_SETUP
-#line 752 "basic.lex"
+#line 752 "basic.l"
 { ReturnToken_(ENDIF); }
 	YY_BREAK
 case 344:
 YY_RULE_SETUP
-#line 754 "basic.lex"
+#line 754 "basic.l"
 { ReturnStatement_(BREAK); }
 	YY_BREAK
 case 345:
 YY_RULE_SETUP
-#line 756 "basic.lex"
+#line 756 "basic.l"
 { ReturnToken_(GOTO); }
 	YY_BREAK
 case 346:
 YY_RULE_SETUP
-#line 758 "basic.lex"
+#line 758 "basic.l"
 { ReturnStrFunc_(NUMTOSTRING); }
 	YY_BREAK
 case 347:
 YY_RULE_SETUP
-#line 759 "basic.lex"
+#line 759 "basic.l"
 { ReturnStrFunc_(NUMTOSTRING); }
 	YY_BREAK
 case 348:
 YY_RULE_SETUP
-#line 760 "basic.lex"
+#line 760 "basic.l"
 { ReturnArithFunc_(STRINGTONUM); }
 	YY_BREAK
 case 349:
 YY_RULE_SETUP
-#line 761 "basic.lex"
+#line 761 "basic.l"
 { ReturnStrFunc_(LOWERCASE); }
 	YY_BREAK
 case 350:
 YY_RULE_SETUP
-#line 762 "basic.lex"
+#line 762 "basic.l"
 { ReturnStrFunc_(UPPERCASE); }
 	YY_BREAK
 case 351:
 YY_RULE_SETUP
-#line 763 "basic.lex"
+#line 763 "basic.l"
 { ReturnArithFunc_(STRINGLENGTH); }
 	YY_BREAK
 case 352:
 YY_RULE_SETUP
-#line 764 "basic.lex"
+#line 764 "basic.l"
 { ReturnArithFunc_(STRINGLENGTH); }
 	YY_BREAK
 case 353:
 YY_RULE_SETUP
-#line 765 "basic.lex"
+#line 765 "basic.l"
 { ReturnStrFunc_(GETCHAR); }
 	YY_BREAK
 case 354:
 YY_RULE_SETUP
-#line 766 "basic.lex"
+#line 766 "basic.l"
 { ReturnStrFunc_(REMOVECHAR); }
 	YY_BREAK
 case 355:
 YY_RULE_SETUP
-#line 767 "basic.lex"
+#line 767 "basic.l"
 { ReturnStrFunc_(LEFTSTR); }
 	YY_BREAK
 case 356:
 YY_RULE_SETUP
-#line 768 "basic.lex"
+#line 768 "basic.l"
 { ReturnStrFunc_(RIGHTSTR); }
 	YY_BREAK
 case 357:
 YY_RULE_SETUP
-#line 769 "basic.lex"
+#line 769 "basic.l"
 { ReturnStrFunc_(MIDSTR); }
 	YY_BREAK
 case 358:
@@ -5683,7 +5683,7 @@ case 358:
 (yy_c_buf_p) = yy_cp = yy_bp + 10;
 YY_DO_BEFORE_ACTION; /* set up basictext again */
 YY_RULE_SETUP
-#line 771 "basic.lex"
+#line 771 "basic.l"
 { ReturnArithFunc_(SPRITECOL); }
 	YY_BREAK
 case 359:
@@ -5692,7 +5692,7 @@ case 359:
 (yy_c_buf_p) = yy_cp = yy_bp + 15;
 YY_DO_BEFORE_ACTION; /* set up basictext again */
 YY_RULE_SETUP
-#line 772 "basic.lex"
+#line 772 "basic.l"
 { ReturnArithFunc_(SPRITECOLRECT); }
 	YY_BREAK
 case 360:
@@ -5701,187 +5701,187 @@ case 360:
 (yy_c_buf_p) = yy_cp = yy_bp + 13;
 YY_DO_BEFORE_ACTION; /* set up basictext again */
 YY_RULE_SETUP
-#line 773 "basic.lex"
+#line 773 "basic.l"
 { ReturnArithFunc_(POINTINRECT); }
 	YY_BREAK
 case 361:
 YY_RULE_SETUP
-#line 775 "basic.lex"
+#line 775 "basic.l"
 { ReturnToken_(PROCEDURE); }
 	YY_BREAK
 case 362:
 YY_RULE_SETUP
-#line 776 "basic.lex"
+#line 776 "basic.l"
 { ReturnToken_(ENDPROC); }
 	YY_BREAK
 case 363:
 YY_RULE_SETUP
-#line 777 "basic.lex"
+#line 777 "basic.l"
 { ReturnToken_(PROCRESULT); }
 	YY_BREAK
 case 364:
 YY_RULE_SETUP
-#line 778 "basic.lex"
+#line 778 "basic.l"
 { ReturnToken_(PROCRESULT); }
 	YY_BREAK
 case 365:
 YY_RULE_SETUP
-#line 779 "basic.lex"
+#line 779 "basic.l"
 { ReturnToken_(PROCRESULTFLOAT); }
 	YY_BREAK
 case 366:
 YY_RULE_SETUP
-#line 780 "basic.lex"
+#line 780 "basic.l"
 { ReturnToken_(PROCRESULTSTR); }
 	YY_BREAK
 case 367:
 YY_RULE_SETUP
-#line 781 "basic.lex"
+#line 781 "basic.l"
 { ReturnToken_(PROCRESULTSTR); }
 	YY_BREAK
 case 368:
 YY_RULE_SETUP
-#line 782 "basic.lex"
+#line 782 "basic.l"
 { ReturnToken_(SHARED); }
 	YY_BREAK
 case 369:
 YY_RULE_SETUP
-#line 783 "basic.lex"
+#line 783 "basic.l"
 { ReturnToken_(GLOBAL); }
 	YY_BREAK
 case 370:
 YY_RULE_SETUP
-#line 784 "basic.lex"
+#line 784 "basic.l"
 { ReturnToken_(NETGLOBAL); }
 	YY_BREAK
 case 371:
 YY_RULE_SETUP
-#line 785 "basic.lex"
+#line 785 "basic.l"
 { ReturnToken_(IMPORTANTNETGLOBAL); }
 	YY_BREAK
 case 372:
 YY_RULE_SETUP
-#line 787 "basic.lex"
+#line 787 "basic.l"
 { ReturnToken_(AND); }
 	YY_BREAK
 case 373:
 YY_RULE_SETUP
-#line 788 "basic.lex"
+#line 788 "basic.l"
 { ReturnToken_(OR); }
 	YY_BREAK
 case 374:
 YY_RULE_SETUP
-#line 789 "basic.lex"
+#line 789 "basic.l"
 { ReturnToken_(NOT); }
 	YY_BREAK
 case 375:
 YY_RULE_SETUP
-#line 791 "basic.lex"
+#line 791 "basic.l"
 { ReturnStatement_(END); }
 	YY_BREAK
 case 376:
 YY_RULE_SETUP
-#line 793 "basic.lex"
+#line 793 "basic.l"
 { ReturnStatement_(NEWBUTTON); }
 	YY_BREAK
 case 377:
 YY_RULE_SETUP
-#line 794 "basic.lex"
+#line 794 "basic.l"
 { ReturnStatement_(CLEARBUTTONS); }
 	YY_BREAK
 case 378:
 YY_RULE_SETUP
-#line 795 "basic.lex"
+#line 795 "basic.l"
 { ReturnStatement_(WAITBUTTONCLICK); }
 	YY_BREAK
 case 379:
 YY_RULE_SETUP
-#line 796 "basic.lex"
+#line 796 "basic.l"
 { ReturnArithFunc_(POLLBUTTONCLICK); }
 	YY_BREAK
 case 380:
 YY_RULE_SETUP
-#line 797 "basic.lex"
+#line 797 "basic.l"
 { ReturnArithFunc_(GETBUTTONCLICK); }
 	YY_BREAK
 case 381:
 YY_RULE_SETUP
-#line 799 "basic.lex"
+#line 799 "basic.l"
 { ReturnStatement_(CREATEMAPVIEWPORT); }
 	YY_BREAK
 case 382:
 YY_RULE_SETUP
-#line 800 "basic.lex"
+#line 800 "basic.l"
 { ReturnStatement_(CREATEVIEWPORT); }
 	YY_BREAK
 case 383:
 YY_RULE_SETUP
-#line 801 "basic.lex"
+#line 801 "basic.l"
 { ReturnStatement_(REMOVEVIEWPORT); }
 	YY_BREAK
 case 384:
 YY_RULE_SETUP
-#line 802 "basic.lex"
+#line 802 "basic.l"
 { ReturnStatement_(VIEWPORTOFFSET); }
 	YY_BREAK
 case 385:
 YY_RULE_SETUP
-#line 803 "basic.lex"
+#line 803 "basic.l"
 { ReturnArithFunc_(GETVIEWPORTXOFFSET); }
 	YY_BREAK
 case 386:
 YY_RULE_SETUP
-#line 804 "basic.lex"
+#line 804 "basic.l"
 { ReturnArithFunc_(GETVIEWPORTYOFFSET); }
 	YY_BREAK
 case 387:
 YY_RULE_SETUP
-#line 805 "basic.lex"
+#line 805 "basic.l"
 { ReturnArithFunc_(GETVIEWPORTWIDTH); }
 	YY_BREAK
 case 388:
 YY_RULE_SETUP
-#line 806 "basic.lex"
+#line 806 "basic.l"
 { ReturnArithFunc_(GETVIEWPORTHEIGHT); }
 	YY_BREAK
 case 389:
 YY_RULE_SETUP
-#line 807 "basic.lex"
+#line 807 "basic.l"
 { ReturnStatement_(MOVEVIEWPORT); }
 	YY_BREAK
 case 390:
 YY_RULE_SETUP
-#line 808 "basic.lex"
+#line 808 "basic.l"
 { ReturnArithFunc_(VIEWPORTMOVING); }
 	YY_BREAK
 case 391:
 YY_RULE_SETUP
-#line 810 "basic.lex"
+#line 810 "basic.l"
 { ReturnToken_(STRINGTYPE); }
 	YY_BREAK
 case 392:
 YY_RULE_SETUP
-#line 811 "basic.lex"
+#line 811 "basic.l"
 { ReturnToken_(STRINGTYPE); }
 	YY_BREAK
 case 393:
 YY_RULE_SETUP
-#line 812 "basic.lex"
+#line 812 "basic.l"
 { ReturnToken_(FLOATTYPE); }
 	YY_BREAK
 case 394:
 YY_RULE_SETUP
-#line 813 "basic.lex"
+#line 813 "basic.l"
 { ReturnToken_(INTEGERTYPE); }
 	YY_BREAK
 case 395:
 YY_RULE_SETUP
-#line 814 "basic.lex"
+#line 814 "basic.l"
 { ReturnToken_(INTEGERTYPE); }
 	YY_BREAK
 case 396:
 YY_RULE_SETUP
-#line 816 "basic.lex"
+#line 816 "basic.l"
 {
 						#ifndef WritersBlock
 						CProgram::GetParsingProgram()->GetLabelTable()->Enter(basictext);
@@ -5890,7 +5890,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 397:
 YY_RULE_SETUP
-#line 822 "basic.lex"
+#line 822 "basic.l"
 {
 	/* An array identifier is an identifier followed by an open square bracket */
 	#ifndef WritersBlock
@@ -5988,7 +5988,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 398:
 YY_RULE_SETUP
-#line 917 "basic.lex"
+#line 917 "basic.l"
 {
 	/* An identifier is an identfier which isn't followed by a : or [ */
 	/* this identifier could refer to either a procedure,label or an identifier, a procedure list is built as part of the */
@@ -6061,7 +6061,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 399:
 YY_RULE_SETUP
-#line 988 "basic.lex"
+#line 988 "basic.l"
 {
 						#ifndef WritersBlock
 						basiclval.string=UCString::Duplicate(basictext);
@@ -6071,7 +6071,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 400:
 YY_RULE_SETUP
-#line 994 "basic.lex"
+#line 994 "basic.l"
 {
 						#ifndef WritersBlock
 						basiclval.string=UCString::Duplicate(basictext);
@@ -6081,13 +6081,13 @@ YY_RULE_SETUP
 	YY_BREAK
 case 401:
 YY_RULE_SETUP
-#line 1000 "basic.lex"
+#line 1000 "basic.l"
 {}
 	YY_BREAK
 case 402:
 /* rule 402 can match eol */
 YY_RULE_SETUP
-#line 1001 "basic.lex"
+#line 1001 "basic.l"
 {
 						EndLineParserReset();
 						gLineno++;
@@ -6099,7 +6099,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 403:
 YY_RULE_SETUP
-#line 1010 "basic.lex"
+#line 1010 "basic.l"
 {
 						#ifndef WritersBlock
 							// cerr << "Unexpected character: " << basictext << " at line " << gLineno << "\n";
@@ -6109,7 +6109,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 404:
 YY_RULE_SETUP
-#line 1016 "basic.lex"
+#line 1016 "basic.l"
 ECHO;
 	YY_BREAK
 #line 6116 "lex.basic.c"
@@ -7106,7 +7106,7 @@ void basicfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 1016 "basic.lex"
+#line 1016 "basic.l"
 
 
 
