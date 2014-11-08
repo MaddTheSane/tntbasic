@@ -1234,7 +1234,7 @@ arrayDimEntry:
 	arrayVariable error CLOSESQBRACKET
 	{
 		$$=0L;
-		LogException_(UTBException::ThrowWithRange(@2,kTBErr_IllegalExp))		
+		LogException_(UTBException::ThrowWithRange(@2,kTBErr_IllegalExp));		
 	}
 // A list of array dim entries, comma seperated. Can be nil.
 arrayDimList:

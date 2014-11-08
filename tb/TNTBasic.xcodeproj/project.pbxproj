@@ -2067,11 +2067,11 @@
 		4DD0D09B09CE3E7C00E34038 /* UFuse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UFuse.h; path = Source/UFuse.h; sourceTree = SOURCE_ROOT; };
 		4DD0D09C09CE3E7C00E34038 /* UFuse.ppob */ = {isa = PBXFileReference; lastKnownFileType = archive.ppob; name = UFuse.ppob; path = Source/UFuse.ppob; sourceTree = SOURCE_ROOT; };
 		4DD0D09E09CE3E7C00E34038 /* TNTBasic.PCH */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNTBasic.PCH; sourceTree = SOURCE_ROOT; };
-		4DD0D0A009CE3E7C00E34038 /* basic.lex */ = {isa = PBXFileReference; explicitFileType = sourcecode.lex; name = basic.lex; path = Source/Parser/basic.lex; sourceTree = SOURCE_ROOT; };
-		4DD0D0A109CE3E7C00E34038 /* basic.yacc */ = {isa = PBXFileReference; lastKnownFileType = text; name = basic.yacc; path = Source/Parser/basic.yacc; sourceTree = SOURCE_ROOT; };
-		4DD0D0A209CE3E7C00E34038 /* preprocessor.yacc */ = {isa = PBXFileReference; lastKnownFileType = text; name = preprocessor.yacc; path = Source/Parser/preprocessor.yacc; sourceTree = SOURCE_ROOT; };
+		4DD0D0A009CE3E7C00E34038 /* basic.l */ = {isa = PBXFileReference; explicitFileType = sourcecode.lex; name = basic.l; path = Source/Parser/basic.l; sourceTree = SOURCE_ROOT; };
+		4DD0D0A109CE3E7C00E34038 /* basic.y */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.yacc; name = basic.y; path = Source/Parser/basic.y; sourceTree = SOURCE_ROOT; };
+		4DD0D0A209CE3E7C00E34038 /* preprocessor.y */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.yacc; name = preprocessor.y; path = Source/Parser/preprocessor.y; sourceTree = SOURCE_ROOT; };
 		4DD0D0A309CE3E7C00E34038 /* preprocessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = preprocessor.h; path = Source/Parser/preprocessor.h; sourceTree = SOURCE_ROOT; };
-		4DD0D0A409CE3E7C00E34038 /* preprocessor.lex */ = {isa = PBXFileReference; lastKnownFileType = text; name = preprocessor.lex; path = Source/Parser/preprocessor.lex; sourceTree = SOURCE_ROOT; };
+		4DD0D0A409CE3E7C00E34038 /* preprocessor.l */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.lex; name = preprocessor.l; path = Source/Parser/preprocessor.l; sourceTree = SOURCE_ROOT; };
 		4DD0D0A609CE3E7C00E34038 /* UEncryption.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UEncryption.cpp; path = Source/UEncryption.cpp; sourceTree = SOURCE_ROOT; };
 		4DD0D0A709CE3E7C00E34038 /* UEncryption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UEncryption.h; path = Source/UEncryption.h; sourceTree = SOURCE_ROOT; };
 		4DD0D0A809CE3E7C00E34038 /* CFlexBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CFlexBuffer.cpp; path = "../mr/C++_Objects/CFlexBuffer/CFlexBuffer.cpp"; sourceTree = SOURCE_ROOT; };
@@ -3857,11 +3857,11 @@
 		4DD0D09F09CE3E7C00E34038 /* Parser */ = {
 			isa = PBXGroup;
 			children = (
-				4DD0D0A009CE3E7C00E34038 /* basic.lex */,
-				4DD0D0A109CE3E7C00E34038 /* basic.yacc */,
+				4DD0D0A009CE3E7C00E34038 /* basic.l */,
+				4DD0D0A109CE3E7C00E34038 /* basic.y */,
 				4DD0D0A309CE3E7C00E34038 /* preprocessor.h */,
-				4DD0D0A209CE3E7C00E34038 /* preprocessor.yacc */,
-				4DD0D0A409CE3E7C00E34038 /* preprocessor.lex */,
+				4DD0D0A209CE3E7C00E34038 /* preprocessor.y */,
+				4DD0D0A409CE3E7C00E34038 /* preprocessor.l */,
 				4DD0D0A509CE3E7C00E34038 /* Support */,
 				4DD0D0AD09CE3E7C00E34038 /* Generated */,
 				4DD0D0B409CE3E7C00E34038 /* Parse Tree Nodes */,
@@ -6378,7 +6378,7 @@
 					/Developer/Headers/FlatCarbon,
 				);
 				INFOPLIST_FILE = Source/TB_Info.plist;
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				REZ_PREPROCESSOR_DEFINITIONS = "$(REZ_PREPROCESSOR_DEFINITIONS)";
 				SDKROOT = macosx;
@@ -6390,11 +6390,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(FRAMEWORK_SEARCH_PATHS)",
 					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(inherited)",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../third_party/openplay2.2/Project_Files/xcode/build/Development\"";
 				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
@@ -6402,10 +6402,9 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_INPUT_FILETYPE = sourcecode.cpp.cpp;
-				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_REUSE_STRINGS = NO;
-				GCC_SHORT_ENUMS = YES;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = YES;
@@ -6441,7 +6440,7 @@
 					/Developer/Headers/FlatCarbon,
 				);
 				INFOPLIST_FILE = Source/TB_Info.plist;
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				REZ_PREPROCESSOR_DEFINITIONS = "$(REZ_PREPROCESSOR_DEFINITIONS)";
 				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "../third_party/BkgConsoleLibs/** ../mr/**";
@@ -6452,11 +6451,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(FRAMEWORK_SEARCH_PATHS)",
 					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(inherited)",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../third_party/openplay2.2/Project_Files/xcode/build/Development\"";
 				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
@@ -6467,7 +6466,6 @@
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_REUSE_STRINGS = NO;
-				GCC_SHORT_ENUMS = YES;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = YES;
