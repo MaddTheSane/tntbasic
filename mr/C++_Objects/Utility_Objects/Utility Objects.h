@@ -44,8 +44,7 @@
 */
 
 #pragma once
-#include			<QDOffscreen.h>
-#include			<Appearance.h>
+#include			<Carbon/Carbon.h>
 #include			"Useful Defines.h"
 
 typedef class UPortSaver

@@ -649,7 +649,6 @@
 		4DD0D3F609CE3E7D00E34038 /* CApplication.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0D14F09CE3E7D00E34038 /* CApplication.cpp */; };
 		4DD0D3F709CE3E7D00E34038 /* CApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0D15009CE3E7D00E34038 /* CApplication.h */; };
 		4DD0D3F809CE3E7D00E34038 /* LEventHandler.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0D09409CE3E7B00E34038 /* LEventHandler.cp */; };
-		4DD0D3F909CE3E7D00E34038 /* LEventHandler.cp in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0D09509CE3E7B00E34038 /* LEventHandler.cp */; };
 		4DD0D3FA09CE3E7D00E34038 /* Version.r in Rez */ = {isa = PBXBuildFile; fileRef = 4DD0D04409CE3E7700E34038 /* Version.r */; };
 		4DD0D3FB09CE3E7D00E34038 /* LFileStream.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CFC309CE3E7200E34038 /* LFileStream.cp */; };
 		4DD0D3FC09CE3E7D00E34038 /* LFileStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CFC409CE3E7200E34038 /* LFileStream.h */; };
@@ -922,15 +921,15 @@
 		4D99DE3214CE002B00C5A075 /* TNT Basic User Guide */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "TNT Basic User Guide"; path = "Distribution/TNT Basic User Guide"; sourceTree = "<group>"; };
 		4DD0CE0D09CE3E4F00E34038 /* TNT Basic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TNT Basic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD0CE1109CE3E4F00E34038 /* TNTBasic_ServerPrefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TNTBasic_ServerPrefix.h; path = Source/Server_Only/TNTBasic_ServerPrefix.h; sourceTree = SOURCE_ROOT; };
-		4DD0CE1A09CE3E5000E34038 /* FileCopy.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = FileCopy.c; path = Sources/FileCopy.c; sourceTree = "<group>"; };
-		4DD0CE1B09CE3E5000E34038 /* DirectoryCopy.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = DirectoryCopy.c; path = Sources/DirectoryCopy.c; sourceTree = "<group>"; };
-		4DD0CE1C09CE3E5000E34038 /* FSpCompat.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = FSpCompat.c; path = Sources/FSpCompat.c; sourceTree = "<group>"; };
-		4DD0CE1D09CE3E5100E34038 /* FullPath.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = FullPath.c; path = Sources/FullPath.c; sourceTree = "<group>"; };
-		4DD0CE1E09CE3E5100E34038 /* IterateDirectory.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = IterateDirectory.c; path = Sources/IterateDirectory.c; sourceTree = "<group>"; };
-		4DD0CE1F09CE3E5100E34038 /* MoreDesktopMgr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = MoreDesktopMgr.c; path = Sources/MoreDesktopMgr.c; sourceTree = "<group>"; };
-		4DD0CE2009CE3E5100E34038 /* MoreFiles.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = MoreFiles.c; path = Sources/MoreFiles.c; sourceTree = "<group>"; };
-		4DD0CE2109CE3E5100E34038 /* MoreFilesExtras.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = MoreFilesExtras.c; path = Sources/MoreFilesExtras.c; sourceTree = "<group>"; };
-		4DD0CE2209CE3E5100E34038 /* Search.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Search.c; path = Sources/Search.c; sourceTree = "<group>"; };
+		4DD0CE1A09CE3E5000E34038 /* FileCopy.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; lineEnding = 0; name = FileCopy.c; path = Sources/FileCopy.c; sourceTree = "<group>"; };
+		4DD0CE1B09CE3E5000E34038 /* DirectoryCopy.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; lineEnding = 0; name = DirectoryCopy.c; path = Sources/DirectoryCopy.c; sourceTree = "<group>"; };
+		4DD0CE1C09CE3E5000E34038 /* FSpCompat.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; lineEnding = 0; name = FSpCompat.c; path = Sources/FSpCompat.c; sourceTree = "<group>"; };
+		4DD0CE1D09CE3E5100E34038 /* FullPath.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; lineEnding = 0; name = FullPath.c; path = Sources/FullPath.c; sourceTree = "<group>"; };
+		4DD0CE1E09CE3E5100E34038 /* IterateDirectory.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; lineEnding = 0; name = IterateDirectory.c; path = Sources/IterateDirectory.c; sourceTree = "<group>"; };
+		4DD0CE1F09CE3E5100E34038 /* MoreDesktopMgr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; lineEnding = 0; name = MoreDesktopMgr.c; path = Sources/MoreDesktopMgr.c; sourceTree = "<group>"; };
+		4DD0CE2009CE3E5100E34038 /* MoreFiles.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; lineEnding = 0; name = MoreFiles.c; path = Sources/MoreFiles.c; sourceTree = "<group>"; };
+		4DD0CE2109CE3E5100E34038 /* MoreFilesExtras.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; lineEnding = 0; name = MoreFilesExtras.c; path = Sources/MoreFilesExtras.c; sourceTree = "<group>"; };
+		4DD0CE2209CE3E5100E34038 /* Search.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; lineEnding = 0; name = Search.c; path = Sources/Search.c; sourceTree = "<group>"; };
 		4DD0CE2409CE3E5100E34038 /* LTimerTask.cp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LTimerTask.cp; sourceTree = "<group>"; };
 		4DD0CE2509CE3E5100E34038 /* LTimerTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTimerTask.h; sourceTree = "<group>"; };
 		4DD0CE2609CE3E5200E34038 /* LTimerTaskFunctor.cp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LTimerTaskFunctor.cp; sourceTree = "<group>"; };
@@ -1490,7 +1489,6 @@
 		4DD0D09209CE3E7B00E34038 /* TFolderIterator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = TFolderIterator.cpp; path = "../mr/C++_Objects/TFolderIterator/TFolderIterator.cpp"; sourceTree = SOURCE_ROOT; };
 		4DD0D09309CE3E7B00E34038 /* TFolderIterator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TFolderIterator.h; path = "../mr/C++_Objects/TFolderIterator/TFolderIterator.h"; sourceTree = SOURCE_ROOT; };
 		4DD0D09409CE3E7B00E34038 /* LEventHandler.cp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LEventHandler.cp; sourceTree = "<group>"; };
-		4DD0D09509CE3E7B00E34038 /* LEventHandler.cp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LEventHandler.cp; sourceTree = "<group>"; };
 		4DD0D09709CE3E7C00E34038 /* CFPrefsHelpers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CFPrefsHelpers.cpp; path = ../mr/CFPrefsHelpers.cpp; sourceTree = SOURCE_ROOT; };
 		4DD0D09809CE3E7C00E34038 /* CFPrefsHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CFPrefsHelpers.h; path = ../mr/CFPrefsHelpers.h; sourceTree = SOURCE_ROOT; };
 		4DD0D09A09CE3E7C00E34038 /* UFuse.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UFuse.cpp; path = Source/UFuse.cpp; sourceTree = SOURCE_ROOT; };
@@ -1749,15 +1747,15 @@
 		4DD0D50909CE3EB800E34038 /* LGACheckBoxImp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = LGACheckBoxImp.h; sourceTree = "<group>"; };
 		4DD0D50B09CE3EB800E34038 /* UQDOperators.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UQDOperators.h; sourceTree = "<group>"; };
 		4DD0D50D09CE3EB900E34038 /* UVolume.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = UVolume.h; sourceTree = "<group>"; };
-		4DD0D50F09CE3EB900E34038 /* MoreFilesExtras.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MoreFilesExtras.h; path = ../third_party/MoreFiles/CHeaders/MoreFilesExtras.h; sourceTree = SOURCE_ROOT; };
-		4DD0D51109CE3EBA00E34038 /* MoreFiles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MoreFiles.h; path = ../third_party/MoreFiles/CHeaders/MoreFiles.h; sourceTree = SOURCE_ROOT; };
-		4DD0D51309CE3EBA00E34038 /* MoreDesktopMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MoreDesktopMgr.h; path = ../third_party/MoreFiles/CHeaders/MoreDesktopMgr.h; sourceTree = SOURCE_ROOT; };
-		4DD0D51509CE3EBA00E34038 /* FileCopy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FileCopy.h; path = ../third_party/MoreFiles/CHeaders/FileCopy.h; sourceTree = SOURCE_ROOT; };
-		4DD0D51709CE3EBB00E34038 /* DirectoryCopy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DirectoryCopy.h; path = ../third_party/MoreFiles/CHeaders/DirectoryCopy.h; sourceTree = SOURCE_ROOT; };
-		4DD0D51909CE3EBB00E34038 /* FSpCompat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FSpCompat.h; path = ../third_party/MoreFiles/CHeaders/FSpCompat.h; sourceTree = SOURCE_ROOT; };
-		4DD0D51B09CE3EBB00E34038 /* FullPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FullPath.h; path = ../third_party/MoreFiles/CHeaders/FullPath.h; sourceTree = SOURCE_ROOT; };
-		4DD0D51D09CE3EBC00E34038 /* IterateDirectory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IterateDirectory.h; path = ../third_party/MoreFiles/CHeaders/IterateDirectory.h; sourceTree = SOURCE_ROOT; };
-		4DD0D51F09CE3EBC00E34038 /* Search.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Search.h; path = ../third_party/MoreFiles/CHeaders/Search.h; sourceTree = SOURCE_ROOT; };
+		4DD0D50F09CE3EB900E34038 /* MoreFilesExtras.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = MoreFilesExtras.h; path = ../third_party/MoreFiles/CHeaders/MoreFilesExtras.h; sourceTree = SOURCE_ROOT; };
+		4DD0D51109CE3EBA00E34038 /* MoreFiles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = MoreFiles.h; path = ../third_party/MoreFiles/CHeaders/MoreFiles.h; sourceTree = SOURCE_ROOT; };
+		4DD0D51309CE3EBA00E34038 /* MoreDesktopMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = MoreDesktopMgr.h; path = ../third_party/MoreFiles/CHeaders/MoreDesktopMgr.h; sourceTree = SOURCE_ROOT; };
+		4DD0D51509CE3EBA00E34038 /* FileCopy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = FileCopy.h; path = ../third_party/MoreFiles/CHeaders/FileCopy.h; sourceTree = SOURCE_ROOT; };
+		4DD0D51709CE3EBB00E34038 /* DirectoryCopy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = DirectoryCopy.h; path = ../third_party/MoreFiles/CHeaders/DirectoryCopy.h; sourceTree = SOURCE_ROOT; };
+		4DD0D51909CE3EBB00E34038 /* FSpCompat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = FSpCompat.h; path = ../third_party/MoreFiles/CHeaders/FSpCompat.h; sourceTree = SOURCE_ROOT; };
+		4DD0D51B09CE3EBB00E34038 /* FullPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = FullPath.h; path = ../third_party/MoreFiles/CHeaders/FullPath.h; sourceTree = SOURCE_ROOT; };
+		4DD0D51D09CE3EBC00E34038 /* IterateDirectory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = IterateDirectory.h; path = ../third_party/MoreFiles/CHeaders/IterateDirectory.h; sourceTree = SOURCE_ROOT; };
+		4DD0D51F09CE3EBC00E34038 /* Search.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = Search.h; path = ../third_party/MoreFiles/CHeaders/Search.h; sourceTree = SOURCE_ROOT; };
 		4DD0D52709CE3EBF00E34038 /* Version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Version.h; path = Source/Version.h; sourceTree = SOURCE_ROOT; };
 		4DD0D52909CE3EBF00E34038 /* CTBResClassifier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CTBResClassifier.h; path = Source/CTBResClassifier.h; sourceTree = SOURCE_ROOT; };
 		4DD0D52B09CE3EBF00E34038 /* TNTBasic_Commands.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TNTBasic_Commands.h; path = Source/TNTBasic_Commands.h; sourceTree = SOURCE_ROOT; };
@@ -1781,8 +1779,8 @@
 		4DD0D55309CE3EC600E34038 /* CBLSpriteLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CBLSpriteLayer.h; path = "../mr/BLAST/BLAST++_Engine/BLAST++_Headers/CBLSpriteLayer.h"; sourceTree = SOURCE_ROOT; };
 		4DD0D55509CE3EC600E34038 /* CStdIOHandleStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CStdIOHandleStream.h; path = "../mr/C++_Objects/PowerPlant/CStdIOHandleStream.h"; sourceTree = SOURCE_ROOT; };
 		4DD0D55B09CE3EC600E34038 /* PP_Debug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PP_Debug.h; sourceTree = "<group>"; };
-		4DD0D55D09CE3EC600E34038 /* Optimization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Optimization.h; path = ../third_party/MoreFiles/Sources/Optimization.h; sourceTree = SOURCE_ROOT; };
-		4DD0D55F09CE3EC700E34038 /* OptimizationEnd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OptimizationEnd.h; path = ../third_party/MoreFiles/Sources/OptimizationEnd.h; sourceTree = SOURCE_ROOT; };
+		4DD0D55D09CE3EC600E34038 /* Optimization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = Optimization.h; path = ../third_party/MoreFiles/Sources/Optimization.h; sourceTree = SOURCE_ROOT; };
+		4DD0D55F09CE3EC700E34038 /* OptimizationEnd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = OptimizationEnd.h; path = ../third_party/MoreFiles/Sources/OptimizationEnd.h; sourceTree = SOURCE_ROOT; };
 		4DD0D56409CE3EC800E34038 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
 		4DD0D56609CE3EC800E34038 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
 		4DD0D56809CE3EC800E34038 /* PP_Requirements.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PP_Requirements.h; sourceTree = "<group>"; };
@@ -2202,7 +2200,7 @@
 		4DEF4D050A100C8A00DAA4BB /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
 		55F409091A0EA7A000C80951 /* PPMacho.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PPMacho.xcodeproj; path = ../third_party/PlayerPRO/PPMacho.xcodeproj; sourceTree = SOURCE_ROOT; };
 		55F409E61A0EA89400C80951 /* OpenPlay.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OpenPlay.xcodeproj; path = ../third_party/openplay2.2/Project_Files/xcode/OpenPlay.xcodeproj; sourceTree = SOURCE_ROOT; };
-		55F40A091A0EAA6800C80951 /* OldCarbHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OldCarbHeaders.h; path = ../tb/OldCarbHeaders.h; sourceTree = "<group>"; };
+		55F40A091A0EAA6800C80951 /* OldCarbHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = OldCarbHeaders.h; path = ../tb/OldCarbHeaders.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2257,7 +2255,6 @@
 			isa = PBXGroup;
 			children = (
 				55343A351A0EC87200331B8C /* TNT */,
-				55343A3E1A0ECBA600331B8C /* MoreFiles */,
 			);
 			name = "Imported Files";
 			sourceTree = "<group>";
@@ -2288,6 +2285,17 @@
 		4DD0CE1909CE3E5000E34038 /* MoreFiles */ = {
 			isa = PBXGroup;
 			children = (
+				4DD0D55D09CE3EC600E34038 /* Optimization.h */,
+				4DD0D50F09CE3EB900E34038 /* MoreFilesExtras.h */,
+				4DD0D51109CE3EBA00E34038 /* MoreFiles.h */,
+				4DD0D51309CE3EBA00E34038 /* MoreDesktopMgr.h */,
+				4DD0D51509CE3EBA00E34038 /* FileCopy.h */,
+				4DD0D51709CE3EBB00E34038 /* DirectoryCopy.h */,
+				4DD0D51909CE3EBB00E34038 /* FSpCompat.h */,
+				4DD0D51B09CE3EBB00E34038 /* FullPath.h */,
+				4DD0D55F09CE3EC700E34038 /* OptimizationEnd.h */,
+				4DD0D51D09CE3EBC00E34038 /* IterateDirectory.h */,
+				4DD0D51F09CE3EBC00E34038 /* Search.h */,
 				4DD0CE1A09CE3E5000E34038 /* FileCopy.c */,
 				4DD0CE1B09CE3E5000E34038 /* DirectoryCopy.c */,
 				4DD0CE1C09CE3E5000E34038 /* FSpCompat.c */,
@@ -2342,7 +2350,7 @@
 			path = "PowerPlant Resources";
 			sourceTree = "<group>";
 		};
-		4DD0CE4B09CE3E5500E34038 /* _Constructor Additions */ = {
+		4DD0CE4B09CE3E5500E34038 /* Constructor Additions */ = {
 			isa = PBXGroup;
 			children = (
 				4DD0CE4D09CE3E5500E34038 /* LBroadcasterEditField.h */,
@@ -2361,6 +2369,7 @@
 				4DD0CE5809CE3E5600E34038 /* LTablePaneHostingGeometry.cp */,
 				4DD0CE5A09CE3E5600E34038 /* Outline table */,
 			);
+			name = "Constructor Additions";
 			path = "_Constructor Additions";
 			sourceTree = "<group>";
 		};
@@ -4030,7 +4039,7 @@
 		55343A371A0EC93E00331B8C /* In Progress */ = {
 			isa = PBXGroup;
 			children = (
-				4DD0CE4B09CE3E5500E34038 /* _Constructor Additions */,
+				4DD0CE4B09CE3E5500E34038 /* Constructor Additions */,
 				55343A381A0EC95400331B8C /* _Carbon Events */,
 				55343A3D1A0ECB6900331B8C /* _Core Foundation */,
 				55343A401A0ECC3100331B8C /* _Debugging Classes */,
@@ -4043,7 +4052,6 @@
 		55343A381A0EC95400331B8C /* _Carbon Events */ = {
 			isa = PBXGroup;
 			children = (
-				4DD0D09509CE3E7B00E34038 /* LEventHandler.cp */,
 				4DD0D09409CE3E7B00E34038 /* LEventHandler.cp */,
 				4DD0D4FB09CE3EB700E34038 /* LWindowEventHandlers.h */,
 				4DD0D4C909CE3EB400E34038 /* TEventHandler.h */,
@@ -4161,24 +4169,6 @@
 				4DD0D4FD09CE3EB700E34038 /* UMachOFunctions.h */,
 			);
 			path = "_Core Foundation";
-			sourceTree = "<group>";
-		};
-		55343A3E1A0ECBA600331B8C /* MoreFiles */ = {
-			isa = PBXGroup;
-			children = (
-				4DD0D55D09CE3EC600E34038 /* Optimization.h */,
-				4DD0D50F09CE3EB900E34038 /* MoreFilesExtras.h */,
-				4DD0D51109CE3EBA00E34038 /* MoreFiles.h */,
-				4DD0D51309CE3EBA00E34038 /* MoreDesktopMgr.h */,
-				4DD0D51509CE3EBA00E34038 /* FileCopy.h */,
-				4DD0D51709CE3EBB00E34038 /* DirectoryCopy.h */,
-				4DD0D51909CE3EBB00E34038 /* FSpCompat.h */,
-				4DD0D51B09CE3EBB00E34038 /* FullPath.h */,
-				4DD0D55F09CE3EC700E34038 /* OptimizationEnd.h */,
-				4DD0D51D09CE3EBC00E34038 /* IterateDirectory.h */,
-				4DD0D51F09CE3EBC00E34038 /* Search.h */,
-			);
-			name = MoreFiles;
 			sourceTree = "<group>";
 		};
 		55343A3F1A0ECC0800331B8C /* Panes */ = {
@@ -4629,7 +4619,6 @@
 				4DD0D3F209CE3E7D00E34038 /* Music_Statements.h in Headers */,
 				4DD0D3F509CE3E7D00E34038 /* RezLib.h in Headers */,
 				4DD0D3F709CE3E7D00E34038 /* CApplication.h in Headers */,
-				4DD0D3F909CE3E7D00E34038 /* LEventHandler.cp in Headers */,
 				4DD0D3FC09CE3E7D00E34038 /* LFileStream.h in Headers */,
 				4DD0D3FF09CE3E7D00E34038 /* UHelp.h in Headers */,
 				4DD0D40209CE3E7D00E34038 /* UEncryption.h in Headers */,

@@ -1,18 +1,16 @@
-// Copyright ©2005, 2006 Freescale Semiconductor, Inc.
+// Copyright ï¿½2005, 2006 Freescale Semiconductor, Inc.
 // Please see the License for the specific language governing rights and
 // limitations under the License.
 // ===========================================================================
-//	UMachOFunctions.h			PowerPlant 2.2.2	©2001-2005 Metrowerks Inc.
+//	UMachOFunctions.h			PowerPlant 2.2.2	ï¿½2001-2005 Metrowerks Inc.
 // ===========================================================================
 
 #ifndef _H_UMachOFunctions
 #define _H_UMachOFunctions
 #pragma once
 
-#ifndef __MACH__
-#include <CFBundle.h>
-#include <CGContext.h>
-#endif
+#include <CoreFoundation/CoreFoundation.h>
+#include <CoreGraphics/CoreGraphics.h>
 
 // ===========================================================================
 //	UMachOFunctions

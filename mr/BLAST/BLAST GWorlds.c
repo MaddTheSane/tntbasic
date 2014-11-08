@@ -38,7 +38,7 @@ SECTION 1 - Misc
 *
 * ***** END LICENSE BLOCK ***** */
 
-#include	<PICTUtils.h>
+#include	<Carbon/Carbon.h>
 #include	<string>
 #include	"BLAST.h"
 
@@ -269,7 +269,7 @@ OSErr NewGWorldWithPicHandle(GWorldPtr *theWorld,PicHandle thePicture,short dept
 	
 	if (depth<=8 && depth>1)
 	{
-		if (picCTab=FastGetPICTCLUT(thePicture,0L))
+		if ((picCTab = FastGetPICTCLUT(thePicture,0L)))
 			CTabChanged(picCTab);
 	}
 	

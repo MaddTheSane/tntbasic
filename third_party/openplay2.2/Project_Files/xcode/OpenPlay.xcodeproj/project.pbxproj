@@ -288,6 +288,9 @@
 
 /* Begin PBXFileReference section */
 		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		55343A491A0EDF4F00331B8C /* machine_lock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = machine_lock.h; path = ../../Source/Utilities/machine_lock.h; sourceTree = SOURCE_ROOT; };
+		55343A4A1A0EDF6100331B8C /* DebugPrint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DebugPrint.h; path = ../../Source/Utilities/DebugPrint.h; sourceTree = SOURCE_ROOT; };
+		55343A4B1A0EDF6100331B8C /* String_Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = String_Utils.h; path = ../../Source/Utilities/String_Utils.h; sourceTree = SOURCE_ROOT; };
 		9758F24A0588DE88008F071A /* Info-OpenPlay_Framework.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Info-OpenPlay_Framework.plist"; sourceTree = "<group>"; };
 		9758F24B0588DE88008F071A /* OpenPlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OpenPlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9758F2600588DE88008F071A /* Info-IP_Module.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Info-IP_Module.plist"; sourceTree = "<group>"; };
@@ -672,8 +675,11 @@
 		F5FE302C02558DCB01A80105 /* Utility Source */ = {
 			isa = PBXGroup;
 			children = (
+				55343A491A0EDF4F00331B8C /* machine_lock.h */,
 				F5ABE67002556F8801A80105 /* machine_lock.cpp */,
+				55343A4A1A0EDF6100331B8C /* DebugPrint.h */,
 				F5ABE66E02556F8801A80105 /* DebugPrint.cpp */,
+				55343A4B1A0EDF6100331B8C /* String_Utils.h */,
 				F5ABE67202556F8801A80105 /* String_Utils.cpp */,
 			);
 			name = "Utility Source";

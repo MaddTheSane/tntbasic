@@ -21,6 +21,7 @@
 #include <UEventMgr.h>
 
 #include <UNewTextDrawing.h>
+#include <Carbon/Carbon.h>
 
 #ifndef __MACH__
 	#include <Drag.h>

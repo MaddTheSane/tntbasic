@@ -14,8 +14,6 @@
 
 #pragma pack (push, 2)
 
-__BEGIN_DECLS
-
 enum {
 	invalColReq		= -1    /*invalid color table request*/
 };
@@ -25,7 +23,7 @@ typedef AVIDType	DisplayIDType;
 typedef UInt32		DisplayModeID;
 typedef UInt32		VideoDeviceType;
 typedef UInt32		GammaTableID;
-typedef WindowPtr                       CWindowPtr;
+typedef WindowPtr	CWindowPtr;
 
 enum {
 	kFontIDNewYork		= 2,
@@ -96,6 +94,12 @@ enum {
 	shadowBit,
 	condenseBit,
 	extendBit
+};
+
+enum {
+	systemMethod	= 0,
+	popularMethod,
+	medianMethod
 };
 
 enum {
@@ -185,20 +189,20 @@ enum {
 	useDistantHdwrMemBit,
 	useLocalHdwrMemBit,
 	pixelsPurgeableBit            = 6,
-	pixelsLockedBit               = 7,
-	nativeEndianPixMapBit         = 8,
+	pixelsLockedBit,
+	nativeEndianPixMapBit,
 	mapPixBit                     = 16,
-	newDepthBit                   = 17,
-	alignPixBit                   = 18,
-	newRowBytesBit                = 19,
-	reallocPixBit                 = 20,
+	newDepthBit,
+	alignPixBit,
+	newRowBytesBit,
+	reallocPixBit,
 	clipPixBit                    = 28,
-	stretchPixBit                 = 29,
-	ditherPixBit                  = 30,
-	gwFlagErrBit                  = 31
+	stretchPixBit,
+	ditherPixBit,
+	gwFlagErrBit
 };
 
-enum {
+typedef CF_OPTIONS(UInt32, PixFlags) {
 	pixPurge                      = 1L << pixPurgeBit,
 	noNewDevice                   = 1L << noNewDeviceBit,
 	useTempMem                    = 1L << useTempMemBit,
@@ -253,12 +257,69 @@ typedef struct CCrsr {
 	Handle              crsrXData;              /*expanded cursor data*/
 	short               crsrXValid;             /*depth of expanded data (0 if none)*/
 	Handle              crsrXHandle;            /*future use*/
-	Bits16              crsr1Data;              /*one-bit cursor*/
-	Bits16              crsrMask;               /*cursor's mask*/
-	Point               crsrHotSpot;            /*cursor's hotspot*/
-	long                crsrXTable;             /*private*/
-	long                crsrID;                 /*private*/
+	Bits16              crsr1Data;
+	Bits16              crsrMask;
+	Point               crsrHotSpot;
+	long                crsrXTable;
+	long                crsrID;
 } CCrsr, *CCrsrPtr, **CCrsrHandle;
+
+typedef struct ColorInfo {
+	RGBColor            ciRGB;
+	short               ciUsage;
+	short               ciTolerance;
+	short               ciDataFields[3];
+} ColorInfo, *ColorInfoPtr, **ColorInfoHandle;
+
+typedef struct Palette {
+	short               pmEntries;
+	short               pmDataFields[7];
+	ColorInfo           pmInfo[1];
+} Palette, *PalettePtr, **PaletteHandle;
+
+typedef struct CommentSpec {
+	short               count;
+	short               ID;
+} CommentSpec, *CommentSpecPtr, **CommentSpecHandle;
+
+typedef struct FontSpec {
+	short               pictFontID;
+	short               sysFontID;
+	long                size[4];
+	short               style;
+	long                nameOffset;
+} FontSpec, *FontSpecPtr, **FontSpecHandle;
+
+typedef struct PictInfo {
+	short               version;
+	long                uniqueColors;
+	PaletteHandle       thePalette;
+	CTabHandle          theColorTable;
+	Fixed               hRes;
+	Fixed               vRes;
+	short               depth;
+	Rect                sourceRect;
+	long                textCount;
+	long                lineCount;
+	long                rectCount;
+	long                rRectCount;
+	long                ovalCount;
+	long                arcCount;
+	long                polyCount;
+	long                regionCount;
+	long                bitMapCount;
+	long                pixMapCount;
+	long                commentCount;
+	long                uniqueComments;
+	CommentSpecHandle   commentHandle;
+	long                uniqueFonts;
+	FontSpecHandle      fontHandle;
+	Handle              fontNamesHandle;
+	long                reserved1;
+	long                reserved2;
+} PictInfo, *PictInfoPtr, **PictInfoHandle;
+
+__BEGIN_DECLS
 
 #if TARGET_OS_MAC
 #define MacInvertRect InvertRect
@@ -356,6 +417,7 @@ extern void MacOffsetRgn(RgnHandle, short, short);
 extern void EraseRgn(RgnHandle);
 extern CTabHandle GetCTable(short);
 extern void GetBackColor(RGBColor *);
+extern void GetForeColor(RGBColor *);
 extern long Color2Index(const RGBColor *);
 extern void FrameRoundRect(const Rect *, short, short);
 extern short Random();
@@ -384,6 +446,9 @@ extern void TextFace(StyleParameter);
 extern void GetFontInfo(FontInfo *);
 extern void DrawChar(CharParameter);
 extern short CharWidth(CharParameter);
+extern Style GetPortTextFace(CGrafPtr);
+extern short GetPortTextMode(CGrafPtr);
+extern void TextMode(short);
 
 //Offscreen
 extern PixMapHandle GetGWorldPixMap(GWorldPtr);
@@ -398,6 +463,8 @@ extern void SetGWorld(CGrafPtr, GDHandle);
 extern void GetGWorld(CGrafPtr *, GDHandle *);
 extern void SetGDevice(GDHandle);
 extern void SetQDGlobalsRandomSeed(long);
+extern Ptr GetPixBaseAddr(PixMapHandle);
+extern void CTabChanged(CTabHandle);
 
 //misc.
 extern GDHandle DMGetFirstScreenDevice(Boolean);
@@ -413,17 +480,27 @@ extern void MacXorRgn(RgnHandle, RgnHandle, RgnHandle);
 extern Boolean MacEqualRgn(RgnHandle, RgnHandle);
 extern long GetQDGlobalsRandomSeed();
 extern void SetQDGlobalsArrow(const Cursor *);
-extern Pattern *GetQDGlobalsDarkGray(Pattern *);
-extern Pattern *GetQDGlobalsLightGray(Pattern *);
-extern Pattern *GetQDGlobalsGray(Pattern *);
-extern Pattern *GetQDGlobalsBlack(Pattern *);
-extern Pattern *GetQDGlobalsWhite(Pattern *);
+extern Pattern *GetQDGlobalsDarkGray(Pattern*);
+extern Pattern *GetQDGlobalsLightGray(Pattern*);
+extern Pattern *GetQDGlobalsGray(Pattern*);
+extern Pattern *GetQDGlobalsBlack(Pattern*);
+extern Pattern *GetQDGlobalsWhite(Pattern*);
+extern GDHandle GetMaxDevice(const Rect*);
+extern const BitMap *GetPortBitMapForCopyBits(CGrafPtr);
+extern void DisposeCTable(CTabHandle);
+extern void SetPortVisibleRegion(CGrafPtr, RgnHandle);
+extern CQDProcsPtr GetPortGrafProcs(CGrafPtr);
+extern void SetPortGrafProcs(CGrafPtr, CQDProcsPtr);
+extern void BackPat(const Pattern *);
+extern OSErr GetPictInfo(PicHandle, PictInfo *, short, short, short, short);
+
+
 extern void HidePen();
 extern void ShowPen();
-extern GDHandle GetMaxDevice(const Rect *);
-extern const BitMap *GetPortBitMapForCopyBits(CGrafPtr);
-extern void DisposeCTable(CTabHandle cTable);
-
+extern void PenNormal();
+extern void PenPat(const Pattern*);
+extern void PenNormal();
+extern void PenMode(short);
 
 
 typedef struct OpaquePMPrintContext*    PMPrintContext;
