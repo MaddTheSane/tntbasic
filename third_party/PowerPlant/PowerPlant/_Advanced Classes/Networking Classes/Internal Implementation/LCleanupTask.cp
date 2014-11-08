@@ -23,8 +23,7 @@
 	#include <Traps.h>
 #endif
 
-#include <LowMem.h>
-#include <Processes.h>
+#include <Carbon/Carbon.h>
 
 PP_Begin_Namespace_PowerPlant
 

@@ -34,7 +34,7 @@
 
 #pragma once
 
-#include	<sound.h>
+#include	<Carbon/Carbon.h>
 
 #include	"ResourceTypes.h"
 

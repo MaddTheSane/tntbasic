@@ -45,9 +45,7 @@
 #include "TNT_Debugging.h"
 #include "CFPrefsHelpers.h"
 
-#include <CFPropertyList.h>
-#include <CFPreferences.h>
-#include <CFNumber.h>
+#include <CoreFoundation/CoreFoundation.h>
 #include <UEnvironment.h>
 #include <UProcess.h>
 
