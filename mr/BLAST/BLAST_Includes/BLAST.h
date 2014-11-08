@@ -38,7 +38,7 @@
 #pragma once
 
 #include	"Marks Routines.h"
-#include	<QDOffScreen.h>
+#include	<Carbon/Carbon.h>
 
 #ifndef __GNUC__		// retrace.h is not available on os x
 #include	<Retrace.h>

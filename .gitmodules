@@ -1,0 +1,3 @@
+[submodule "third_party/PlayerPRO"]
+	path = third_party/PlayerPRO
+	url = https://github.com/MaddTheSane/PlayerPRO.git

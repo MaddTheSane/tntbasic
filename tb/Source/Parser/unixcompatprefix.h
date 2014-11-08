@@ -42,9 +42,9 @@ int fileno(std::FILE *stream);
 
 int yywrap();
 
-//#define		HAVE_ALLOCA_H	1				/*	Tells the code to include alloca.h to get alloca defined */
-#include		<alloca.h>
 
 #ifdef __cplusplus
 }
 #endif
+
+#include		<alloca.h>

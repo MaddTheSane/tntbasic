@@ -610,7 +610,7 @@ Boolean CommandPeriod();
 
 // PixelDoublePPC.c
 #pragma mark PixelDoublePPC.c
-asm void PixelDouble(
+void PixelDouble(
    register  char *dstbase,
    register  UInt32 dstrowbytes,
    register  char *srcbase,
@@ -693,7 +693,7 @@ int Blend (int i1, int i2) ;
 // About box bits.c
 #pragma mark About Box Bits.c
 
-#ifdef __QDOFFSCREEN__
+//#ifdef __QDOFFSCREEN__
 
 typedef struct
 {
@@ -719,7 +719,7 @@ Boolean StartupScrollyCredits(ScrollyRec *theRec,PicHandle thePic,short textID,s
 void ShutDownScrollyCredits(ScrollyRec *theRec);
 void ScrollCredits(ScrollyRec *theRec);
 
-#endif
+//#endif
 
 // QuickDraw Routines.cpp
 #pragma mark QuickDraw Routines.cpp

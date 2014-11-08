@@ -11,3 +11,5 @@ build
 tags
 *.mode1v3
 *.swo
+project.xcworkspace/
+xcuserdata/

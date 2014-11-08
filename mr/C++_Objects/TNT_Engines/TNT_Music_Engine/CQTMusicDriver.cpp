@@ -43,7 +43,7 @@
 
 #include		"TNT_Debugging.h"
 #include		"CQTMusicDriver.h"
-#include		"RDriver.h"
+#include		<PlayerPROCore/PlayerPROCore.h>
 #include		"Utility Objects.h"
 #include		"Marks Routines.h"
 

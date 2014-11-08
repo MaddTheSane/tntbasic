@@ -55,7 +55,7 @@
 
 #include		"TNT_Debugging.h"
 #include		"CMADDriver.h"
-#include		"RDriver.h"
+#include		<PlayerPROCore/PlayerPROCore.h>
 #include		"Utility Objects.h"
 
 MADLibrary *CMADDriver::sLib=0;

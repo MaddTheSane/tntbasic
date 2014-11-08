@@ -32,7 +32,7 @@
 *
 * ***** END LICENSE BLOCK ***** */
 
-#include	<QDOffscreen.h>
+#include	<Carbon/Carbon.h>
 #include	"BLAST.h"
 #include	"Marks Routines.h"
 

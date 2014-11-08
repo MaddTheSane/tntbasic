@@ -38,7 +38,7 @@
 // stop stdlib new throwing exceptions, tnt code always checks for a NULL return
 // TODO - test if this actually suppresses the exceptions
 #include <new>
-void *operator new(size_t size) throw();
+//void *operator new(size_t size) throw();
 #endif
 
 #define			Debug_Signal						1		// enable signalpstr etc
@@ -56,6 +56,7 @@ void LogThrow(const char *inFunc, const char *inFileName, long inLineNo, const L
 #define Throw_Err(err)		do { try { LException::Throw(err); } catch(const LException &e) { LogThrow(__func__,__FILE__,__LINE__,e); throw; } } while (0)
 
 #include		<math.h>
+#include		"OldCarbHeaders.h"
 #include		<PP_ClassHeaders.cp>
 #include		<iostream>
 
