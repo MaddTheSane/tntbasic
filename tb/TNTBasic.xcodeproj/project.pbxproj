@@ -1124,6 +1124,145 @@
 		556350461A0F023C00255FCD /* LGAColorSwatchControl.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF0509CE3E6300E34038 /* LGAColorSwatchControl.cp */; };
 		556350471A0F023C00255FCD /* LGAFocusBorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF0809CE3E6300E34038 /* LGAFocusBorder.h */; };
 		556350481A0F023C00255FCD /* LGAFocusBorder.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF0709CE3E6300E34038 /* LGAFocusBorder.cp */; };
+		556350491A0F035700255FCD /* LApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF8309CE3E6D00E34038 /* LApplication.h */; };
+		5563504A1A0F035700255FCD /* LApplication.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF8209CE3E6D00E34038 /* LApplication.cp */; };
+		5563504B1A0F035700255FCD /* LCommander.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF8509CE3E6D00E34038 /* LCommander.h */; };
+		5563504C1A0F035700255FCD /* LCommander.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF8409CE3E6D00E34038 /* LCommander.cp */; };
+		5563504D1A0F035700255FCD /* LDocApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0D53709CE3EC500E34038 /* LDocApplication.h */; };
+		5563504E1A0F035700255FCD /* LDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0D53909CE3EC500E34038 /* LDocument.h */; };
+		5563504F1A0F035700255FCD /* LSingleDoc.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0D53B09CE3EC500E34038 /* LSingleDoc.h */; };
+		556350501A0F035F00255FCD /* UModalDialogs.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF1909CE3E6500E34038 /* UModalDialogs.h */; };
+		556350511A0F035F00255FCD /* UModalDialogs.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF1809CE3E6500E34038 /* UModalDialogs.cp */; };
+		556350521A0F035F00255FCD /* UNavServicesDialogs.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CE3B09CE3E5300E34038 /* UNavServicesDialogs.h */; };
+		556350531A0F035F00255FCD /* UNavServicesDialogs.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CE3A09CE3E5300E34038 /* UNavServicesDialogs.cp */; };
+		556350541A0F035F00255FCD /* LFileTypeList.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CE3509CE3E5300E34038 /* LFileTypeList.h */; };
+		556350551A0F035F00255FCD /* LFileTypeList.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CE3409CE3E5300E34038 /* LFileTypeList.cp */; };
+		556350561A0F036600255FCD /* UCarbonDesktop.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CFC509CE3E7200E34038 /* UCarbonDesktop.cp */; };
+		556350571A0F036600255FCD /* LException.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CFA109CE3E6F00E34038 /* LException.h */; };
+		556350581A0F036600255FCD /* LException.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CFA009CE3E6F00E34038 /* LException.cp */; };
+		556350591A0F036600255FCD /* LString.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF9F09CE3E6F00E34038 /* LString.h */; };
+		5563505A1A0F036600255FCD /* LString.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF9E09CE3E6F00E34038 /* LString.cp */; };
+		5563505B1A0F036600255FCD /* LRadioGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF3009CE3E6600E34038 /* LRadioGroup.h */; };
+		5563505C1A0F036600255FCD /* LRadioGroup.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF2F09CE3E6600E34038 /* LRadioGroup.cp */; };
+		5563505D1A0F036600255FCD /* LTabGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF3209CE3E6700E34038 /* LTabGroup.h */; };
+		5563505E1A0F036600255FCD /* LTabGroup.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF3109CE3E6700E34038 /* LTabGroup.cp */; };
+		5563505F1A0F036600255FCD /* LGrowZone.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF2A09CE3E6600E34038 /* LGrowZone.h */; };
+		556350601A0F036600255FCD /* LGrowZone.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF2909CE3E6600E34038 /* LGrowZone.cp */; };
+		556350611A0F036600255FCD /* TTimerTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0D4A509CE3EB000E34038 /* TTimerTask.h */; };
+		556350621A0F036600255FCD /* LTimerTaskFunctor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CE2709CE3E5200E34038 /* LTimerTaskFunctor.h */; };
+		556350631A0F036600255FCD /* LTimerTaskFunctor.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CE2609CE3E5200E34038 /* LTimerTaskFunctor.cp */; };
+		556350641A0F036600255FCD /* LTimerTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CE2509CE3E5100E34038 /* LTimerTask.h */; };
+		556350651A0F036600255FCD /* LTimerTask.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CE2409CE3E5100E34038 /* LTimerTask.cp */; };
+		556350661A0F036600255FCD /* LClipboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0D54109CE3EC600E34038 /* LClipboard.h */; };
+		556350671A0F036600255FCD /* UDesktop.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0D4F709CE3EB600E34038 /* UDesktop.h */; };
+		556350681A0F037100255FCD /* LAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF9409CE3E6E00E34038 /* LAction.h */; };
+		556350691A0F037100255FCD /* LAction.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF9309CE3E6E00E34038 /* LAction.cp */; };
+		5563506A1A0F037100255FCD /* LUndoer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF9609CE3E6E00E34038 /* LUndoer.h */; };
+		5563506B1A0F037100255FCD /* LUndoer.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF9509CE3E6E00E34038 /* LUndoer.cp */; };
+		5563506C1A0F037100255FCD /* UTEViewTextAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF9809CE3E6E00E34038 /* UTEViewTextAction.h */; };
+		5563506D1A0F037100255FCD /* UTEViewTextAction.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF9709CE3E6E00E34038 /* UTEViewTextAction.cp */; };
+		5563506E1A0F037100255FCD /* UTETextAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF9A09CE3E6F00E34038 /* UTETextAction.h */; };
+		5563506F1A0F037100255FCD /* UTETextAction.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF9909CE3E6F00E34038 /* UTETextAction.cp */; };
+		556350701A0F037C00255FCD /* UExtractFromAEDesc.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CFAD09CE3E7000E34038 /* UExtractFromAEDesc.h */; };
+		556350711A0F037C00255FCD /* UExtractFromAEDesc.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CFAC09CE3E7000E34038 /* UExtractFromAEDesc.cp */; };
+		556350721A0F037C00255FCD /* UAppleEventsMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CFA709CE3E7000E34038 /* UAppleEventsMgr.h */; };
+		556350731A0F037C00255FCD /* UAppleEventsMgr.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CFA609CE3E7000E34038 /* UAppleEventsMgr.cp */; };
+		556350741A0F037C00255FCD /* LModelDirector.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF8D09CE3E6E00E34038 /* LModelDirector.h */; };
+		556350751A0F037C00255FCD /* LModelDirector.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF8C09CE3E6E00E34038 /* LModelDirector.cp */; };
+		556350761A0F037C00255FCD /* LModelObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF8F09CE3E6E00E34038 /* LModelObject.h */; };
+		556350771A0F037C00255FCD /* LModelObject.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF8E09CE3E6E00E34038 /* LModelObject.cp */; };
+		556350781A0F037C00255FCD /* LModelProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF9109CE3E6E00E34038 /* LModelProperty.h */; };
+		556350791A0F037C00255FCD /* LModelProperty.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF9009CE3E6E00E34038 /* LModelProperty.cp */; };
+		5563507A1A0F038400255FCD /* LFileStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CFC409CE3E7200E34038 /* LFileStream.h */; };
+		5563507B1A0F038400255FCD /* LFileStream.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CFC309CE3E7200E34038 /* LFileStream.cp */; };
+		5563507C1A0F038400255FCD /* LStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CFB709CE3E7100E34038 /* LStream.h */; };
+		5563507D1A0F038400255FCD /* LStream.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CFB609CE3E7100E34038 /* LStream.cp */; };
+		5563507E1A0F038400255FCD /* LHandleStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CFAB09CE3E7000E34038 /* LHandleStream.h */; };
+		5563507F1A0F038400255FCD /* LHandleStream.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CFAA09CE3E7000E34038 /* LHandleStream.cp */; };
+		556350801A0F038400255FCD /* LFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF7109CE3E6C00E34038 /* LFile.h */; };
+		556350811A0F038400255FCD /* LFile.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF7009CE3E6C00E34038 /* LFile.cp */; };
+		556350821A0F038400255FCD /* LDataStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF7309CE3E6C00E34038 /* LDataStream.h */; };
+		556350831A0F038400255FCD /* LDataStream.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF7209CE3E6C00E34038 /* LDataStream.cp */; };
+		556350841A0F038900255FCD /* LAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF7609CE3E6C00E34038 /* LAttachment.h */; };
+		556350851A0F038900255FCD /* LAttachment.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF7509CE3E6C00E34038 /* LAttachment.cp */; };
+		556350861A0F038900255FCD /* LAttachable.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF7809CE3E6C00E34038 /* LAttachable.h */; };
+		556350871A0F038900255FCD /* LAttachable.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF7709CE3E6C00E34038 /* LAttachable.cp */; };
+		556350881A0F038900255FCD /* LBroadcaster.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF7A09CE3E6C00E34038 /* LBroadcaster.h */; };
+		556350891A0F038900255FCD /* LBroadcaster.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF7909CE3E6C00E34038 /* LBroadcaster.cp */; };
+		5563508A1A0F038900255FCD /* LEventDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF7C09CE3E6C00E34038 /* LEventDispatcher.h */; };
+		5563508B1A0F038900255FCD /* LEventDispatcher.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF7B09CE3E6C00E34038 /* LEventDispatcher.cp */; };
+		5563508C1A0F038900255FCD /* LListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF7E09CE3E6D00E34038 /* LListener.h */; };
+		5563508D1A0F038900255FCD /* LListener.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF7D09CE3E6D00E34038 /* LListener.cp */; };
+		5563508E1A0F038900255FCD /* LPeriodical.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF8009CE3E6D00E34038 /* LPeriodical.h */; };
+		5563508F1A0F038900255FCD /* LPeriodical.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF7F09CE3E6D00E34038 /* LPeriodical.cp */; };
+		556350901A0F038900255FCD /* LSharable.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF3609CE3E6700E34038 /* LSharable.h */; };
+		556350911A0F038900255FCD /* LSharable.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF3509CE3E6700E34038 /* LSharable.cp */; };
+		556350921A0F038900255FCD /* LDragAndDrop.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF3909CE3E6700E34038 /* LDragAndDrop.h */; };
+		556350931A0F038900255FCD /* LDragAndDrop.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF3809CE3E6700E34038 /* LDragAndDrop.cp */; };
+		556350941A0F038900255FCD /* LDragTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF3B09CE3E6700E34038 /* LDragTask.h */; };
+		556350951A0F038900255FCD /* LDragTask.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF3A09CE3E6700E34038 /* LDragTask.cp */; };
+		556350961A0F038F00255FCD /* LMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF2C09CE3E6600E34038 /* LMenu.h */; };
+		556350971A0F038F00255FCD /* LMenu.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF2B09CE3E6600E34038 /* LMenu.cp */; };
+		556350981A0F038F00255FCD /* LMenuBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF2E09CE3E6600E34038 /* LMenuBar.h */; };
+		556350991A0F038F00255FCD /* LMenuBar.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF2D09CE3E6600E34038 /* LMenuBar.cp */; };
+		5563509A1A0F039B00255FCD /* UControlMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CFBE09CE3E7200E34038 /* UControlMgr.h */; };
+		5563509B1A0F039B00255FCD /* UControlMgr.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CFBD09CE3E7200E34038 /* UControlMgr.cp */; };
+		5563509C1A0F039B00255FCD /* UDebugging.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CFB109CE3E7100E34038 /* UDebugging.h */; };
+		5563509D1A0F039B00255FCD /* UDebugging.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CFB009CE3E7100E34038 /* UDebugging.cp */; };
+		5563509E1A0F039B00255FCD /* UMemoryMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CFA509CE3E7000E34038 /* UMemoryMgr.h */; };
+		5563509F1A0F039B00255FCD /* UMemoryMgr.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CFA409CE3E7000E34038 /* UMemoryMgr.cp */; };
+		556350A01A0F039B00255FCD /* UAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF3409CE3E6700E34038 /* UAppearance.h */; };
+		556350A11A0F039B00255FCD /* UAppearance.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF3309CE3E6700E34038 /* UAppearance.cp */; };
+		556350A21A0F039B00255FCD /* UAttachments.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF0D09CE3E6400E34038 /* UAttachments.h */; };
+		556350A31A0F039B00255FCD /* UAttachments.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF0C09CE3E6400E34038 /* UAttachments.cp */; };
+		556350A41A0F039B00255FCD /* UCursor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF0F09CE3E6400E34038 /* UCursor.h */; };
+		556350A51A0F039B00255FCD /* UCursor.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF0E09CE3E6400E34038 /* UCursor.cp */; };
+		556350A61A0F039B00255FCD /* UDrawingState.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF1109CE3E6400E34038 /* UDrawingState.h */; };
+		556350A71A0F039B00255FCD /* UDrawingState.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF1009CE3E6400E34038 /* UDrawingState.cp */; };
+		556350A81A0F039B00255FCD /* UDrawingUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF1309CE3E6400E34038 /* UDrawingUtils.h */; };
+		556350A91A0F039B00255FCD /* UDrawingUtils.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF1209CE3E6400E34038 /* UDrawingUtils.cp */; };
+		556350AA1A0F039B00255FCD /* UEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF1509CE3E6400E34038 /* UEnvironment.h */; };
+		556350AB1A0F039B00255FCD /* UEnvironment.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF1409CE3E6400E34038 /* UEnvironment.cp */; };
+		556350AC1A0F039B00255FCD /* UKeyFilters.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF1709CE3E6400E34038 /* UKeyFilters.h */; };
+		556350AD1A0F039B00255FCD /* UKeyFilters.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF1609CE3E6400E34038 /* UKeyFilters.cp */; };
+		556350AE1A0F039B00255FCD /* UReanimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF1B09CE3E6500E34038 /* UReanimator.h */; };
+		556350AF1A0F039B00255FCD /* UReanimator.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF1A09CE3E6500E34038 /* UReanimator.cp */; };
+		556350B01A0F039B00255FCD /* URegions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF1D09CE3E6500E34038 /* URegions.h */; };
+		556350B11A0F039B00255FCD /* URegions.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF1C09CE3E6500E34038 /* URegions.cp */; };
+		556350B21A0F039B00255FCD /* URegistrar.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF1F09CE3E6500E34038 /* URegistrar.h */; };
+		556350B31A0F039B00255FCD /* URegistrar.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF1E09CE3E6500E34038 /* URegistrar.cp */; };
+		556350B41A0F039B00255FCD /* UResourceMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF2109CE3E6500E34038 /* UResourceMgr.h */; };
+		556350B51A0F039B00255FCD /* UResourceMgr.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF2009CE3E6500E34038 /* UResourceMgr.cp */; };
+		556350B61A0F039B00255FCD /* UScreenPort.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF2309CE3E6500E34038 /* UScreenPort.h */; };
+		556350B71A0F039B00255FCD /* UScreenPort.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF2209CE3E6500E34038 /* UScreenPort.cp */; };
+		556350B81A0F039B00255FCD /* UTextTraits.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF2509CE3E6600E34038 /* UTextTraits.h */; };
+		556350B91A0F039B00255FCD /* UTextTraits.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF2409CE3E6600E34038 /* UTextTraits.cp */; };
+		556350BA1A0F039B00255FCD /* UWindows.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CF2709CE3E6600E34038 /* UWindows.h */; };
+		556350BB1A0F039B00255FCD /* UWindows.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CF2609CE3E6600E34038 /* UWindows.cp */; };
+		556350BC1A0F039B00255FCD /* UProcessMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CE2B09CE3E5200E34038 /* UProcessMgr.h */; };
+		556350BD1A0F039B00255FCD /* UProcessMgr.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CE2A09CE3E5200E34038 /* UProcessMgr.cp */; };
+		556350BE1A0F039B00255FCD /* UScrap.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CE2909CE3E5200E34038 /* UScrap.h */; };
+		556350BF1A0F039B00255FCD /* UScrap.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CE2809CE3E5200E34038 /* UScrap.cp */; };
+		556350C01A0F039B00255FCD /* UEventMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0D4F909CE3EB600E34038 /* UEventMgr.h */; };
+		556350C11A0F039B00255FCD /* UQDOperators.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0D50B09CE3EB800E34038 /* UQDOperators.h */; };
+		556350C21A0F039B00255FCD /* UPrinting.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0D4A709CE3EB100E34038 /* UPrinting.h */; };
+		556350C31A0F039B00255FCD /* UException.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0D54309CE3EC600E34038 /* UException.h */; };
+		556350C41A0F039B00255FCD /* UTextEdit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0D4A909CE3EB100E34038 /* UTextEdit.h */; };
+		556350C51A0F039B00255FCD /* UTBAccessors.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0D4AB09CE3EB100E34038 /* UTBAccessors.h */; };
+		556350C61A0F03A200255FCD /* LTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CE4209CE3E5400E34038 /* LTableView.h */; };
+		556350C71A0F03A200255FCD /* LTableView.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CE4109CE3E5400E34038 /* LTableView.cp */; };
+		556350C81A0F03A200255FCD /* LTableArrayStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CE4409CE3E5400E34038 /* LTableArrayStorage.h */; };
+		556350C91A0F03A200255FCD /* LTableArrayStorage.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CE4309CE3E5400E34038 /* LTableArrayStorage.cp */; };
+		556350CA1A0F03A200255FCD /* LTableMultiGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CE4609CE3E5400E34038 /* LTableMultiGeometry.h */; };
+		556350CB1A0F03A200255FCD /* LTableMultiGeometry.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CE4509CE3E5400E34038 /* LTableMultiGeometry.cp */; };
+		556350CC1A0F03A200255FCD /* LTableMultiSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CE4809CE3E5400E34038 /* LTableMultiSelector.h */; };
+		556350CD1A0F03A200255FCD /* LTableMultiSelector.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CE4709CE3E5400E34038 /* LTableMultiSelector.cp */; };
+		556350CE1A0F03A200255FCD /* LTableSingleSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CE4A09CE3E5500E34038 /* LTableSingleSelector.h */; };
+		556350CF1A0F03A200255FCD /* LTableSingleSelector.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CE4909CE3E5500E34038 /* LTableSingleSelector.cp */; };
+		556350D01A0F03A200255FCD /* LTableMonoGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0CE3109CE3E5200E34038 /* LTableMonoGeometry.h */; };
+		556350D11A0F03A200255FCD /* LTableMonoGeometry.cp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0CE3009CE3E5200E34038 /* LTableMonoGeometry.cp */; };
+		556350D21A0F03A200255FCD /* UTables.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0D4AF09CE3EB200E34038 /* UTables.h */; };
+		556350D31A0F03A200255FCD /* UTableHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD0D4B109CE3EB200E34038 /* UTableHelpers.h */; };
 		55CDDB6A1A0EF7DE006EE64A /* OpenPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CDDA931A0EF4EE006EE64A /* OpenPlay.framework */; };
 		55CDDB6B1A0EF7DE006EE64A /* OpenPlay.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 55CDDA931A0EF4EE006EE64A /* OpenPlay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55CDDB6E1A0EF7F2006EE64A /* PlayerPROCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CDDB031A0EF4EE006EE64A /* PlayerPROCore.framework */; };
@@ -5699,74 +5838,122 @@
 				55634F9A1A0F01DB00255FCD /* LComparator.h in Headers */,
 				5563503D1A0F023500255FCD /* LGAIconSuiteMixin.h in Headers */,
 				55634F8D1A0F01BF00255FCD /* LView.h in Headers */,
+				556350881A0F038900255FCD /* LBroadcaster.h in Headers */,
+				556350B21A0F039B00255FCD /* URegistrar.h in Headers */,
+				556350C51A0F039B00255FCD /* UTBAccessors.h in Headers */,
 				55634F671A0F01BF00255FCD /* LCaption.h in Headers */,
+				556350861A0F038900255FCD /* LAttachable.h in Headers */,
 				55634FB51A0F020700255FCD /* LAMPopupGroupBoxImp.h in Headers */,
+				5563505D1A0F036600255FCD /* LTabGroup.h in Headers */,
 				55634FDF1A0F021200255FCD /* LGAPushButtonImp.h in Headers */,
+				5563504E1A0F035700255FCD /* LDocument.h in Headers */,
 				55634FA31A0F01DB00255FCD /* TArrayIterator.h in Headers */,
+				5563508E1A0F038900255FCD /* LPeriodical.h in Headers */,
 				55634FCD1A0F021200255FCD /* LGAGroupBoxImp.h in Headers */,
 				55634FF51A0F021A00255FCD /* LStdPopupButtonImp.h in Headers */,
 				55634F6B1A0F01BF00255FCD /* LControl.h in Headers */,
 				55634F891A0F01BF00255FCD /* LTable.h in Headers */,
 				556350351A0F022E00255FCD /* UAMModalDialogs.h in Headers */,
+				556350CC1A0F03A200255FCD /* LTableMultiSelector.h in Headers */,
+				556350C61A0F03A200255FCD /* LTableView.h in Headers */,
 				55634FA01A0F01DB00255FCD /* LVariableArray.h in Headers */,
 				55634FE51A0F021200255FCD /* LGASliderImp.h in Headers */,
+				556350A61A0F039B00255FCD /* UDrawingState.h in Headers */,
 				55634F9C1A0F01DB00255FCD /* LArray.h in Headers */,
+				5563505B1A0F036600255FCD /* LRadioGroup.h in Headers */,
 				556350221A0F022400255FCD /* LTabsControl.h in Headers */,
+				5563509E1A0F039B00255FCD /* UMemoryMgr.h in Headers */,
 				55634FB91A0F020700255FCD /* LAMStaticTextImp.h in Headers */,
+				556350BC1A0F039B00255FCD /* UProcessMgr.h in Headers */,
+				556350661A0F036600255FCD /* LClipboard.h in Headers */,
 				55634F401A0EFE5200255FCD /* LBroadcasterEditField.h in Headers */,
 				55634F931A0F01BF00255FCD /* LOffscreenView.h in Headers */,
 				556350281A0F022400255FCD /* LPopupButton.h in Headers */,
+				556350761A0F037C00255FCD /* LModelObject.h in Headers */,
+				5563505F1A0F036600255FCD /* LGrowZone.h in Headers */,
+				556350B81A0F039B00255FCD /* UTextTraits.h in Headers */,
 				55634F5C1A0F017300255FCD /* LOutlineTable.h in Headers */,
 				55634F811A0F01BF00255FCD /* LRadioGroupView.h in Headers */,
 				556350451A0F023C00255FCD /* LGAColorSwatchControl.h in Headers */,
+				556350AA1A0F039B00255FCD /* UEnvironment.h in Headers */,
 				55634FDB1A0F021200255FCD /* LGAPopupGroupBoxImp.h in Headers */,
 				55634F771A0F01BF00255FCD /* LListBox.h in Headers */,
 				55634FE31A0F021200255FCD /* LGASeparatorImp.h in Headers */,
 				55634FF31A0F021A00255FCD /* LStdControlImp.h in Headers */,
 				556350181A0F022400255FCD /* LRadioButton.h in Headers */,
 				55634FC01A0F021200255FCD /* LGABevelButtonImp.h in Headers */,
+				5563504F1A0F035700255FCD /* LSingleDoc.h in Headers */,
 				5563500E1A0F022400255FCD /* LPictureControl.h in Headers */,
 				55634FAC1A0F020700255FCD /* LAMClockImp.h in Headers */,
+				556350681A0F037100255FCD /* LAction.h in Headers */,
 				55634FD91A0F021200255FCD /* LGAPopupButtonImp.h in Headers */,
 				5563500C1A0F022400255FCD /* LLittleArrows.h in Headers */,
 				5563501C1A0F022400255FCD /* LSeparatorLine.h in Headers */,
 				55634F581A0F017300255FCD /* LOutlineMultiSelector.h in Headers */,
+				556350B41A0F039B00255FCD /* UResourceMgr.h in Headers */,
 				556350391A0F023500255FCD /* UGAColorRamp.h in Headers */,
+				556350491A0F035700255FCD /* LApplication.h in Headers */,
+				5563508A1A0F038900255FCD /* LEventDispatcher.h in Headers */,
+				556350C81A0F03A200255FCD /* LTableArrayStorage.h in Headers */,
+				556350D21A0F03A200255FCD /* UTables.h in Headers */,
 				556350311A0F022E00255FCD /* LMenuController.h in Headers */,
+				556350BA1A0F039B00255FCD /* UWindows.h in Headers */,
 				55634FC71A0F021200255FCD /* LGAControlImp.h in Headers */,
+				5563506E1A0F037100255FCD /* UTETextAction.h in Headers */,
+				556350B61A0F039B00255FCD /* UScreenPort.h in Headers */,
 				55634F691A0F01BF00255FCD /* LCicnButton.h in Headers */,
 				55634F971A0F01BF00255FCD /* UQuickTime.h in Headers */,
 				55634F541A0F017300255FCD /* LOutlineItem.h in Headers */,
 				55634F8B1A0F01BF00255FCD /* LTextEditView.h in Headers */,
+				556350721A0F037C00255FCD /* UAppleEventsMgr.h in Headers */,
 				55634FD31A0F021200255FCD /* LGALittleArrowsImp.h in Headers */,
+				556350591A0F036600255FCD /* LString.h in Headers */,
 				55634FEB1A0F021200255FCD /* LGATabsControlImp.h in Headers */,
 				55634F501A0F017300255FCD /* LEditableOutlineItem.h in Headers */,
 				55634F791A0F01BF00255FCD /* LMultiPanelView.h in Headers */,
+				5563509C1A0F039B00255FCD /* UDebugging.h in Headers */,
 				55634F6F1A0F01BF00255FCD /* LEditField.h in Headers */,
+				556350501A0F035F00255FCD /* UModalDialogs.h in Headers */,
 				55634F421A0EFE5200255FCD /* LInPlaceEditField.h in Headers */,
 				55634FFA1A0F022400255FCD /* LChasingArrows.h in Headers */,
 				55634FBF1A0F021200255FCD /* LGACheckBoxImp.h in Headers */,
+				556350A81A0F039B00255FCD /* UDrawingUtils.h in Headers */,
+				5563506A1A0F037100255FCD /* LUndoer.h in Headers */,
 				556350471A0F023C00255FCD /* LGAFocusBorder.h in Headers */,
 				55634FD71A0F021200255FCD /* LGAPlacardImp.h in Headers */,
 				55634FA91A0F020700255FCD /* LAMImageWellImp.h in Headers */,
 				55634FAB1A0F020700255FCD /* LAMBevelButtonImp.h in Headers */,
 				5563502A1A0F022400255FCD /* LBevelButton.h in Headers */,
 				556350041A0F022400255FCD /* LDisclosureTriangle.h in Headers */,
+				556350701A0F037C00255FCD /* UExtractFromAEDesc.h in Headers */,
+				5563507A1A0F038400255FCD /* LFileStream.h in Headers */,
 				55634FB31A0F020700255FCD /* LAMPopupButtonImp.h in Headers */,
+				5563507E1A0F038400255FCD /* LHandleStream.h in Headers */,
 				556350291A0F022400255FCD /* LPopupGroupBox.h in Headers */,
 				55634F951A0F01BF00255FCD /* LGrafPortView.h in Headers */,
+				556350D01A0F03A200255FCD /* LTableMonoGeometry.h in Headers */,
+				556350C01A0F039B00255FCD /* UEventMgr.h in Headers */,
 				556350061A0F022400255FCD /* LEditText.h in Headers */,
 				55634FF11A0F021A00255FCD /* LStdPushButtonImp.h in Headers */,
 				5563503B1A0F023500255FCD /* LGACIconMixin.h in Headers */,
+				556350671A0F036600255FCD /* UDesktop.h in Headers */,
 				55634F7B1A0F01BF00255FCD /* LPane.h in Headers */,
+				556350CA1A0F03A200255FCD /* LTableMultiGeometry.h in Headers */,
+				556350841A0F038900255FCD /* LAttachment.h in Headers */,
+				556350961A0F038F00255FCD /* LMenu.h in Headers */,
 				55634FE71A0F021200255FCD /* LGAStaticTextImp.h in Headers */,
 				55634FEF1A0F021200255FCD /* LGAWindowHeaderImp.h in Headers */,
 				5563502B1A0F022E00255FCD /* LControlImp.h in Headers */,
+				556350C21A0F039B00255FCD /* UPrinting.h in Headers */,
 				5563501E1A0F022400255FCD /* LSlider.h in Headers */,
+				556350781A0F037C00255FCD /* LModelProperty.h in Headers */,
 				55634FC21A0F021200255FCD /* LGAChasingArrowsImp.h in Headers */,
+				556350571A0F036600255FCD /* LException.h in Headers */,
 				55634F8F1A0F01BF00255FCD /* LWindow.h in Headers */,
 				5563502F1A0F022E00255FCD /* LControlView.h in Headers */,
 				55634F521A0F017300255FCD /* LInPlaceOutlineKeySelector.h in Headers */,
+				556350821A0F038400255FCD /* LDataStream.h in Headers */,
+				556350A01A0F039B00255FCD /* UAppearance.h in Headers */,
 				5563501A1A0F022400255FCD /* LScrollBar.h in Headers */,
 				556350331A0F022E00255FCD /* LScrollerView.h in Headers */,
 				55634FA51A0F020700255FCD /* LAMTextGroupBoxImp.h in Headers */,
@@ -5775,11 +5962,15 @@
 				55634FCF1A0F021200255FCD /* LGAIconControlImp.h in Headers */,
 				55634F651A0F01BF00255FCD /* LButton.h in Headers */,
 				55634FAF1A0F020700255FCD /* LAMControlImp.h in Headers */,
+				556350641A0F036600255FCD /* LTimerTask.h in Headers */,
 				55634FBD1A0F020700255FCD /* LAMWindowHeaderImp.h in Headers */,
 				55634FA71A0F020700255FCD /* LAMCheckBoxGroupBoxImp.h in Headers */,
+				556350621A0F036600255FCD /* LTimerTaskFunctor.h in Headers */,
+				556350D31A0F03A200255FCD /* UTableHelpers.h in Headers */,
 				55634F4C1A0EFE5200255FCD /* LTablePaneHostingGeometry.h in Headers */,
 				556350141A0F022400255FCD /* LProgressBar.h in Headers */,
 				55634F9E1A0F01DB00255FCD /* LRunArray.h in Headers */,
+				556350AC1A0F039B00255FCD /* UKeyFilters.h in Headers */,
 				5563500A1A0F022400255FCD /* LImageWell.h in Headers */,
 				55634FFC1A0F022400255FCD /* LCheckBox.h in Headers */,
 				556350161A0F022400255FCD /* LPushButton.h in Headers */,
@@ -5788,20 +5979,32 @@
 				55634F981A0F01DB00255FCD /* LArrayIterator.h in Headers */,
 				55634F481A0EFE5200255FCD /* LFastArrayIterator.h in Headers */,
 				55634FC41A0F021200255FCD /* LGACheckBoxGroupBoxImp.h in Headers */,
+				5563504D1A0F035700255FCD /* LDocApplication.h in Headers */,
 				55634F5A1A0F017300255FCD /* LOutlineRowSelector.h in Headers */,
 				5563503F1A0F023500255FCD /* LGAPictureMixin.h in Headers */,
 				556350411A0F023500255FCD /* LGATitleMixin.h in Headers */,
+				556350741A0F037C00255FCD /* LModelDirector.h in Headers */,
 				556350081A0F022400255FCD /* LIconControl.h in Headers */,
+				556350611A0F036600255FCD /* TTimerTask.h in Headers */,
+				556350541A0F035F00255FCD /* LFileTypeList.h in Headers */,
+				556350521A0F035F00255FCD /* UNavServicesDialogs.h in Headers */,
 				556350021A0F022400255FCD /* LCmdBevelButton.h in Headers */,
+				556350AE1A0F039B00255FCD /* UReanimator.h in Headers */,
 				556350371A0F022E00255FCD /* UControlRegistry.h in Headers */,
 				556350101A0F022400255FCD /* LPlacard.h in Headers */,
 				556350001A0F022400255FCD /* LClock.h in Headers */,
+				5563506C1A0F037100255FCD /* UTEViewTextAction.h in Headers */,
 				556350261A0F022400255FCD /* LWindowHeader.h in Headers */,
 				55634FB11A0F020700255FCD /* LAMEditTextImp.h in Headers */,
+				556350CE1A0F03A200255FCD /* LTableSingleSelector.h in Headers */,
 				55634F4A1A0EFE5200255FCD /* UNewTextDrawing.h in Headers */,
+				5563504B1A0F035700255FCD /* LCommander.h in Headers */,
+				556350C41A0F039B00255FCD /* UTextEdit.h in Headers */,
 				55634FCB1A0F021200255FCD /* LGAEditTextImp.h in Headers */,
 				55634FFE1A0F022400255FCD /* LCheckBoxGroupBox.h in Headers */,
+				5563509A1A0F039B00255FCD /* UControlMgr.h in Headers */,
 				55634F911A0F01BF00255FCD /* UGWorld.h in Headers */,
+				556350981A0F038F00255FCD /* LMenuBar.h in Headers */,
 				55634F7D1A0F01BF00255FCD /* LPicture.h in Headers */,
 				55634F441A0EFE5200255FCD /* LInPlaceHostView.h in Headers */,
 				55634F7F1A0F01BF00255FCD /* LPlaceHolder.h in Headers */,
@@ -5814,15 +6017,27 @@
 				55634F851A0F01BF00255FCD /* LStdControl.h in Headers */,
 				556350241A0F022400255FCD /* LTextGroupBox.h in Headers */,
 				55634FE91A0F021200255FCD /* LGATabsButton.h in Headers */,
+				556350A41A0F039B00255FCD /* UCursor.h in Headers */,
+				556350A21A0F039B00255FCD /* UAttachments.h in Headers */,
+				556350BE1A0F039B00255FCD /* UScrap.h in Headers */,
 				55634F561A0F017300255FCD /* LOutlineKeySelector.h in Headers */,
 				55634F461A0EFE5200255FCD /* LMarqueeTask.h in Headers */,
+				556350B01A0F039B00255FCD /* URegions.h in Headers */,
 				55634FB71A0F020700255FCD /* LAMPushButtonImp.h in Headers */,
 				55634FBB1A0F020700255FCD /* LAMTrackActionImp.h in Headers */,
+				556350C11A0F039B00255FCD /* UQDOperators.h in Headers */,
+				556350801A0F038400255FCD /* LFile.h in Headers */,
 				55634F711A0F01BF00255FCD /* LFocusBox.h in Headers */,
 				55634FC91A0F021200255FCD /* LGADisclosureTriangleImp.h in Headers */,
 				55634FD11A0F021200255FCD /* LGAImageWellImp.h in Headers */,
+				556350901A0F038900255FCD /* LSharable.h in Headers */,
+				556350C31A0F039B00255FCD /* UException.h in Headers */,
+				556350921A0F038900255FCD /* LDragAndDrop.h in Headers */,
+				5563507C1A0F038400255FCD /* LStream.h in Headers */,
 				55634FD51A0F021200255FCD /* LGAPictureControlImp.h in Headers */,
 				556350201A0F022400255FCD /* LStaticText.h in Headers */,
+				5563508C1A0F038900255FCD /* LListener.h in Headers */,
+				556350941A0F038900255FCD /* LDragTask.h in Headers */,
 				55634F871A0F01BF00255FCD /* LTabGroupView.h in Headers */,
 				55634F6D1A0F01BF00255FCD /* LDialogBox.h in Headers */,
 				55634FED1A0F021200255FCD /* LGATextGroupBoxImp.h in Headers */,
@@ -6857,6 +7072,7 @@
 				55634FEA1A0F021200255FCD /* LGATabsButton.cp in Sources */,
 				55634FF81A0F021A00255FCD /* LStdScrollBarImp.cp in Sources */,
 				5563502C1A0F022E00255FCD /* LControlImp.cp in Sources */,
+				5563505C1A0F036600255FCD /* LRadioGroup.cp in Sources */,
 				55634FA61A0F020700255FCD /* LAMTextGroupBoxImp.cp in Sources */,
 				55634F741A0F01BF00255FCD /* LGroupBox.cp in Sources */,
 				55634F641A0F01BF00255FCD /* LActiveScroller.cp in Sources */,
@@ -6866,24 +7082,39 @@
 				55634FBC1A0F020700255FCD /* LAMTrackActionImp.cp in Sources */,
 				55634F3E1A0EFE2100255FCD /* LInterruptSafeList.cp in Sources */,
 				55634FB01A0F020700255FCD /* LAMControlImp.cp in Sources */,
+				556350D11A0F03A200255FCD /* LTableMonoGeometry.cp in Sources */,
+				556350B71A0F039B00255FCD /* UScreenPort.cp in Sources */,
+				5563509D1A0F039B00255FCD /* UDebugging.cp in Sources */,
 				55634FFB1A0F022400255FCD /* LChasingArrows.cp in Sources */,
+				556350A31A0F039B00255FCD /* UAttachments.cp in Sources */,
 				55634FC51A0F021200255FCD /* LGACheckBoxGroupBoxImp.cp in Sources */,
+				5563505A1A0F036600255FCD /* LString.cp in Sources */,
+				556350A91A0F039B00255FCD /* UDrawingUtils.cp in Sources */,
+				556350561A0F036600255FCD /* UCarbonDesktop.cp in Sources */,
 				55634F9B1A0F01DB00255FCD /* LComparator.cp in Sources */,
+				556350791A0F037C00255FCD /* LModelProperty.cp in Sources */,
 				55634FD01A0F021200255FCD /* LGAIconControlImp.cp in Sources */,
 				55634FAE1A0F020700255FCD /* LAMBevelButtonImp.cp in Sources */,
 				55634F821A0F01BF00255FCD /* LRadioGroupView.cp in Sources */,
 				556350031A0F022400255FCD /* LCmdBevelButton.cp in Sources */,
 				55634F861A0F01BF00255FCD /* LStdControl.cp in Sources */,
 				556350171A0F022400255FCD /* LPushButton.cp in Sources */,
+				5563507B1A0F038400255FCD /* LFileStream.cp in Sources */,
 				55634FCC1A0F021200255FCD /* LGAEditTextImp.cp in Sources */,
 				55634FE21A0F021200255FCD /* LGARadioButtonImp.cp in Sources */,
 				55634FC61A0F021200255FCD /* LGACheckBoxImp.cp in Sources */,
 				55634F991A0F01DB00255FCD /* LArrayIterator.cp in Sources */,
 				55634FCE1A0F021200255FCD /* LGAGroupBoxImp.cp in Sources */,
 				55634F701A0F01BF00255FCD /* LEditField.cp in Sources */,
+				556350C71A0F03A200255FCD /* LTableView.cp in Sources */,
+				556350751A0F037C00255FCD /* LModelDirector.cp in Sources */,
 				55634FFF1A0F022400255FCD /* LCheckBoxGroupBox.cp in Sources */,
+				556350581A0F036600255FCD /* LException.cp in Sources */,
+				556350601A0F036600255FCD /* LGrowZone.cp in Sources */,
+				556350511A0F035F00255FCD /* UModalDialogs.cp in Sources */,
 				55634F7E1A0F01BF00255FCD /* LPicture.cp in Sources */,
 				556350111A0F022400255FCD /* LPlacard.cp in Sources */,
+				556350CB1A0F03A200255FCD /* LTableMultiGeometry.cp in Sources */,
 				55634FFD1A0F022400255FCD /* LCheckBox.cp in Sources */,
 				55634F3F1A0EFE2100255FCD /* LCleanupTask.cp in Sources */,
 				55634FE81A0F021200255FCD /* LGAStaticTextImp.cp in Sources */,
@@ -6894,12 +7125,14 @@
 				55634FD81A0F021200255FCD /* LGAPlacardImp.cp in Sources */,
 				55634FBE1A0F020700255FCD /* LAMWindowHeaderImp.cp in Sources */,
 				5563501F1A0F022400255FCD /* LSlider.cp in Sources */,
+				556350711A0F037C00255FCD /* UExtractFromAEDesc.cp in Sources */,
 				556350361A0F022E00255FCD /* UAMModalDialogs.cp in Sources */,
 				556350051A0F022400255FCD /* LDisclosureTriangle.cp in Sources */,
 				55634F881A0F01BF00255FCD /* LTabGroupView.cp in Sources */,
 				55634F611A0F01B100255FCD /* LColumnView.cp in Sources */,
 				55634F6E1A0F01BF00255FCD /* LDialogBox.cp in Sources */,
 				5563500B1A0F022400255FCD /* LImageWell.cp in Sources */,
+				556350991A0F038F00255FCD /* LMenuBar.cp in Sources */,
 				55634FF91A0F022400255FCD /* LBevelButton.cp in Sources */,
 				55634F6A1A0F01BF00255FCD /* LCicnButton.cp in Sources */,
 				556350421A0F023500255FCD /* LGATitleMixin.cp in Sources */,
@@ -6909,82 +7142,127 @@
 				55634F5D1A0F017300255FCD /* LOutlineTable.cp in Sources */,
 				556350271A0F022400255FCD /* LWindowHeader.cp in Sources */,
 				5563500F1A0F022400255FCD /* LPictureControl.cp in Sources */,
+				5563508B1A0F038900255FCD /* LEventDispatcher.cp in Sources */,
 				55634F761A0F01BF00255FCD /* LIconPane.cp in Sources */,
 				55634FB41A0F020700255FCD /* LAMPopupButtonImp.cp in Sources */,
+				5563509B1A0F039B00255FCD /* UControlMgr.cp in Sources */,
 				556350151A0F022400255FCD /* LProgressBar.cp in Sources */,
 				55634FE61A0F021200255FCD /* LGASliderImp.cp in Sources */,
 				55634F571A0F017300255FCD /* LOutlineKeySelector.cp in Sources */,
+				556350691A0F037100255FCD /* LAction.cp in Sources */,
+				556350811A0F038400255FCD /* LFile.cp in Sources */,
 				55634FB81A0F020700255FCD /* LAMPushButtonImp.cp in Sources */,
 				556350461A0F023C00255FCD /* LGAColorSwatchControl.cp in Sources */,
+				5563509F1A0F039B00255FCD /* UMemoryMgr.cp in Sources */,
 				556350251A0F022400255FCD /* LTextGroupBox.cp in Sources */,
 				55634F721A0F01BF00255FCD /* LFocusBox.cp in Sources */,
 				55634F4D1A0EFE5200255FCD /* LTablePaneHostingGeometry.cp in Sources */,
 				55634F7C1A0F01BF00255FCD /* LPane.cp in Sources */,
 				55634F601A0F01A600255FCD /* UVolume.cp in Sources */,
 				556350401A0F023500255FCD /* LGAPictureMixin.cp in Sources */,
+				556350871A0F038900255FCD /* LAttachable.cp in Sources */,
 				55634F531A0F017300255FCD /* LInPlaceOutlineKeySelector.cp in Sources */,
+				556350851A0F038900255FCD /* LAttachment.cp in Sources */,
 				55634FBA1A0F020700255FCD /* LAMStaticTextImp.cp in Sources */,
+				5563507F1A0F038400255FCD /* LHandleStream.cp in Sources */,
+				556350C91A0F03A200255FCD /* LTableArrayStorage.cp in Sources */,
 				556350131A0F022400255FCD /* LPopupGroupBox.cp in Sources */,
 				5563502E1A0F022E00255FCD /* LControlPane.cp in Sources */,
 				55634F551A0F017300255FCD /* LOutlineItem.cp in Sources */,
+				556350B11A0F039B00255FCD /* URegions.cp in Sources */,
 				556350091A0F022400255FCD /* LIconControl.cp in Sources */,
+				556350631A0F036600255FCD /* LTimerTaskFunctor.cp in Sources */,
+				5563506B1A0F037100255FCD /* LUndoer.cp in Sources */,
 				55634F5B1A0F017300255FCD /* LOutlineRowSelector.cp in Sources */,
+				556350891A0F038900255FCD /* LBroadcaster.cp in Sources */,
+				556350651A0F036600255FCD /* LTimerTask.cp in Sources */,
 				55634FCA1A0F021200255FCD /* LGADisclosureTriangleImp.cp in Sources */,
+				5563506F1A0F037100255FCD /* UTETextAction.cp in Sources */,
 				55634FE01A0F021200255FCD /* LGAPushButtonImp.cp in Sources */,
 				55634F621A0F01B100255FCD /* LTextColumn.cp in Sources */,
+				5563505E1A0F036600255FCD /* LTabGroup.cp in Sources */,
 				55634F9F1A0F01DB00255FCD /* LRunArray.cp in Sources */,
+				556350B91A0F039B00255FCD /* UTextTraits.cp in Sources */,
 				556350191A0F022400255FCD /* LRadioButton.cp in Sources */,
 				55634FA11A0F01DB00255FCD /* LVariableArray.cp in Sources */,
+				556350BB1A0F039B00255FCD /* UWindows.cp in Sources */,
 				55634F431A0EFE5200255FCD /* LInPlaceEditField.cp in Sources */,
 				55634FA41A0F01E800255FCD /* PP_Constants.cp in Sources */,
 				55634FA81A0F020700255FCD /* LAMCheckBoxGroupBoxImp.cp in Sources */,
+				556350CD1A0F03A200255FCD /* LTableMultiSelector.cp in Sources */,
 				55634F921A0F01BF00255FCD /* UGWorld.cp in Sources */,
 				556350071A0F022400255FCD /* LEditText.cp in Sources */,
 				55634FAD1A0F020700255FCD /* LAMClockImp.cp in Sources */,
+				556350831A0F038400255FCD /* LDataStream.cp in Sources */,
 				556350381A0F022E00255FCD /* UControlRegistry.cp in Sources */,
 				55634FEE1A0F021200255FCD /* LGATextGroupBoxImp.cp in Sources */,
+				5563504C1A0F035700255FCD /* LCommander.cp in Sources */,
 				5563500D1A0F022400255FCD /* LLittleArrows.cp in Sources */,
 				55634FC11A0F021200255FCD /* LGABevelButtonImp.cp in Sources */,
 				55634FF61A0F021A00255FCD /* LStdPopupButtonImp.cp in Sources */,
 				55634F961A0F01BF00255FCD /* LGrafPortView.cp in Sources */,
 				556350321A0F022E00255FCD /* LMenuController.cp in Sources */,
+				556350531A0F035F00255FCD /* UNavServicesDialogs.cp in Sources */,
 				556350301A0F022E00255FCD /* LControlView.cp in Sources */,
+				556350951A0F038900255FCD /* LDragTask.cp in Sources */,
 				55634FE41A0F021200255FCD /* LGASeparatorImp.cp in Sources */,
 				556350211A0F022400255FCD /* LStaticText.cp in Sources */,
 				55634FB61A0F020700255FCD /* LAMPopupGroupBoxImp.cp in Sources */,
 				55634F8E1A0F01BF00255FCD /* LView.cp in Sources */,
+				556350931A0F038900255FCD /* LDragAndDrop.cp in Sources */,
+				556350971A0F038F00255FCD /* LMenu.cp in Sources */,
 				55634F5F1A0F01A600255FCD /* UProcess.cp in Sources */,
+				556350B51A0F039B00255FCD /* UResourceMgr.cp in Sources */,
+				5563507D1A0F038400255FCD /* LStream.cp in Sources */,
+				556350551A0F035F00255FCD /* LFileTypeList.cp in Sources */,
 				55634F901A0F01BF00255FCD /* LWindow.cp in Sources */,
 				55634FDC1A0F021200255FCD /* LGAPopupGroupBoxImp.cp in Sources */,
+				556350A51A0F039B00255FCD /* UCursor.cp in Sources */,
 				55634FC81A0F021200255FCD /* LGAControlImp.cp in Sources */,
+				556350CF1A0F03A200255FCD /* LTableSingleSelector.cp in Sources */,
 				55634FF41A0F021A00255FCD /* LStdControlImp.cp in Sources */,
 				55634FDA1A0F021200255FCD /* LGAPopupButtonImp.cp in Sources */,
+				556350AB1A0F039B00255FCD /* UEnvironment.cp in Sources */,
+				556350BF1A0F039B00255FCD /* UScrap.cp in Sources */,
 				55634F451A0EFE5200255FCD /* LInPlaceHostView.cp in Sources */,
 				55634F801A0F01BF00255FCD /* LPlaceHolder.cp in Sources */,
+				556350B31A0F039B00255FCD /* URegistrar.cp in Sources */,
+				5563506D1A0F037100255FCD /* UTEViewTextAction.cp in Sources */,
 				55634F5E1A0F019A00255FCD /* LEventHandler.cp in Sources */,
 				55634F8C1A0F01BF00255FCD /* LTextEditView.cp in Sources */,
 				5563501D1A0F022400255FCD /* LSeparatorLine.cp in Sources */,
 				556350481A0F023C00255FCD /* LGAFocusBorder.cp in Sources */,
 				55634F591A0F017300255FCD /* LOutlineMultiSelector.cp in Sources */,
+				556350BD1A0F039B00255FCD /* UProcessMgr.cp in Sources */,
 				556350341A0F022E00255FCD /* LScrollerView.cp in Sources */,
+				556350AD1A0F039B00255FCD /* UKeyFilters.cp in Sources */,
+				5563508D1A0F038900255FCD /* LListener.cp in Sources */,
 				55634F8A1A0F01BF00255FCD /* LTable.cp in Sources */,
 				55634F491A0EFE5200255FCD /* LFastArrayIterator.cp in Sources */,
 				55634F941A0F01BF00255FCD /* LOffscreenView.cp in Sources */,
 				55634F7A1A0F01BF00255FCD /* LMultiPanelView.cp in Sources */,
 				55634FAA1A0F020700255FCD /* LAMImageWellImp.cp in Sources */,
+				556350771A0F037C00255FCD /* LModelObject.cp in Sources */,
 				556350231A0F022400255FCD /* LTabsControl.cp in Sources */,
 				55634F9D1A0F01DB00255FCD /* LArray.cp in Sources */,
+				556350AF1A0F039B00255FCD /* UReanimator.cp in Sources */,
+				556350731A0F037C00255FCD /* UAppleEventsMgr.cp in Sources */,
+				556350911A0F038900255FCD /* LSharable.cp in Sources */,
 				556350441A0F023500255FCD /* UGraphicUtils.cp in Sources */,
 				55634F6C1A0F01BF00255FCD /* LControl.cp in Sources */,
 				5563503E1A0F023500255FCD /* LGAIconSuiteMixin.cp in Sources */,
 				556350121A0F022400255FCD /* LPopupButton.cp in Sources */,
+				5563504A1A0F035700255FCD /* LApplication.cp in Sources */,
 				55634F781A0F01BF00255FCD /* LListBox.cp in Sources */,
 				5563501B1A0F022400255FCD /* LScrollBar.cp in Sources */,
 				5563503A1A0F023500255FCD /* UGAColorRamp.cp in Sources */,
+				556350A11A0F039B00255FCD /* UAppearance.cp in Sources */,
 				5563503C1A0F023500255FCD /* LGACIconMixin.cp in Sources */,
+				556350A71A0F039B00255FCD /* UDrawingState.cp in Sources */,
 				55634F681A0F01BF00255FCD /* LCaption.cp in Sources */,
 				55634FD41A0F021200255FCD /* LGALittleArrowsImp.cp in Sources */,
 				55634F471A0EFE5200255FCD /* LMarqueeTask.cp in Sources */,
+				5563508F1A0F038900255FCD /* LPeriodical.cp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7227,6 +7505,7 @@
 				55634F3D1A0EFDFF00255FCD /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

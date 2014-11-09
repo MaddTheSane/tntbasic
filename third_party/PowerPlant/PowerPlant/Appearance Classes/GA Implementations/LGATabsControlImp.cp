@@ -734,7 +734,7 @@ LGATabsControlImp::CreateTabButton(
 
 	paneInfo.left		= inButtonPosition.h;
 	paneInfo.top		= inButtonPosition.v;
-	paneInfo.userCon	= nil;
+	paneInfo.userCon	= 0;
 	paneInfo.superView	= GetTabButtonView ();
 
 	SControlInfo	controlInfo;
@@ -1207,7 +1207,7 @@ LGATabsControlImp::BuildTabButtonView()
 	paneInfo.bindings.bottom = false;
 	paneInfo.left = localFrame.left + 1;
 	paneInfo.top = localFrame.top;
-	paneInfo.userCon = nil;
+	paneInfo.userCon = 0;
 	paneInfo.superView = mControlPane->GetSuperView();
 
 	SViewInfo	viewInfo;		// Setup the view info

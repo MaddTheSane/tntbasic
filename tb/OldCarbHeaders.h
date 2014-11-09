@@ -101,7 +101,6 @@ typedef CF_ENUM(SInt8, StyledLineBreakCode) {
 	smBreakOverflow               = 2
 };
 
-
 enum {
 	italicBit	= 1,
 	ulineBit,
@@ -334,6 +333,25 @@ typedef struct PictInfo {
 	long                reserved2;
 } PictInfo, *PictInfoPtr, **PictInfoHandle;
 
+typedef struct FMOutput {
+	short               errNum;
+	Handle              fontHandle;
+	UInt8               boldPixels;
+	UInt8               italicPixels;
+	UInt8               ulOffset;
+	UInt8               ulShadow;
+	UInt8               ulThick;
+	UInt8               shadowPixels;
+	SInt8               extra;
+	UInt8               ascent;
+	UInt8               descent;
+	UInt8               widMax;
+	SInt8               leading;
+	SInt8               curStyle;
+	Point               numer;
+	Point               denom;
+} FMOutput, *FMOutputPtr, *FMOutPtr;
+
 __BEGIN_DECLS
 
 #if TARGET_OS_MAC
@@ -357,6 +375,9 @@ __BEGIN_DECLS
 #define MacXorRgn XorRgn
 #define MacEqualRgn EqualRgn
 #define MacPaintRgn PaintRgn
+#define MacDrawText DrawText
+#define MacUnionRect UnionRect
+#define MacFrameRgn FrameRgn
 #endif
 
 extern void GetPort(GrafPtr *);
@@ -466,6 +487,11 @@ extern Style GetPortTextFace(CGrafPtr);
 extern short GetPortTextMode(CGrafPtr);
 extern void TextMode(short);
 extern long VisibleLength(Ptr, long);
+extern void MacDrawText(const void *, short, short);
+extern short TruncString(short, Str255, TruncCode);
+extern FMFontFamily FMGetFontFamilyFromName(ConstStr255Param);
+extern void StdText(short, const void *, Point, Point);
+extern FMOutPtr FMSwapFont(const FMInput *);
 
 //Offscreen
 extern PixMapHandle GetGWorldPixMap(GWorldPtr);
@@ -527,7 +553,22 @@ extern void MacPaintRgn(RgnHandle);
 extern StyledLineBreakCode StyledLineBreak(Ptr, long, long, long, long, Fixed *, long *);
 extern void EraseRoundRect(const Rect *, short, short);
 extern void SetPortBounds(CGrafPtr, const Rect *);
-
+extern Boolean EqualPt(Point, Point);
+extern Boolean IsPortColor(CGrafPtr);
+extern short GetPixDepth(PixMapHandle);
+extern Boolean TestDeviceAttribute(GDHandle, short);
+extern Boolean GetOutlinePreferred();
+extern void SetOutlinePreferred(Boolean);
+extern void MacUnionRect(const Rect *, const Rect *, Rect *);
+extern UInt8 LMGetFractEnable();
+extern void SetFractEnable(Boolean);
+extern CGrafPtr CreateNewPort();
+extern void DisposePort(CGrafPtr);
+extern void MovePortTo(short, short);
+extern void PortSize(short, short);
+extern void MacFrameRgn(RgnHandle);
+extern Rect *QDGetPictureBounds(PicHandle, Rect *);
+extern short QDError();
 
 extern void HidePen();
 extern void ShowPen();
