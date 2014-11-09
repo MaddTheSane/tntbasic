@@ -1,0 +1,26 @@
+//
+//  PowerPlant.pch
+//  TNTBasic
+//
+//  Created by C.W. Betts on 11/8/14.
+//
+//
+
+#ifndef TNTBasic_PowerPlant_pch
+#define TNTBasic_PowerPlant_pch
+
+#define			Debug_Signal						1		// enable signalpstr etc
+#define			TARGET_API_MAC_CARBON				1		// use carbon api calls
+#define			CARBON								1		// mr uses carbon
+#define			PP_Target_Carbon					1		// pp uses carbon
+#define			CALL_IN_SPOCKETS_BUT_NOT_IN_CARBON	1		// use sprockets, even tho it's not in carbon
+
+
+#include		<math.h>
+#include		"OldCarbHeaders.h"
+#include		<PP_ClassHeaders.cp>
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif

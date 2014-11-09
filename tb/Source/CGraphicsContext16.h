@@ -34,6 +34,9 @@
 
 #pragma once
 
+#ifndef __CGRAPHICSCONTEXT16_H__
+#define __CGRAPHICSCONTEXT16_H__
+
 #include						"BLAST Layer Manager.h"
 #include						"BLAST Standard Buffers.h"
 #include						"CFPSSprite.h"
@@ -133,3 +136,5 @@ class CGraphicsContext16 : public CGraphicsContext
 	
 		EGraphicsContextType	GetType()					{ return kBlastGraphicsContext; }
 };
+
+#endif

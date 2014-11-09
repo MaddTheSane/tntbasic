@@ -32,7 +32,7 @@
 *
 * ***** END LICENSE BLOCK ***** */
 
-#include		"OpenPlay.h"
+#include		<OpenPlay/OpenPlay.h>
 
 #include		<LDialogBox.h>
 #include		<UModalDialogs.h>
@@ -367,7 +367,7 @@ class UFuse
 										LWindow							*inGrafPort);
 		
 		static void					DisplayMessage(
-										Str255							inString);
+										ConstStr255Param							inString);
 		
 		static void					SendSimpleInternalMessage(
 										SInt32							inWhat,

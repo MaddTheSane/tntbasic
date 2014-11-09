@@ -73,7 +73,7 @@
 
 #include		"TNT_Debugging.h"
 #include		"Carbon_Settings.h"
-#include		<Displays.h>
+#include		<Carbon/Carbon.h>
 #include		"CGraphicsContext16.h"
 #include		"CQDBufferedPortDrawBuffer.h"
 #include		"Utility Objects.h"

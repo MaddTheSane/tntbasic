@@ -34,7 +34,10 @@
 
 #pragma once
 
-#include						<DrawSprocket.h>
+#ifndef __CGRAPHICSCONTEXT_H__
+#define __CGRAPHICSCONTEXT_H__
+
+#include						<DrawSprocket/DrawSprocket.h>
 #include						"CSpriteManager.h"
 #include						"UTimingUtils.h"
 #include						"CCanvasManager.h"
@@ -239,3 +242,5 @@ class CGraphicsContext
 		
 		inline WindowRef		GetGameWindow()		{ return mWindow; }
 };
+
+#endif

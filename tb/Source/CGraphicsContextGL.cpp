@@ -45,7 +45,7 @@
 
 #include		"Carbon_Settings.h"
 #include		"TNT_Debugging.h"
-#include		<Displays.h>
+#include		<Carbon/Carbon.h>
 #include		"CGraphicsContextGL.h"
 #include		"Utility Objects.h"
 #include		"UTBException.h"
@@ -55,7 +55,7 @@
 #include		"CTMAPViewport.h"
 #include		"CApplication.h"
 #include		"CImageBank.h"
-//#include		<AGL/glext.h>
+#include		<OpenGL/glext.h>
 
 // ÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑ
 //		¥ Constructor											/*e*/
@@ -251,7 +251,7 @@ void CGraphicsContextGL::RenderSpritesAndBlit()
 
 				delete [] pixels;
 						
-				if (mScreenShot=::OpenPicture(&rect))
+				if ((mScreenShot=::OpenPicture(&rect)))
 				{
 					// Copy the gworld to the picture
 					UForeColourSaver	safe1(TColourPresets::kBlack);

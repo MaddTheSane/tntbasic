@@ -165,34 +165,44 @@ void BlastCopyMaskRect(BCPtr source,BCPtr dest,const Rect *sourceRect,const Rect
 		blit:		// evil goto, necessary this time
 		
 		// Move the data in the biggest chunks possible
-		#ifdef powerc
-		// raa PowerPC 601, 8 bytes in one move command
-		if (g601Chip)
-		{	
-			while (miscCount>=sizeof(double))
+			while (miscCount>=sizeof(unsigned long long))
 			{
-				*((double *)destPtr)++=*((double *)srcPtr)++;
-				miscCount-=sizeof(double);
+				unsigned long long *aDestPtr = ((unsigned long long *)destPtr);
+				unsigned long long *aSrcPtr = ((unsigned long long *)srcPtr);
+				*aDestPtr = *aSrcPtr;
+				aDestPtr++;
+				aSrcPtr++;
+				miscCount -= sizeof(unsigned long long);
 			}
-		}
-		#endif
 		
 		while(miscCount>=sizeof(unsigned long))
 		{
-			*((unsigned long *)destPtr)++=*((unsigned long *)srcPtr)++;
-			miscCount-=sizeof(unsigned long);				
+			unsigned long *aDestPtr = ((unsigned long *)destPtr);
+			unsigned long *aSrcPtr = ((unsigned long *)srcPtr);
+			*aDestPtr = *aSrcPtr;
+			aDestPtr++;
+			aSrcPtr++;
+			miscCount -= sizeof(unsigned long);
 		}
 		
 		while(miscCount>=sizeof(unsigned short))
 		{
-			*((unsigned short *)destPtr)++=*((unsigned short *)srcPtr)++;
-			miscCount-=sizeof(unsigned short);				
+			unsigned short *aDestPtr = ((unsigned short *)destPtr);
+			unsigned short *aSrcPtr = ((unsigned short *)srcPtr);
+			*aDestPtr = *aSrcPtr;
+			aDestPtr++;
+			aSrcPtr++;
+			miscCount -= sizeof(unsigned short);
 		}
 		
 		while(miscCount>=sizeof(unsigned char))
 		{
-			*((unsigned char *)destPtr)++=*((unsigned char *)srcPtr)++;
-			miscCount-=sizeof(unsigned char);				
+			unsigned char *aDestPtr = ((unsigned char *)destPtr);
+			unsigned char *aSrcPtr = ((unsigned char *)srcPtr);
+			*aDestPtr = *aSrcPtr;
+			aDestPtr++;
+			aSrcPtr++;
+			miscCount -= sizeof(unsigned char);
 		}
 	
 		// watch for split masks
@@ -234,34 +244,44 @@ void BlastCopy(BCPtr source,BCPtr dest,const Rect *sourceRect,const Rect *destRe
 		miscCount=widthToCopy;
 	
 		// Move the data in the biggest chunks possible
-		#ifdef powerc
-		// raa PowerPC 601, 8 bytes in one move command
-		if (g601Chip)
-		{	
-			while (miscCount>=sizeof(double))
+			while (miscCount>=sizeof(unsigned long long))
 			{
-				*((double *)destPtr)++=*((double *)srcPtr)++;
-				miscCount-=sizeof(double);
+				unsigned long long *aDestPtr = ((unsigned long long *)destPtr);
+				unsigned long long *aSrcPtr = ((unsigned long long *)srcPtr);
+				*aDestPtr = *aSrcPtr;
+				aDestPtr++;
+				aSrcPtr++;
+				miscCount -= sizeof(unsigned long long);
 			}
-		}
-		#endif
 		
 		while(miscCount>=sizeof(unsigned long))
 		{
-			*((unsigned long *)destPtr)++=*((unsigned long *)srcPtr)++;
-			miscCount-=sizeof(unsigned long);				
+			unsigned long *aDestPtr = ((unsigned long *)destPtr);
+			unsigned long *aSrcPtr = ((unsigned long *)srcPtr);
+			*aDestPtr = *aSrcPtr;
+			aDestPtr++;
+			aSrcPtr++;
+			miscCount -= sizeof(unsigned long);
 		}
 		
 		while(miscCount>=sizeof(unsigned short))
 		{
-			*((unsigned short *)destPtr)++=*((unsigned short *)srcPtr)++;
-			miscCount-=sizeof(unsigned short);				
+			unsigned short *aDestPtr = ((unsigned short *)destPtr);
+			unsigned short *aSrcPtr = ((unsigned short *)srcPtr);
+			*aDestPtr = *aSrcPtr;
+			aDestPtr++;
+			aSrcPtr++;
+			miscCount -= sizeof(unsigned short);
 		}
 		
 		while(miscCount>=sizeof(unsigned char))
 		{
-			*((unsigned char *)destPtr)++=*((unsigned char *)srcPtr)++;
-			miscCount-=sizeof(unsigned char);				
+			unsigned char *aDestPtr = ((unsigned char *)destPtr);
+			unsigned char *aSrcPtr = ((unsigned char *)srcPtr);
+			*aDestPtr = *aSrcPtr;
+			aDestPtr++;
+			aSrcPtr++;
+			miscCount -= sizeof(unsigned char);
 		}
 	}
 }
@@ -383,24 +403,36 @@ void BlastCopyDoubleAligned(
 			miscCount=leftSectionLength;
 			while(miscCount>=sizeof(unsigned long))
 			{
-				*((unsigned long *)destPtr)++=*((unsigned long *)srcPtr)++;
-				miscCount-=sizeof(unsigned long);				
+				unsigned long *aDestPtr = ((unsigned long *)destPtr);
+				unsigned long *aSrcPtr = ((unsigned long *)srcPtr);
+				*aDestPtr = *aSrcPtr;
+				aDestPtr++;
+				aSrcPtr++;
+				miscCount-=sizeof(unsigned long);
 			}		
 			while(miscCount>=sizeof(unsigned short))
 			{
-				*((unsigned short *)destPtr)++=*((unsigned short *)srcPtr)++;
+				unsigned short *aDestPtr = ((unsigned short *)destPtr);
+				unsigned short *aSrcPtr = ((unsigned short *)srcPtr);
+				*aDestPtr = *aSrcPtr;
+				aDestPtr++;
+				aSrcPtr++;
 				miscCount-=sizeof(unsigned short);
 			}
-			if (miscCount)
+			if (miscCount == 1)
 				*destPtr++=*srcPtr++;
 		}
 		
 		// copy mid section using doubles
 		miscCount=midSectionLength;
-		while (miscCount>=sizeof(double))
+		while (miscCount>=sizeof(unsigned long long))
 		{
-			*((double *)destPtr)++=*((double *)srcPtr)++;
-			miscCount-=sizeof(double);
+			unsigned long long *aDestPtr = ((unsigned long long *)destPtr);
+			unsigned long long *aSrcPtr = ((unsigned long long *)srcPtr);
+			*aDestPtr = *aSrcPtr;
+			aDestPtr++;
+			aSrcPtr++;
+			miscCount-=sizeof(unsigned long long);
 		}
 				
 		// copy right side
@@ -409,16 +441,24 @@ void BlastCopyDoubleAligned(
 			miscCount=rightSectionLength;
 			while(miscCount>=sizeof(unsigned long))
 			{
-				*((unsigned long *)destPtr)++=*((unsigned long *)srcPtr)++;
-				miscCount-=sizeof(unsigned long);				
+				unsigned long *aDestPtr = ((unsigned long *)destPtr);
+				unsigned long *aSrcPtr = ((unsigned long *)srcPtr);
+				*aDestPtr = *aSrcPtr;
+				aDestPtr++;
+				aSrcPtr++;
+				miscCount-=sizeof(unsigned long);
 			}		
 			while(miscCount>=sizeof(unsigned short))
 			{
-				*((unsigned short *)destPtr)++=*((unsigned short *)srcPtr)++;
-				miscCount-=sizeof(unsigned short);				
+				unsigned short *aDestPtr = ((unsigned short *)destPtr);
+				unsigned short *aSrcPtr = ((unsigned short *)srcPtr);
+				*aDestPtr = *aSrcPtr;
+				aDestPtr++;
+				aSrcPtr++;
+				miscCount -= sizeof(unsigned short);
 			}
-			if (miscCount)
-				*destPtr++=*srcPtr++;
+			if (miscCount == 1)
+				*destPtr++ = *srcPtr++;
 		}
 				
 		// next row
@@ -464,28 +504,34 @@ void BlastCopy16(BCPtr source,BCPtr dest,const Rect *sourceRect,const Rect *dest
 		miscCount=widthToCopy;
 	
 		// Move the data in the biggest chunks possible
-		#ifdef powerc
-		// raa PowerPC 601, 8 bytes in one move command
-		if (g601Chip)
-		{	
 			while (miscCount>=sizeof(double)/2)
 			{
-				*((double *)destPtr)++=*((double *)srcPtr)++;
-				miscCount-=sizeof(double)/2;
+				unsigned long long *aDestPtr = ((unsigned long long *)destPtr);
+				unsigned long long *aSrcPtr = ((unsigned long long *)srcPtr);
+				*aDestPtr = *aSrcPtr;
+				aDestPtr++;
+				aSrcPtr++;
+				miscCount-=sizeof(unsigned long long)/2;
 			}
-		}
-		#endif
 		
 		while(miscCount>=sizeof(unsigned long)/2)
 		{
-			*((unsigned long *)destPtr)++=*((unsigned long *)srcPtr)++;
-			miscCount-=sizeof(unsigned long)/2;				
+			unsigned long *aDestPtr = ((unsigned long *)destPtr);
+			unsigned long *aSrcPtr = ((unsigned long *)srcPtr);
+			*aDestPtr = *aSrcPtr;
+			aDestPtr++;
+			aSrcPtr++;
+			miscCount -= sizeof(unsigned long)/2;
 		}
 		
 		while(miscCount>=sizeof(unsigned short)/2)
 		{
-			*((unsigned short *)destPtr)++=*((unsigned short *)srcPtr)++;
-			miscCount-=sizeof(unsigned short)/2;				
+			unsigned short *aDestPtr = ((unsigned short *)destPtr);
+			unsigned short *aSrcPtr = ((unsigned short *)srcPtr);
+			*aDestPtr = *aSrcPtr;
+			aDestPtr++;
+			aSrcPtr++;
+			miscCount -= sizeof(unsigned short)/2;
 		}
 	}
 }
@@ -537,12 +583,18 @@ void BlastCopy16Mask(BCPtr source,BCPtr dest,const Rect *sourceRect,const Rect *
 		
 		while(miscCount>=sizeof(unsigned short)/2)
 		{
-			if(*((short *)srcPtr)!=maskColour)
-				*((unsigned short *)destPtr)++=*((unsigned short *)srcPtr)++;
-			else
+			if(*((short *)srcPtr)!=maskColour) {
+				unsigned short *aDestPtr = ((unsigned short *)destPtr);
+				unsigned short *aSrcPtr = ((unsigned short *)srcPtr);
+				*aDestPtr = *aSrcPtr;
+				aDestPtr++;
+				aSrcPtr++;
+			} else
 			{
-				*((unsigned short *)destPtr)++;
-				*((unsigned short *)srcPtr)++;
+				unsigned short *aDestPtr = ((unsigned short *)destPtr);
+				unsigned short *aSrcPtr = ((unsigned short *)srcPtr);
+				aDestPtr++;
+				aSrcPtr++;
 			}
 			miscCount-=sizeof(unsigned short)/2;				
 		}
@@ -684,7 +736,9 @@ void BlastCopyScaledNoClip16(BCPtr sourceRec,BCPtr destRec,Rect *scaleRect,short
 		while (xCounter<width)
 		{
 			*(short*)destPtr=*(short*)(((unsigned long)(rowStart+(xCounter>>(kBlastFP-1))))&0xFFFFFFFE);	// & masks out the lowest bit which should be cleared
-			((short*)destPtr)++;
+			short *aDestPtr = ((short *)destPtr);
+			aDestPtr++;
+			
 			xCounter+=xScale;
 		}
 	}
@@ -894,8 +948,13 @@ void BlastCopy8To16(BCPtr source,BCPtr dest,Rect *sourceRect,Rect *destRect,Blas
 		
 		while(miscCount>=sizeof(unsigned char))
 		{
-			*((unsigned short *)destPtr)++=blastColourTable[*((unsigned char *)srcPtr)++];
-			miscCount-=sizeof(unsigned char);				
+			unsigned short *aDestPtr = ((unsigned short *)destPtr);
+			unsigned char *aSrcPtr = ((unsigned char*)srcPtr);
+			*aDestPtr = blastColourTable[*aSrcPtr];
+			aDestPtr++;
+			aSrcPtr++;
+
+			miscCount -= sizeof(unsigned char);
 		}
 	}
 }

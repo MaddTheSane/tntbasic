@@ -16,7 +16,7 @@
 #include <LControlPane.h>
 #include <UDrawingState.h>
 
-#include <MacWindows.h>
+#include <Carbon/Carbon.h>
 
 PP_Begin_Namespace_PowerPlant
 

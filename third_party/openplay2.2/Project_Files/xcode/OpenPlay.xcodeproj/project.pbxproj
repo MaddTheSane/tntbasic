@@ -38,6 +38,30 @@
 		18AD33FF05D070C8006D9A32 /* OpenPlay.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9758F24B0588DE88008F071A /* OpenPlay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		18EB655A05D055CF006B1F7B /* tcpip.so.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9758F2610588DE88008F071A /* tcpip.so.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		18EB657F05D05794006B1F7B /* OpenPlay.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9758F24B0588DE88008F071A /* OpenPlay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		55343A511A0EE98600331B8C /* OpenPlay.h in Headers */ = {isa = PBXBuildFile; fileRef = 55343A501A0EE98600331B8C /* OpenPlay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55634F1F1A0EFD8B00255FCD /* CATEndpoint_OP.h in Headers */ = {isa = PBXBuildFile; fileRef = 55634F111A0EFD8B00255FCD /* CATEndpoint_OP.h */; };
+		55634F201A0EFD8B00255FCD /* CEndpoint_OP.h in Headers */ = {isa = PBXBuildFile; fileRef = 55634F121A0EFD8B00255FCD /* CEndpoint_OP.h */; };
+		55634F211A0EFD8B00255FCD /* CIPEndpoint_OP.h in Headers */ = {isa = PBXBuildFile; fileRef = 55634F131A0EFD8B00255FCD /* CIPEndpoint_OP.h */; };
+		55634F221A0EFD8B00255FCD /* NetSprocketLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 55634F141A0EFD8B00255FCD /* NetSprocketLib.h */; };
+		55634F231A0EFD8B00255FCD /* NSp_InterruptSafeList.h in Headers */ = {isa = PBXBuildFile; fileRef = 55634F151A0EFD8B00255FCD /* NSp_InterruptSafeList.h */; };
+		55634F241A0EFD8B00255FCD /* NSpGame.h in Headers */ = {isa = PBXBuildFile; fileRef = 55634F161A0EFD8B00255FCD /* NSpGame.h */; };
+		55634F251A0EFD8B00255FCD /* NSpGameMaster.h in Headers */ = {isa = PBXBuildFile; fileRef = 55634F171A0EFD8B00255FCD /* NSpGameMaster.h */; };
+		55634F261A0EFD8B00255FCD /* NSpGamePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 55634F181A0EFD8B00255FCD /* NSpGamePrivate.h */; };
+		55634F271A0EFD8B00255FCD /* NSpGameSlave.h in Headers */ = {isa = PBXBuildFile; fileRef = 55634F191A0EFD8B00255FCD /* NSpGameSlave.h */; };
+		55634F281A0EFD8B00255FCD /* NSpLists_OP.h in Headers */ = {isa = PBXBuildFile; fileRef = 55634F1A1A0EFD8B00255FCD /* NSpLists_OP.h */; };
+		55634F291A0EFD8B00255FCD /* NSpPrefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 55634F1B1A0EFD8B00255FCD /* NSpPrefix.h */; };
+		55634F2A1A0EFD8B00255FCD /* NSpProtocolRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 55634F1C1A0EFD8B00255FCD /* NSpProtocolRef.h */; };
+		55634F2B1A0EFD8B00255FCD /* NSpVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 55634F1D1A0EFD8B00255FCD /* NSpVersion.h */; };
+		55634F2C1A0EFD8B00255FCD /* PrivateMessages.h in Headers */ = {isa = PBXBuildFile; fileRef = 55634F1E1A0EFD8B00255FCD /* PrivateMessages.h */; };
+		55634F2D1A0EFD9200255FCD /* ByteSwapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 55634F051A0EFCE900255FCD /* ByteSwapping.h */; };
+		55634F2E1A0EFD9200255FCD /* ERObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 55634F071A0EFCE900255FCD /* ERObject.h */; };
+		55634F2F1A0EFD9200255FCD /* Exceptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 55634F081A0EFCE900255FCD /* Exceptions.h */; };
+		55634F301A0EFD9200255FCD /* find_files.h in Headers */ = {isa = PBXBuildFile; fileRef = 55634F091A0EFCE900255FCD /* find_files.h */; };
+		55634F311A0EFD9200255FCD /* LinkedList.h in Headers */ = {isa = PBXBuildFile; fileRef = 55634F0A1A0EFCE900255FCD /* LinkedList.h */; };
+		55634F321A0EFD9200255FCD /* OPDLLUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 55634F0C1A0EFCE900255FCD /* OPDLLUtils.h */; };
+		55634F331A0EFD9200255FCD /* OPUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 55634F0D1A0EFCE900255FCD /* OPUtils.h */; };
+		55634F341A0EFD9200255FCD /* portable_files.h in Headers */ = {isa = PBXBuildFile; fileRef = 55634F0E1A0EFCE900255FCD /* portable_files.h */; };
+		55634F351A0EFD9200255FCD /* TPointerArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 55634F101A0EFCE900255FCD /* TPointerArray.h */; };
 		9758F2250588DE88008F071A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 		9758F2270588DE88008F071A /* module_management.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5ABE64102556F3701A80105 /* module_management.cpp */; };
 		9758F2280588DE88008F071A /* op_endpoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5ABE64202556F3701A80105 /* op_endpoint.cpp */; };
@@ -291,6 +315,30 @@
 		55343A491A0EDF4F00331B8C /* machine_lock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = machine_lock.h; path = ../../Source/Utilities/machine_lock.h; sourceTree = SOURCE_ROOT; };
 		55343A4A1A0EDF6100331B8C /* DebugPrint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DebugPrint.h; path = ../../Source/Utilities/DebugPrint.h; sourceTree = SOURCE_ROOT; };
 		55343A4B1A0EDF6100331B8C /* String_Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = String_Utils.h; path = ../../Source/Utilities/String_Utils.h; sourceTree = SOURCE_ROOT; };
+		55343A501A0EE98600331B8C /* OpenPlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenPlay.h; path = ../../Interfaces/OpenPlay.h; sourceTree = "<group>"; };
+		55634F051A0EFCE900255FCD /* ByteSwapping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ByteSwapping.h; path = ../../Source/Utilities/ByteSwapping.h; sourceTree = "<group>"; };
+		55634F071A0EFCE900255FCD /* ERObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ERObject.h; path = ../../Source/Utilities/ERObject.h; sourceTree = "<group>"; };
+		55634F081A0EFCE900255FCD /* Exceptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Exceptions.h; path = ../../Source/Utilities/Exceptions.h; sourceTree = "<group>"; };
+		55634F091A0EFCE900255FCD /* find_files.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = find_files.h; path = ../../Source/Utilities/find_files.h; sourceTree = "<group>"; };
+		55634F0A1A0EFCE900255FCD /* LinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LinkedList.h; path = ../../Source/Utilities/LinkedList.h; sourceTree = "<group>"; };
+		55634F0C1A0EFCE900255FCD /* OPDLLUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OPDLLUtils.h; path = ../../Source/Utilities/OPDLLUtils.h; sourceTree = "<group>"; };
+		55634F0D1A0EFCE900255FCD /* OPUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OPUtils.h; path = ../../Source/Utilities/OPUtils.h; sourceTree = "<group>"; };
+		55634F0E1A0EFCE900255FCD /* portable_files.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = portable_files.h; path = ../../Source/Utilities/portable_files.h; sourceTree = "<group>"; };
+		55634F101A0EFCE900255FCD /* TPointerArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TPointerArray.h; path = ../../Source/Utilities/TPointerArray.h; sourceTree = "<group>"; };
+		55634F111A0EFD8B00255FCD /* CATEndpoint_OP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CATEndpoint_OP.h; path = ../../Source/NetSprocketLib/CATEndpoint_OP.h; sourceTree = "<group>"; };
+		55634F121A0EFD8B00255FCD /* CEndpoint_OP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CEndpoint_OP.h; path = ../../Source/NetSprocketLib/CEndpoint_OP.h; sourceTree = "<group>"; };
+		55634F131A0EFD8B00255FCD /* CIPEndpoint_OP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CIPEndpoint_OP.h; path = ../../Source/NetSprocketLib/CIPEndpoint_OP.h; sourceTree = "<group>"; };
+		55634F141A0EFD8B00255FCD /* NetSprocketLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetSprocketLib.h; path = ../../Source/NetSprocketLib/NetSprocketLib.h; sourceTree = "<group>"; };
+		55634F151A0EFD8B00255FCD /* NSp_InterruptSafeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSp_InterruptSafeList.h; path = ../../Source/NetSprocketLib/NSp_InterruptSafeList.h; sourceTree = "<group>"; };
+		55634F161A0EFD8B00255FCD /* NSpGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSpGame.h; path = ../../Source/NetSprocketLib/NSpGame.h; sourceTree = "<group>"; };
+		55634F171A0EFD8B00255FCD /* NSpGameMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSpGameMaster.h; path = ../../Source/NetSprocketLib/NSpGameMaster.h; sourceTree = "<group>"; };
+		55634F181A0EFD8B00255FCD /* NSpGamePrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSpGamePrivate.h; path = ../../Source/NetSprocketLib/NSpGamePrivate.h; sourceTree = "<group>"; };
+		55634F191A0EFD8B00255FCD /* NSpGameSlave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSpGameSlave.h; path = ../../Source/NetSprocketLib/NSpGameSlave.h; sourceTree = "<group>"; };
+		55634F1A1A0EFD8B00255FCD /* NSpLists_OP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSpLists_OP.h; path = ../../Source/NetSprocketLib/NSpLists_OP.h; sourceTree = "<group>"; };
+		55634F1B1A0EFD8B00255FCD /* NSpPrefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSpPrefix.h; path = ../../Source/NetSprocketLib/NSpPrefix.h; sourceTree = "<group>"; };
+		55634F1C1A0EFD8B00255FCD /* NSpProtocolRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSpProtocolRef.h; path = ../../Source/NetSprocketLib/NSpProtocolRef.h; sourceTree = "<group>"; };
+		55634F1D1A0EFD8B00255FCD /* NSpVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSpVersion.h; path = ../../Source/NetSprocketLib/NSpVersion.h; sourceTree = "<group>"; };
+		55634F1E1A0EFD8B00255FCD /* PrivateMessages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrivateMessages.h; path = ../../Source/NetSprocketLib/PrivateMessages.h; sourceTree = "<group>"; };
 		9758F24A0588DE88008F071A /* Info-OpenPlay_Framework.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Info-OpenPlay_Framework.plist"; sourceTree = "<group>"; };
 		9758F24B0588DE88008F071A /* OpenPlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OpenPlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9758F2600588DE88008F071A /* Info-IP_Module.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Info-IP_Module.plist"; sourceTree = "<group>"; };
@@ -498,6 +546,7 @@
 		08FB77ACFE841707C02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				55343A501A0EE98600331B8C /* OpenPlay.h */,
 				F5679E0E026A340201A80105 /* NSpDialogMacOS.cpp */,
 				F5ABE64102556F3701A80105 /* module_management.cpp */,
 				F5ABE64202556F3701A80105 /* op_endpoint.cpp */,
@@ -526,6 +575,36 @@
 				F5ABE67302556F8801A80105 /* TPointerArray.cpp */,
 			);
 			name = Source;
+			sourceTree = "<group>";
+		};
+		55634F041A0EFCDC00255FCD /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				55634F111A0EFD8B00255FCD /* CATEndpoint_OP.h */,
+				55634F121A0EFD8B00255FCD /* CEndpoint_OP.h */,
+				55634F131A0EFD8B00255FCD /* CIPEndpoint_OP.h */,
+				55634F141A0EFD8B00255FCD /* NetSprocketLib.h */,
+				55634F151A0EFD8B00255FCD /* NSp_InterruptSafeList.h */,
+				55634F161A0EFD8B00255FCD /* NSpGame.h */,
+				55634F171A0EFD8B00255FCD /* NSpGameMaster.h */,
+				55634F181A0EFD8B00255FCD /* NSpGamePrivate.h */,
+				55634F191A0EFD8B00255FCD /* NSpGameSlave.h */,
+				55634F1A1A0EFD8B00255FCD /* NSpLists_OP.h */,
+				55634F1B1A0EFD8B00255FCD /* NSpPrefix.h */,
+				55634F1C1A0EFD8B00255FCD /* NSpProtocolRef.h */,
+				55634F1D1A0EFD8B00255FCD /* NSpVersion.h */,
+				55634F1E1A0EFD8B00255FCD /* PrivateMessages.h */,
+				55634F051A0EFCE900255FCD /* ByteSwapping.h */,
+				55634F071A0EFCE900255FCD /* ERObject.h */,
+				55634F081A0EFCE900255FCD /* Exceptions.h */,
+				55634F091A0EFCE900255FCD /* find_files.h */,
+				55634F0A1A0EFCE900255FCD /* LinkedList.h */,
+				55634F0C1A0EFCE900255FCD /* OPDLLUtils.h */,
+				55634F0D1A0EFCE900255FCD /* OPUtils.h */,
+				55634F0E1A0EFCE900255FCD /* portable_files.h */,
+				55634F101A0EFCE900255FCD /* TPointerArray.h */,
+			);
+			name = Headers;
 			sourceTree = "<group>";
 		};
 		F5530D6F0256BF5501A80105 /* IP Module */ = {
@@ -584,6 +663,7 @@
 		F5ABE64002556D8F01A80105 /* OpenPlay Framework */ = {
 			isa = PBXGroup;
 			children = (
+				55634F041A0EFCDC00255FCD /* Headers */,
 				9758F24A0588DE88008F071A /* Info-OpenPlay_Framework.plist */,
 				089C1665FE841158C02AAC07 /* Resources */,
 				08FB77ACFE841707C02AAC07 /* Source */,
@@ -692,6 +772,30 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55634F201A0EFD8B00255FCD /* CEndpoint_OP.h in Headers */,
+				55634F2D1A0EFD9200255FCD /* ByteSwapping.h in Headers */,
+				55634F241A0EFD8B00255FCD /* NSpGame.h in Headers */,
+				55634F211A0EFD8B00255FCD /* CIPEndpoint_OP.h in Headers */,
+				55634F341A0EFD9200255FCD /* portable_files.h in Headers */,
+				55634F261A0EFD8B00255FCD /* NSpGamePrivate.h in Headers */,
+				55634F291A0EFD8B00255FCD /* NSpPrefix.h in Headers */,
+				55634F301A0EFD9200255FCD /* find_files.h in Headers */,
+				55634F321A0EFD9200255FCD /* OPDLLUtils.h in Headers */,
+				55634F351A0EFD9200255FCD /* TPointerArray.h in Headers */,
+				55634F2E1A0EFD9200255FCD /* ERObject.h in Headers */,
+				55634F281A0EFD8B00255FCD /* NSpLists_OP.h in Headers */,
+				55634F271A0EFD8B00255FCD /* NSpGameSlave.h in Headers */,
+				55343A511A0EE98600331B8C /* OpenPlay.h in Headers */,
+				55634F251A0EFD8B00255FCD /* NSpGameMaster.h in Headers */,
+				55634F331A0EFD9200255FCD /* OPUtils.h in Headers */,
+				55634F221A0EFD8B00255FCD /* NetSprocketLib.h in Headers */,
+				55634F311A0EFD9200255FCD /* LinkedList.h in Headers */,
+				55634F2A1A0EFD8B00255FCD /* NSpProtocolRef.h in Headers */,
+				55634F1F1A0EFD8B00255FCD /* CATEndpoint_OP.h in Headers */,
+				55634F231A0EFD8B00255FCD /* NSp_InterruptSafeList.h in Headers */,
+				55634F2B1A0EFD8B00255FCD /* NSpVersion.h in Headers */,
+				55634F2F1A0EFD9200255FCD /* Exceptions.h in Headers */,
+				55634F2C1A0EFD8B00255FCD /* PrivateMessages.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1345,7 +1449,6 @@
 				);
 				INFOPLIST_FILE = "Info-IP_Module.plist";
 				INSTALL_PATH = "";
-				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = (
 					"-DDEBUG",
 					"-DDEBUGCALLCHAIN",
@@ -1357,7 +1460,6 @@
 				PRODUCT_NAME = tcpip.so;
 				SECTORDER_FLAGS = "";
 				WRAPPER_EXTENSION = bundle;
-				ZERO_LINK = NO;
 			};
 			name = Debug;
 		};
@@ -1366,7 +1468,6 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
-				DEBUGGING_SYMBOLS = NO;
 				EXPORTED_SYMBOLS_FILE = ../../Source/OPNetModules/posix/NetModuleDarwin.exp;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_PREFIX_HEADER = ../../Source/Utilities/Posix/prefixMach.h;
@@ -1392,7 +1493,6 @@
 				PRODUCT_NAME = tcpip.so;
 				SECTORDER_FLAGS = "";
 				WRAPPER_EXTENSION = bundle;
-				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
@@ -1403,6 +1503,7 @@
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				EXPORTED_SYMBOLS_FILE = ../../Source/OpenPlayLib/posix/openplay_darwin.exp;
 				FRAMEWORK_VERSION = A;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1421,8 +1522,6 @@
 					../../Interfaces,
 				);
 				INFOPLIST_FILE = "Info-OpenPlay_Framework.plist";
-				INSTALL_PATH = "@executable_path/../Frameworks";
-				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = (
 					"-DDEBUG",
 					"-DDEBUGCALLCHAIN",
@@ -1430,16 +1529,10 @@
 					"-Dmacho_build",
 				);
 				OTHER_LDFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = OpenPlay;
 				SECTORDER_FLAGS = "";
 				SKIP_INSTALL = YES;
-				WARNING_CFLAGS = (
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
 				WRAPPER_EXTENSION = framework;
-				ZERO_LINK = NO;
 			};
 			name = Debug;
 		};
@@ -1448,13 +1541,13 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
-				DEBUGGING_SYMBOLS = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				EXPORTED_SYMBOLS_FILE = ../../Source/OpenPlayLib/posix/openplay_darwin.exp;
 				FRAMEWORK_VERSION = A;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_PREFIX_HEADER = ../../Source/Utilities/Posix/prefixMach.h;
 				HEADER_SEARCH_PATHS = (
 					../../Source/Utilities/posix,
@@ -1467,22 +1560,15 @@
 					../../Interfaces,
 				);
 				INFOPLIST_FILE = "Info-OpenPlay_Framework.plist";
-				INSTALL_PATH = "@executable_path/../Frameworks";
 				OTHER_CFLAGS = (
 					"-Dproject_builder",
 					"-Dmacho_build",
 				);
 				OTHER_LDFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = OpenPlay;
 				SECTORDER_FLAGS = "";
 				SKIP_INSTALL = YES;
-				WARNING_CFLAGS = (
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
 				WRAPPER_EXTENSION = framework;
-				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
@@ -2021,7 +2107,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_OPTIMIZATION_LEVEL = 0;
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				REZ_PREPROCESSOR_DEFINITIONS = "project_builder=1";
 				SDKROOT = macosx;
@@ -2032,7 +2118,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				REZ_PREPROCESSOR_DEFINITIONS = "project_builder=1";
 				SDKROOT = macosx;
 			};

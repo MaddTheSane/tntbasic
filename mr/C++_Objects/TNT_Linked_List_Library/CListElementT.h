@@ -32,6 +32,9 @@
 *
 * ***** END LICENSE BLOCK ***** */
 
+#ifndef __CLISTELEMENTT_H__
+#define __CLISTELEMENTT_H__
+
 #pragma once
 
 template <class T>
@@ -102,8 +105,8 @@ template <class T>
 CListElementT<T>::CListElementT(
 	T			*inDataPtr)
 {
-	mBossList=0L;
-	mNextElement=mPrevElement=0L;
+	mBossList = NULL;
+	mNextElement=mPrevElement = NULL;
 	mElementData=inDataPtr;
 }
 
@@ -142,8 +145,10 @@ TListIndex CListElementT<T>::GetCurrentIndex() const
 	TListIndex			index=0L;
 	CListElementT<T>	*ptr=(CListElementT<T>*)this; // Cast away constness
 	
-	while (ptr=ptr->GetPrevElement())
+	while ((ptr = ptr->GetPrevElement()))
 		index++;
 	
 	return index;
 }
+
+#endif

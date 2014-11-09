@@ -34,9 +34,12 @@
 
 #pragma once
 
+#ifndef __CTIMEMGRTASK_H__
+#define __CTIMEMGRTASK_H__
+
 #include		<LCleanupTask.h>
 
-#include		<Timer.h>
+#include		<Carbon/Carbon.h>
 
 class CTimeMgrTask : public LCleanupTask
 {
@@ -70,3 +73,5 @@ class CTimeMgrTask : public LCleanupTask
 		
 		virtual void		Tick() = 0;
 };
+
+#endif

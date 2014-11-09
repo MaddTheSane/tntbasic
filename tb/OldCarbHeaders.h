@@ -26,6 +26,14 @@ typedef UInt32		GammaTableID;
 typedef WindowPtr	CWindowPtr;
 
 enum {
+	returnColorTable              = 0x0001,
+	returnPalette                 = 0x0002,
+	recordComments                = 0x0004,
+	recordFontInfo                = 0x0008,
+	suppressBlackAndWhite         = 0x0010
+};
+
+enum {
 	kFontIDNewYork		= 2,
 	kFontIDGeneva,
 	kFontIDMonaco,
@@ -86,6 +94,13 @@ enum {
 	ditherCopy                    = 64,	/* Transparent mode constant */
 	transparent                   = 36
 };
+
+typedef CF_ENUM(SInt8, StyledLineBreakCode) {
+	smBreakWord                   = 0,
+	smBreakChar                   = 1,
+	smBreakOverflow               = 2
+};
+
 
 enum {
 	italicBit	= 1,
@@ -202,7 +217,7 @@ enum {
 	gwFlagErrBit
 };
 
-typedef CF_OPTIONS(UInt32, PixFlags) {
+enum {
 	pixPurge                      = 1L << pixPurgeBit,
 	noNewDevice                   = 1L << noNewDeviceBit,
 	useTempMem                    = 1L << useTempMemBit,
@@ -220,8 +235,8 @@ typedef CF_OPTIONS(UInt32, PixFlags) {
 	reallocPix                    = 1L << reallocPixBit,
 	clipPix                       = 1L << clipPixBit,
 	stretchPix                    = 1L << stretchPixBit,
-	ditherPix                     = 1L << ditherPixBit,
-	gwFlagErr                     = 1L << gwFlagErrBit
+	ditherPix                     = 1 << ditherPixBit,
+	gwFlagErr                     = 1 << gwFlagErrBit
 };
 
 typedef SInt8 PixelType;
@@ -341,6 +356,7 @@ __BEGIN_DECLS
 #define MacInvertRgn InvertRgn
 #define MacXorRgn XorRgn
 #define MacEqualRgn EqualRgn
+#define MacPaintRgn PaintRgn
 #endif
 
 extern void GetPort(GrafPtr *);
@@ -449,6 +465,7 @@ extern short CharWidth(CharParameter);
 extern Style GetPortTextFace(CGrafPtr);
 extern short GetPortTextMode(CGrafPtr);
 extern void TextMode(short);
+extern long VisibleLength(Ptr, long);
 
 //Offscreen
 extern PixMapHandle GetGWorldPixMap(GWorldPtr);
@@ -493,6 +510,23 @@ extern CQDProcsPtr GetPortGrafProcs(CGrafPtr);
 extern void SetPortGrafProcs(CGrafPtr, CQDProcsPtr);
 extern void BackPat(const Pattern *);
 extern OSErr GetPictInfo(PicHandle, PictInfo *, short, short, short, short);
+extern GDHandle GetGWorldDevice(GWorldPtr);
+extern long GetPixRowBytes(PixMapHandle);
+extern PicHandle OpenPicture(const Rect *);
+extern void ClosePicture();
+extern void SetStdCProcs(CQDProcs *);
+extern void KillPicture(PicHandle);
+extern OSStatus QDSetDirtyRegion(CGrafPtr, RgnHandle);
+extern Boolean QDIsPortBufferDirty(CGrafPtr);
+extern OSErr LockPortBits(GrafPtr);
+extern OSErr UnlockPortBits(GrafPtr);
+extern Boolean IsValidPort(CGrafPtr);
+extern PixPatHandle GetPortBackPixPat(CGrafPtr, PixPatHandle);
+extern PixPatHandle GetPortPenPixPat(CGrafPtr, PixPatHandle);
+extern void MacPaintRgn(RgnHandle);
+extern StyledLineBreakCode StyledLineBreak(Ptr, long, long, long, long, Fixed *, long *);
+extern void EraseRoundRect(const Rect *, short, short);
+extern void SetPortBounds(CGrafPtr, const Rect *);
 
 
 extern void HidePen();

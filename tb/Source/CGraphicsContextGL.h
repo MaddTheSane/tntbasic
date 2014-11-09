@@ -34,6 +34,9 @@
 
 #pragma once
 
+#ifndef __CGRAPHICSCONTEXTGL_H__
+#define __CGRAPHICSCONTEXTGL_H__
+
 #if __MWERKS__
 #include						<agl.h>
 #else
@@ -144,3 +147,5 @@ class CGraphicsContextGL : public CGraphicsContext
 		
 		EGraphicsContextType		GetType()							{ return kOpenGLGraphicsContext; }
 };
+
+#endif

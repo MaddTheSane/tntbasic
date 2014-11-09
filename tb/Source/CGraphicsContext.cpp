@@ -34,7 +34,7 @@
 
 #include		"TNT_Debugging.h"
 #include		"Carbon_Settings.h"
-#include		<Displays.h>
+#include		<Carbon/Carbon.h>
 #include		"CGraphicsContext.h"
 #include		"Utility Objects.h"
 #include		"UTBException.h"
@@ -184,7 +184,7 @@ CGraphicsContext::CGraphicsContext(
 		
 		mClockFrequency=mCurrentRes.refreshRate;
 
-		Rect		screenBounds={0,0,mCurrentRes.height,mCurrentRes.width};
+		Rect		screenBounds={0,0,static_cast<short>(mCurrentRes.height),static_cast<short>(mCurrentRes.width)};
 		
 		// Install a VBl sync to stop hideous tearing effects
 		if (mClockFrequency==0 || DISABLE_VBL_PROC)				// no vbl, must be an lcd screen...
@@ -781,7 +781,7 @@ void CGraphicsContext::Pause()
 
 	if (mGoFullScreen)
 	{
-		Rect		screenBounds={0,0,mPreviousRes.height,mPreviousRes.width};
+		Rect		screenBounds={0,0,static_cast<short>(mPreviousRes.height),static_cast<short>(mPreviousRes.width)};
 		OSErr		err;
 			
 		err=::ReleaseDesktop(sScreenRef);
@@ -1064,7 +1064,7 @@ void CGraphicsContext::ReactToNewMap()
 	
 	while (CViewport *vp=indexer.GetNextData())
 	{
-		if (tvp=dynamic_cast<CTMAPViewport*>(vp))
+		if ((tvp=dynamic_cast<CTMAPViewport*>(vp)))
 		{
 			TTBInteger		layer=tvp->GetLayerIndex();
 			TTBInteger		canvasId=tvp->GetCanvas();

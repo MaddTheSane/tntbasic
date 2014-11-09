@@ -149,7 +149,7 @@ LAMBevelButtonImp::Init(
 		// getting and detaching the PICT resource.
 
 	bool	usePictHandle = false;
-	ResIDT	pictID;
+	ResIDT	pictID = 0;
 									// Lo byte of min value stores the
 									//   content type
 	if ((UInt8) inControlPane->GetMinValue() == kControlContentPictRes) {

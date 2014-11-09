@@ -180,7 +180,7 @@ void CSymbolTableT<T>::EnterGuest(
 
 	// it's it's there then don't add it again
 	if (mArray.FetchIndexOf(inEntry)==LArray::index_Bad)
-		Store(inEntry);
+		this->Store(inEntry);
 }
 
 // ÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑ
@@ -253,7 +253,7 @@ T *CSymbolTableT<T>::Enter(
 		
 		Try_
 		{
-			Store(entry);
+			this->Store(entry);
 		}
 		Catch_(err)
 		{

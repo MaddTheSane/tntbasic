@@ -673,7 +673,7 @@ LOutlineItem::ResetDrawContents(
 	ioDrawContents.outHasIcon = false;
 	ioDrawContents.outIconSuite = nil;
 	ioDrawContents.outIconTransform = 0;
-	ioDrawContents.outIconAlign = nil;
+	ioDrawContents.outIconAlign = 0;
 	ioDrawContents.outDoTruncation = true;
 
 	// Reset text drawing info.

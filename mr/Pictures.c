@@ -31,8 +31,7 @@
 *
 * ***** END LICENSE BLOCK ***** */
 
-#include	<PictUtils.h>
-#include	<Palettes.h>
+#include	<Carbon/Carbon.h>
 #include	"Marks Routines.h"
 
 // Globals
